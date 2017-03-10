@@ -1,0 +1,12 @@
+footer ul li a,
+footer ul li span {
+    vertical-align: top;
+}
+
+footer ul li {
+    margin-top: 0.5em;
+}
+
+.card-date {
+    color: #bdbdbd;
+}
