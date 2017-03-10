@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Blog | Vatsal Joshi</title>
+    <meta charset="UTF-8">
+    <script>
+        if (window.location.protocol == "http:") {
+            window.location.protocol = "https";
+        }
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta content="Blog by Vatsal Joshi" name="description" />
+    <meta content="Blog,Vatsal,Joshi,VaTz88,VIT,Vadodara,India" name="keywords" />
+    <meta content="Vatsal Joshi" name="author">
+    <!--<link href="media/VatsalJoshi.ico" rel="shortcut icon">-->
+    <meta content="Vatsal Joshi" itemprop="name">
+    <meta content="Blog by Vatsal Joshi" itemprop="description" />
+    <!--<meta content="media/VatsalJoshi.jpg" itemprop="image" />-->
+    <meta content="summary" name="twitter:card" />
+    <meta content=@VaTz88 name="twitter:site:id" />
+    <meta content="Blog | Vatsal Joshi" name="twitter:title" />
+    <meta content="Blog by Vatsal Joshi" name="twitter:description" />
+    <meta content="media/VatsalJoshi.jpg" name="twitter:image" />
+    <meta content="Blog | Vatsal Joshi" name="twitter:image:alt" />
+    <meta content="Blog | Vatsal Joshi" property="og:title" />
+    <meta content="website" property="og:type">
+    <meta content="https://blog.vatz88.in/" property="og:url">
+    <!--<meta content="media/VatsalJoshi.jpg" property="og:image" />-->
+    <meta content="Blog by Vatsal Joshi" property="og:description" />
+    <meta content="Blog | Vatsal Joshi" property="og:site_name" />
+    <meta content="663218817159771" property="fb:app_id">
+    <meta content="30AC13B4115EEFB980C0404E990B0FE7" name="msvalidate.01" />
+    <!-- CSS  -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="light-blue lighten-1" role="navigation">
+            <div class="nav-wrapper container"><a id="logo-container" href="https://vatz88.in" class="brand-logo">VaTz88</a>
+
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="/">Home</a></li>
+                </ul>
+
+                <ul id="nav-mobile" class="side-nav">
+                    <li><a href="/">Home</a></li>
+                </ul>
+                <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+
+            </div>
+        </nav>
+    </header>
+
+    <!--<div class="section no-pad-bot" id="index-banner">
+        <div class="container">
+            <br><br>
+            <h1 class="header center orange-text">Blog by Vatsal Joshi</h1>
+            <div class="row center">
+                <h5 class="header col s12 light">My attempt towards becoming a better developer</h5>
+            </div>
+            <div class="row center">
+                <p>This blog has articles from my experiences of learning various technologies. If you are a newbie and this
+                    blog helps you i'll be more than happy.</p>
+            </div>
+            <br><br>
+
+        </div>
+    </div>-->
+
+
+    <main class="container">
+        <div class="section">
+
+            <!-- Article -->
+            <article>
+
+                <div class="row">
+                    <div class="col l10 m12 s12">
+
+                        <div class="artilce-head">
+                            <div class="artile-title">
+                                <h3>Setting up Ubuntu on Asus Rog GL552VW</h3>
+                            </div>
+                            <div>
+                                <span class="card-date">10<sup>th</sup> March 2017</span>
+                            </div>
+                        </div>
+
+                        <hr>
+                        <div class="section"></div>
+
+                        <div class="article-body">
+                            <div class="artile-content">
+
+                                <p>
+                                    If you are new to linux probably switching from windows getting linux up and running on your system can be tiresome. Fisrt
+                                    thing you would do is simply google to find out the most easy way to get things done.
+                                    If you are lucky it may work out well for you. But that was not the case with me. Here
+                                    i have tried to list down the problems i faced while setting up my system with their
+                                    solution. Also i have added some extra things you might want to do as a developer. In
+                                    the end i have added some very useful linux commands which will be helpful to you if
+                                    you are a first time linux user.
+                                </p>
+                                <p>
+                                    I will be more specific issues which may arise and skip the common steps which you can find from google search. I have Asus
+                                    Rog GL552VW which comes with nvidia graphics card and Windows installed.
+                                    <q>Don't buy laptop with nvidia graphics card if you are not a gamer or only want to run linux.</q>
+                                </p>
+
+                                <div class="section"></div>
+
+                                <h5>Installing Ubuntu</h5>
+                                <div class="section"></div>
+                                <h6>Issue: Ubuntu stuck while booting</h6>
+                                <p>This problem arises due the nvidia graphics.</p>
+                                <div class="section"></div>
+                                <em>Solution</em>
+                                <ol>
+                                    <li>Reboot into GRUB.</li>
+                                    <li>Highlight the Ubuntu option and press E.</li>
+                                    <li>Add <code>nouveau.modeset=0</code> to the end of the line beginning with linux.</li>
+                                    <li>Press F10 to boot.</li>
+                                </ol>
+                                <p>This is just a temporary work around. After the installation make sure you do the following:</p>
+                                <ol>
+                                    <li>
+                                        Open the GRUB file.
+                                        <br>
+                                        <code>sudo gedit /etc/default/grub</code>
+                                    </li>
+                                    <li>
+                                        Find the following command
+                                        <br>
+                                        <code>GRUB_CMDLINE_LINUX_DEFAULT="quiet splash"</code>
+                                        <br> And change it to
+                                        <br>
+                                        <code>GRUB_CMDLINE_LINUX_DEFAULT="quiet splash nouveau.modeset=0"</code>
+                                    </li>
+                                    <li>
+                                        Save and go back to terminal
+                                        <br> Run <code>sudo update-grub</code>
+                                    </li>
+                                    <li>Finally reboot your system.</li>
+                                </ol>
+                                <div>
+                                    <em>Reference:</em>
+                                    <ul>
+                                        <li>
+                                            <a href="http://askubuntu.com/questions/760934/graphics-issues-after-while-installing-ubuntu-16-04-16-10-with-nvidia-graphics">http://askubuntu.com/questions/760934/graphics-issues-after-while-installing-ubuntu-16-04-16-10-with-nvidia-graphics</a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="section"></div>
+
+                                <h5>Chrome Flickering</h5>
+                                <div class="section"></div>
+                                <h6><em>Issue:</em> Some pages with heavy animations when opened in chrome screen starts flickering.</h6>
+                                <div class="section"></div>
+                                <em>Solution</em>
+                                <ol>
+                                    <li>
+                                        Open the following file to edit
+                                        <br>
+                                        <code>sudo gedit /usr/share/applications/google-chrome.desktop</code>
+                                    </li>
+                                    <li>
+                                        Find and change the line
+                                        <br>
+                                        <code>Exec=/usr/bin/google-chrome-stable %U</code>
+                                        <br>To
+                                        <br>
+                                        <code>Exec=/usr/bin/google-chrome-stable %U "--disable-gpu-driver-bug-workarounds" "--enable-native-gpu-memory-buffers"</code>
+                                    </li>
+                                </ol>
+                                <p>Note that you'll have to do this each time after chrome is updated.</p>
+
+                            </div>
+                            <!-- End of article content -->
+                        </div>
+                        <!-- End of article body -->
+                    </div>
+                </div>
+
+            </article>
+
+        </div>
+        <br><br>
+        <div class="section"></div>
+    </main>
+
+    <footer class="page-footer orange">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 m12 s12">
+                    <h5 class="white-text">About Me</h5>
+                    <p class="grey-text text-lighten-4">Engineering student at VIT University, Vellore campus. Technology enthusiast and love coding.</p>
+                </div>
+                <div class="col l3 m6 s12">
+                    <h5 class="white-text">My Projects</h5>
+                    <ul>
+                        <li><a class="white-text" target="_blank" href="https://bit.ly/ffcsotg">FFCS on The Go</a></li>
+                        <li><a class="white-text" target="_blank" href="https://goo.gl/jxLuI7">V-TOP-Easy</a></li>
+                        <li><span class="white-text">See more on</span><br>
+                            <a class="white-text" target="_blank" href="https://github.com/vatz88"><img src="../media/github-circle.png" alt="GitHub"> GitHub</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col l3 m6 s12">
+                    <h5 class="white-text">Connect With Me</h5>
+                    <ul>
+                        <li>
+                            <a class="white-text" href="https://www.facebook.com/VaTz88" target="_blank"><img src="../media/facebook.png" alt="Facebook"> Facebook</a>
+                        </li>
+                        <li>
+                            <a class="white-text" href="https://twitter.com/VaTz88" target="_blank"><img src="../media/twitter.png" alt="Twitter"> Twitter</a>
+                        </li>
+                        <li>
+                            <a class="white-text" href="https://plus.google.com/+VatsalJoshiVaTz88" target="_blank"><img src="../media/google-plus.png" alt="Google+"> Google+</a>
+                        </li>
+                        <li>
+                            <a class="white-text" href="https://www.linkedin.com/in/vatz88" target="_blank"><img src="../media/linkedin.png" alt="LinkedIn"> LinkedIn</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                &copy; 2017 <a class="orange-text text-lighten-3" href="https://vatz88.in" target="_blank">Vatsal Joshi</a>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+    <script src="../js/script.js"></script>
+</body>
+
+</html>

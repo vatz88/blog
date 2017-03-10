@@ -1,3 +1,19 @@
+
+/* Sticky footer */
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+
+/* custom style */
+
 footer ul li a,
 footer ul li span {
     vertical-align: top;
@@ -9,4 +25,13 @@ footer ul li {
 
 .card-date {
     color: #bdbdbd;
+}
+
+.artile-title,
+.artile-content {
+    color: #616161;
+}
+
+code {
+    background-color: #eeeeee;
 }
