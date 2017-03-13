@@ -35,3 +35,14 @@ footer ul li {
 code {
     background-color: #eeeeee;
 }
+
+article ol:not(.browser-default) li {
+    padding-bottom: 0.5em;
+    padding-top: 0.5em;
+}
+
+article ul:not(.browser-default) li {
+    list-style-type: disc;
+    padding-bottom: 0.5em;
+    padding-top: 0.5em;
+}

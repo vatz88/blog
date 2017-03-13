@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Blog | Vatsal Joshi</title>
+    <title>Setting up Ubuntu on Asus Rog GL552VW - Blog | Vatsal Joshi</title>
     <meta charset="UTF-8">
     <script>
         if (window.location.protocol == "http:") {
@@ -10,25 +10,25 @@
         }
     </script>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <meta content="Blog by Vatsal Joshi" name="description" />
+    <meta content="Setting up Ubuntu on Asus Rog GL552VW - Blog | Vatsal Joshi" name="description" />
     <meta content="Blog,Vatsal,Joshi,VaTz88,VIT,Vadodara,India" name="keywords" />
     <meta content="Vatsal Joshi" name="author">
     <!--<link href="media/VatsalJoshi.ico" rel="shortcut icon">-->
     <meta content="Vatsal Joshi" itemprop="name">
-    <meta content="Blog by Vatsal Joshi" itemprop="description" />
+    <meta content="Setting up Ubuntu on Asus Rog GL552VW - Blog | Vatsal Joshi" itemprop="description" />
     <!--<meta content="media/VatsalJoshi.jpg" itemprop="image" />-->
     <meta content="summary" name="twitter:card" />
     <meta content=@VaTz88 name="twitter:site:id" />
-    <meta content="Blog | Vatsal Joshi" name="twitter:title" />
-    <meta content="Blog by Vatsal Joshi" name="twitter:description" />
-    <meta content="media/VatsalJoshi.jpg" name="twitter:image" />
-    <meta content="Blog | Vatsal Joshi" name="twitter:image:alt" />
-    <meta content="Blog | Vatsal Joshi" property="og:title" />
+    <meta content="Setting up Ubuntu on Asus Rog GL552VW - Blog | Vatsal Joshi" name="twitter:title" />
+    <meta content="Setting up Ubuntu on Asus Rog GL552VW - Blog | Vatsal Joshi" name="twitter:description" />
+    <meta content="../media/VatsalJoshi.jpg" name="twitter:image" />
+    <meta content="Setting up Ubuntu on Asus Rog GL552VW - Blog | Vatsal Joshi" name="twitter:image:alt" />
+    <meta content="Setting up Ubuntu on Asus Rog GL552VW - Blog | Vatsal Joshi" property="og:title" />
     <meta content="website" property="og:type">
     <meta content="https://blog.vatz88.in/" property="og:url">
     <!--<meta content="media/VatsalJoshi.jpg" property="og:image" />-->
-    <meta content="Blog by Vatsal Joshi" property="og:description" />
-    <meta content="Blog | Vatsal Joshi" property="og:site_name" />
+    <meta content="Setting up Ubuntu on Asus Rog GL552VW - Blog | Vatsal Joshi" property="og:description" />
+    <meta content="Setting up Ubuntu on Asus Rog GL552VW - Blog | Vatsal Joshi" property="og:site_name" />
     <meta content="663218817159771" property="fb:app_id">
     <meta content="30AC13B4115EEFB980C0404E990B0FE7" name="msvalidate.01" />
     <!-- CSS  -->
@@ -60,7 +60,7 @@
             <br><br>
             <h1 class="header center orange-text">Blog by Vatsal Joshi</h1>
             <div class="row center">
-                <h5 class="header col s12 light">My attempt towards becoming a better developer</h5>
+                <h4 class="header col s12 light">My attempt towards becoming a better developer</h4>
             </div>
             <div class="row center">
                 <p>This blog has articles from my experiences of learning various technologies. If you are a newbie and this
@@ -106,18 +106,17 @@
                                     you are a first time linux user.
                                 </p>
                                 <p>
-                                    I will be more specific issues which may arise and skip the common steps which you can find from google search. I have Asus
-                                    Rog GL552VW which comes with nvidia graphics card and Windows installed.
+                                    I will be more specific towards the issues which may arise while installing and skip the common steps which you can find
+                                    from google search. I have Asus Rog GL552VW which comes with nvidia graphics card and
+                                    Windows installed.
                                     <q>Don't buy laptop with nvidia graphics card if you are not a gamer or only want to run linux.</q>
                                 </p>
 
                                 <div class="section"></div>
 
-                                <h5>Installing Ubuntu</h5>
-                                <div class="section"></div>
-                                <h6>Issue: Ubuntu stuck while booting</h6>
+                                <h4>Installing Ubuntu</h4>
+                                <h5>Issue: Ubuntu stuck while booting</h5>
                                 <p>This problem arises due the nvidia graphics.</p>
-                                <div class="section"></div>
                                 <em>Solution</em>
                                 <ol>
                                     <li>Reboot into GRUB.</li>
@@ -157,10 +156,8 @@
 
                                 <div class="section"></div>
 
-                                <h5>Chrome Flickering</h5>
-                                <div class="section"></div>
-                                <h6><em>Issue:</em> Some pages with heavy animations when opened in chrome screen starts flickering.</h6>
-                                <div class="section"></div>
+                                <h4>Chrome Flickering</h4>
+                                <h5><em>Issue:</em> Some pages with heavy animations when opened in chrome screen starts flickering.</h5>
                                 <em>Solution</em>
                                 <ol>
                                     <li>
@@ -178,6 +175,125 @@
                                     </li>
                                 </ol>
                                 <p>Note that you'll have to do this each time after chrome is updated.</p>
+
+                                <div class="section"></div>
+
+                                <h4>Extra setup for developers</h4>
+
+                                <h5>Install JDK</h5>
+                                <code>sudo apt-get install default-jdk</code>
+
+                                <div class="section"></div>
+
+                                <h5>Set up LAMP</h5>
+                                <ol>
+                                    <li>
+                                        Install apache server
+                                        <br>
+                                        <code>sudo apt-get install apache2</code>
+                                    </li>
+                                    <li>
+                                        Install MySQL server
+                                        <br>
+                                        <code>sudo apt-get install mysql-server</code>
+                                    </li>
+                                    <li>
+                                        Install php
+                                        <br>
+                                        <code>sudo apt-get install php7.0-cli</code>
+                                        <br>
+                                        <code>sudo apt-get install libapache2-mod-php</code>
+                                        <br>
+                                        <code>sudo apt-get install php-mysql</code>
+                                    </li>
+                                </ol>
+                                <p>
+                                    Above commands will Install LAMP. Once you're done with that following are some addition tools and useful commands:
+                                </p>
+                                <ul>
+                                    <li>
+                                        Restart apache server
+                                        <br>
+                                        <code>sudo /etc/init.d/apache2 restart</code>
+                                    </li>
+                                    <li>
+                                        Open mysql in terminal
+                                        <br>
+                                        <code>mysql -u root -p</code>
+                                    </li>
+                                    <li>
+                                        Install Adminer
+                                        <p>A lot people use phpMyAdmin but i prefer Adminer</p>
+                                        <code>
+                                            sudo apt-get install adminer
+                                            <br>
+                                            sudo wget "http://www.adminer.org/latest.php" -O /usr/share/adminer/latest.php
+                                            <br>
+                                            sudo ln -s /usr/share/adminer/latest.php /usr/share/adminer/adminer.php
+                                            <br>
+                                            echo "Alias /adminer.php /usr/share/adminer/adminer.php" | sudo tee /etc/apache2/conf-available/adminer.conf
+                                            <br>
+                                            sudo a2enconf adminer.conf
+                                            // access here: http://localhost/adminer.php
+                                        </code>
+                                    </li>
+                                    <li>
+                                        Additionally if you would like to install postgresql follow this Stack Overflow answer
+                                        <br>
+                                        <div>
+                                            <em>Reference:</em>
+                                            <a href="http://stackoverflow.com/questions/1471571/how-to-configure-postgresql-for-the-first-time">http://stackoverflow.com/questions/1471571/how-to-configure-postgresql-for-the-first-time</a>
+                                        </div>
+                                    </li>
+                                </ul>
+
+                                <div class="section"></div>
+
+                                <h4>Useful Linux Commands And Tricks For Newbies</h4>
+
+                                <h5>Upadte system</h5>
+                                Update everything with this single command
+                                <br>
+                                <code>sudo apt-get update && time sudo apt-get dist-upgrade</code>
+
+                                <div class="section"></div>
+
+                                <h5>Show password feedback in terminal</h5>
+                                <code>sudo gedit /etc/sudoers</code>
+                                <br> Find the following line in the file opened
+                                <br>
+                                <code>Defaults	env_reset</code>
+                                <br> And replace it with
+                                <br>
+                                <code>Defaults	env_reset,pwfeedback</code>
+
+                                <div class="section"></div>
+
+                                <h5>Install a Package</h5>
+                                <code>udo apt-get install [packagename]</code>
+
+                                <div class="section"></div>
+
+                                <h5>Completely Uninstall a Package</h5>
+                                <code>
+                                    sudo apt-get remove --purge [packagename]
+                                    sudo apt-get autoremove
+                                    sudo aptitude purge [packagename]
+                                </code>
+
+                                <div class="section"></div>
+
+                                <h5>Reinstall a Installed Package</h5>
+                                <code>sudo apt-get update && sudo apt-get install --reinstall [packagename]</code>
+
+                                <div class="section"></div>
+
+                                <h5>Open File Browser as Super User</h5>
+                                <code>
+                                    sudo apt install gksu
+                                    <br>
+                                    gksu nautilus
+                                </code>
 
                             </div>
                             <!-- End of article content -->
@@ -197,11 +313,11 @@
         <div class="container">
             <div class="row">
                 <div class="col l6 m12 s12">
-                    <h5 class="white-text">About Me</h5>
+                    <h4 class="white-text">About Me</h4>
                     <p class="grey-text text-lighten-4">Engineering student at VIT University, Vellore campus. Technology enthusiast and love coding.</p>
                 </div>
                 <div class="col l3 m6 s12">
-                    <h5 class="white-text">My Projects</h5>
+                    <h4 class="white-text">My Projects</h4>
                     <ul>
                         <li><a class="white-text" target="_blank" href="https://bit.ly/ffcsotg">FFCS on The Go</a></li>
                         <li><a class="white-text" target="_blank" href="https://goo.gl/jxLuI7">V-TOP-Easy</a></li>
@@ -211,7 +327,7 @@
                     </ul>
                 </div>
                 <div class="col l3 m6 s12">
-                    <h5 class="white-text">Connect With Me</h5>
+                    <h4 class="white-text">Connect With Me</h4>
                     <ul>
                         <li>
                             <a class="white-text" href="https://www.facebook.com/VaTz88" target="_blank"><img src="../media/facebook.png" alt="Facebook"> Facebook</a>
