@@ -88,7 +88,7 @@
 
                         <div class="artilce-head">
                             <div class="artile-title">
-                                <h3>Setting up Ubuntu on Asus Rog GL552VW</h3>
+                                <h3>Setting up Ubuntu On Asus Rog GL552VW</h3>
                             </div>
                             <div>
                                 <span class="card-date">10<sup>th</sup> March 2017</span>
@@ -102,31 +102,31 @@
                             <div class="artile-content">
 
                                 <p>
-                                    If you are new to linux probably switching from windows getting linux up and running on your system can be tiresome. Fisrt
+                                    If you are new to Linux probably switching from Windows, getting Linux up and running on your system can be tiresome. Fisrt
                                     thing you would do is simply google to find out the most easy way to get things done.
-                                    If you are lucky it may work out well for you. But that was not the case with me. Here
-                                    i have tried to list down the problems i faced while setting up my system with their
-                                    solution. Also i have added some extra things you might want to do as a developer. In
-                                    the end i have added some very useful linux commands which will be helpful to you if
-                                    you are a first time linux user.
+                                    If you are lucky it may work out well for you. But that was not the case with me. Here,
+                                    I have tried to list down the problems I faced while setting up my system with their
+                                    solutions. Also, I have added some extra things you might want to do as a developer.
+                                    In the end I have added some very useful Linux commands which will be helpful to you
+                                    if you are a first time Linux user.
                                 </p>
                                 <p>
                                     I will be more specific towards the issues which may arise while installing and skip the common steps which you can find
-                                    from google search. I have Asus Rog GL552VW which comes with nvidia graphics card and
+                                    from a google search. I have Asus Rog GL552VW which comes with Nvidia graphics card and
                                     Windows installed.
-                                    <q>Don't buy laptop with nvidia graphics card if you are not a gamer or only want to run linux.</q>
+                                    <q>Don't buy laptop with Nvidia graphics card if you are not a gamer or only want to run Linux.</q>
                                 </p>
 
                                 <div class="section"></div>
 
                                 <h4>Installing Ubuntu</h4>
                                 <h5>Issue: Ubuntu stuck while booting</h5>
-                                <p>This problem arises due the nvidia graphics.</p>
+                                <p>This problem arises due the Nvidia graphics.</p>
                                 <em>Solution</em>
                                 <ol>
                                     <li>Reboot into GRUB.</li>
-                                    <li>Highlight the Ubuntu option and press E.</li>
-                                    <li>Add <code>nouveau.modeset=0</code> to the end of the line beginning with linux.</li>
+                                    <li>Highlight the Ubuntu option and press <code>E</code>.</li>
+                                    <li>Add <code>nouveau.modeset=0</code> to the end of the line beginning with Linux.</li>
                                     <li>Press F10 to boot.</li>
                                 </ol>
                                 <p>This is just a temporary work around. After the installation make sure you do the following:</p>
@@ -152,9 +152,9 @@
                                 </ol>
                                 <div>
                                     <em>Reference:</em>
-                                    <ul>
+                                    <ul class="browser-default">
                                         <li>
-                                            <a href="http://askubuntu.com/questions/760934/graphics-issues-after-while-installing-ubuntu-16-04-16-10-with-nvidia-graphics">http://askubuntu.com/questions/760934/graphics-issues-after-while-installing-ubuntu-16-04-16-10-with-nvidia-graphics</a>
+                                            <a href="http://askUbuntu.com/questions/760934/graphics-issues-after-while-installing-Ubuntu-16-04-16-10-with-nvidia-graphics">http://askUbuntu.com/questions/760934/graphics-issues-after-while-installing-Ubuntu-16-04-16-10-with-nvidia-graphics</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -193,17 +193,17 @@
                                 <h5>Set up LAMP</h5>
                                 <ol>
                                     <li>
-                                        Install apache server
+                                        Install Apache Server
                                         <br>
                                         <code>sudo apt-get install apache2</code>
                                     </li>
                                     <li>
-                                        Install MySQL server
+                                        Install MySQL Server
                                         <br>
                                         <code>sudo apt-get install mysql-server</code>
                                     </li>
                                     <li>
-                                        Install php
+                                        Install PHP
                                         <br>
                                         <code>sudo apt-get install php7.0-cli</code>
                                         <br>
@@ -213,11 +213,11 @@
                                     </li>
                                 </ol>
                                 <p>
-                                    Above commands will Install LAMP. Once you're done with that following are some addition tools and useful commands:
+                                    Above commands will Install LAMP. Once you're done with that, following are some addition tools and useful commands:
                                 </p>
-                                <ul>
+                                <ul class="browser-default">
                                     <li>
-                                        Restart apache server
+                                        Restart Apache Server
                                         <br>
                                         <code>sudo /etc/init.d/apache2 restart</code>
                                     </li>
@@ -228,7 +228,7 @@
                                     </li>
                                     <li>
                                         Install Adminer
-                                        <p>A lot people use phpMyAdmin but i prefer Adminer</p>
+                                        <p>A lot people use phpMyAdmin but I prefer Adminer</p>
                                         <code>
                                             sudo apt-get install adminer
                                             <br>
@@ -243,7 +243,7 @@
                                         </code>
                                     </li>
                                     <li>
-                                        Additionally if you would like to install postgresql follow this Stack Overflow answer
+                                        Additionally, if you would like to install postgresql follow the Stack Overflow answer bellow.
                                         <br>
                                         <div>
                                             <em>Reference:</em>
@@ -256,14 +256,14 @@
 
                                 <h4>Useful Linux Commands And Tricks For Newbies</h4>
 
-                                <h5>Upadte system</h5>
+                                <h5>Upadte System</h5>
                                 Update everything with this single command
                                 <br>
                                 <code>sudo apt-get update && time sudo apt-get dist-upgrade</code>
 
                                 <div class="section"></div>
 
-                                <h5>Show password feedback in terminal</h5>
+                                <h5>Show Password Feedback In Terminal</h5>
                                 <code>sudo gedit /etc/sudoers</code>
                                 <br> Find the following line in the file opened
                                 <br>
@@ -274,12 +274,12 @@
 
                                 <div class="section"></div>
 
-                                <h5>Install a Package</h5>
+                                <h5>Install A Package</h5>
                                 <code>udo apt-get install [packagename]</code>
 
                                 <div class="section"></div>
 
-                                <h5>Completely Uninstall a Package</h5>
+                                <h5>Completely Uninstall A Package</h5>
                                 <code>
                                     sudo apt-get remove --purge [packagename]
                                     sudo apt-get autoremove
@@ -293,7 +293,7 @@
 
                                 <div class="section"></div>
 
-                                <h5>Open File Browser as Super User</h5>
+                                <h5>Open File Browser As Super User</h5>
                                 <code>
                                     sudo apt install gksu
                                     <br>
@@ -304,7 +304,7 @@
 
                                 <h5>Automatically Mount Partitions</h5>
                                 <p>
-                                    If you have more than one hard drive partitions on your system ubuntu will only mount the one on which it is installed. Other
+                                    If you have more than one hard drive partitions on your system Ubuntu will only mount the one on which it is installed. Other
                                     partitions will mount as you try to open them. This gives some fraction of a second lag
                                     when you open the unmount drive for the first time.
                                 </p>
