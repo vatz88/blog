@@ -126,7 +126,7 @@
                                 <ol>
                                     <li>Reboot into GRUB.</li>
                                     <li>Highlight the Ubuntu option and press <code>E</code>.</li>
-                                    <li>Add <code>nouveau.modeset=0</code> to the end of the line beginning with Linux.</li>
+                                    <li>Add <code><div>nouveau.modeset=0</div></code> to the end of the line beginning with Linux.</li>
                                     <li>Press F10 to boot.</li>
                                 </ol>
                                 <p>This is just a temporary work around. After the installation make sure you do the following:</p>
@@ -134,19 +134,19 @@
                                     <li>
                                         Open the GRUB file.
                                         <br>
-                                        <code>sudo gedit /etc/default/grub</code>
+                                        <code><div>sudo gedit /etc/default/grub</div></code>
                                     </li>
                                     <li>
                                         Find the following command
                                         <br>
-                                        <code>GRUB_CMDLINE_LINUX_DEFAULT="quiet splash"</code>
+                                        <code><div>GRUB_CMDLINE_LINUX_DEFAULT="quiet splash"</div></code>
                                         <br> And change it to
                                         <br>
-                                        <code>GRUB_CMDLINE_LINUX_DEFAULT="quiet splash nouveau.modeset=0"</code>
+                                        <code><div>GRUB_CMDLINE_LINUX_DEFAULT="quiet splash nouveau.modeset=0"</div></code>
                                     </li>
                                     <li>
                                         Save and go back to terminal
-                                        <br> Run <code>sudo update-grub</code>
+                                        <br> Run <code><div>sudo update-grub</div></code>
                                     </li>
                                     <li>Finally reboot your system.</li>
                                 </ol>
@@ -168,25 +168,25 @@
                                     <li>
                                         Open the following file to edit
                                         <br>
-                                        <code>sudo gedit /usr/share/applications/google-chrome.desktop</code>
+                                        <code><div>sudo gedit /usr/share/applications/google-chrome.desktop</div></code>
                                     </li>
                                     <li>
                                         Find and change the line
                                         <br>
-                                        <code>Exec=/usr/bin/google-chrome-stable %U</code>
+                                        <code><div>Exec=/usr/bin/google-chrome-stable %U</div></code>
                                         <br>To
                                         <br>
-                                        <code>Exec=/usr/bin/google-chrome-stable %U "--disable-gpu-driver-bug-workarounds" "--enable-native-gpu-memory-buffers"</code>
+                                        <code><div>Exec=/usr/bin/google-chrome-stable %U "--disable-gpu-driver-bug-workarounds" "--enable-native-gpu-memory-buffers"</div></code>
                                     </li>
                                 </ol>
                                 <p>Note that you'll have to do this each time after chrome is updated.</p>
 
                                 <div class="section"></div>
 
-                                <h4>Extra setup for developers</h4>
+                                <h4>Extra Setup For Developers</h4>
 
                                 <h5>Install JDK</h5>
-                                <code>sudo apt-get install default-jdk</code>
+                                <code><div>sudo apt-get install default-jdk</div></code>
 
                                 <div class="section"></div>
 
@@ -195,21 +195,21 @@
                                     <li>
                                         Install Apache Server
                                         <br>
-                                        <code>sudo apt-get install apache2</code>
+                                        <code><div>sudo apt-get install apache2</div></code>
                                     </li>
                                     <li>
                                         Install MySQL Server
                                         <br>
-                                        <code>sudo apt-get install mysql-server</code>
+                                        <code><div>sudo apt-get install mysql-server</div></code>
                                     </li>
                                     <li>
                                         Install PHP
                                         <br>
-                                        <code>sudo apt-get install php7.0-cli</code>
+                                        <code><div>sudo apt-get install php7.0-cli</div></code>
                                         <br>
-                                        <code>sudo apt-get install libapache2-mod-php</code>
+                                        <code><div>sudo apt-get install libapache2-mod-php</div></code>
                                         <br>
-                                        <code>sudo apt-get install php-mysql</code>
+                                        <code><div>sudo apt-get install php-mysql</div></code>
                                     </li>
                                 </ol>
                                 <p>
@@ -219,36 +219,37 @@
                                     <li>
                                         Restart Apache Server
                                         <br>
-                                        <code>sudo /etc/init.d/apache2 restart</code>
+                                        <code><div>sudo /etc/init.d/apache2 restart</div></code>
                                     </li>
                                     <li>
                                         Open mysql in terminal
                                         <br>
-                                        <code>mysql -u root -p</code>
+                                        <code><div>mysql -u root -p</div></code>
                                     </li>
                                     <li>
-                                        Install Adminer
-                                        <p>A lot people use phpMyAdmin but I prefer Adminer</p>
-                                        <code>
-                                            sudo apt-get install adminer
-                                            <br>
-                                            sudo wget "http://www.adminer.org/latest.php" -O /usr/share/adminer/latest.php
-                                            <br>
-                                            sudo ln -s /usr/share/adminer/latest.php /usr/share/adminer/adminer.php
-                                            <br>
-                                            echo "Alias /adminer.php /usr/share/adminer/adminer.php" | sudo tee /etc/apache2/conf-available/adminer.conf
-                                            <br>
-                                            sudo a2enconf adminer.conf
-                                            // access here: http://localhost/adminer.php
-                                        </code>
+                                        Deploy Adminer On Localhost
+                                        <br>A lot of people use phpMyAdmin, but I prefer Adminer.
+                                        <br>
+                                        <code><div>
+                                            <div>
+                                                sudo apt-get install adminer
+                                                <br>
+                                                sudo wget "http://www.adminer.org/latest.php" -O /usr/share/adminer/latest.php
+                                                <br>
+                                                sudo ln -s /usr/share/adminer/latest.php /usr/share/adminer/adminer.php
+                                                <br>
+                                                echo "Alias /adminer.php /usr/share/adminer/adminer.php" | sudo tee /etc/apache2/conf-available/adminer.conf
+                                                <br>
+                                                sudo a2enconf adminer.conf
+                                                // access here: http://localhost/adminer.php
+                                            </div>
+                                        </div></code>
                                     </li>
                                     <li>
                                         Additionally, if you would like to install postgresql follow the Stack Overflow answer bellow.
                                         <br>
-                                        <div>
-                                            <em>Reference:</em>
-                                            <a href="http://stackoverflow.com/questions/1471571/how-to-configure-postgresql-for-the-first-time">http://stackoverflow.com/questions/1471571/how-to-configure-postgresql-for-the-first-time</a>
-                                        </div>
+                                        <em>Reference:</em>
+                                        <a target="_blank" href="http://stackoverflow.com/questions/1471571/how-to-configure-postgresql-for-the-first-time">http://stackoverflow.com/questions/1471571/how-to-configure-postgresql-for-the-first-time</a>
                                     </li>
                                 </ul>
 
@@ -259,46 +260,46 @@
                                 <h5>Upadte System</h5>
                                 Update everything with this single command
                                 <br>
-                                <code>sudo apt-get update && time sudo apt-get dist-upgrade</code>
+                                <code><div>sudo apt-get update && time sudo apt-get dist-upgrade</div></code>
 
                                 <div class="section"></div>
 
                                 <h5>Show Password Feedback In Terminal</h5>
-                                <code>sudo gedit /etc/sudoers</code>
+                                <code><div>sudo gedit /etc/sudoers</div></code>
                                 <br> Find the following line in the file opened
                                 <br>
-                                <code>Defaults	env_reset</code>
+                                <code><div>Defaults	env_reset</div></code>
                                 <br> And replace it with
                                 <br>
-                                <code>Defaults	env_reset,pwfeedback</code>
+                                <code><div>Defaults	env_reset,pwfeedback</div></code>
 
                                 <div class="section"></div>
 
                                 <h5>Install A Package</h5>
-                                <code>udo apt-get install [packagename]</code>
+                                <code><div>udo apt-get install [packagename]</div></code>
 
                                 <div class="section"></div>
 
                                 <h5>Completely Uninstall A Package</h5>
-                                <code>
+                                <code><div>
                                     sudo apt-get remove --purge [packagename]
                                     sudo apt-get autoremove
                                     sudo aptitude purge [packagename]
-                                </code>
+                                </div></code>
 
                                 <div class="section"></div>
 
                                 <h5>Reinstall a Installed Package</h5>
-                                <code>sudo apt-get update && sudo apt-get install --reinstall [packagename]</code>
+                                <code><div>sudo apt-get update && sudo apt-get install --reinstall [packagename]</div></code>
 
                                 <div class="section"></div>
 
                                 <h5>Open File Browser As Super User</h5>
-                                <code>
+                                <code><div>
                                     sudo apt install gksu
                                     <br>
                                     gksu nautilus
-                                </code>
+                                </div></code>
 
                                 <div class="section"></div>
 
