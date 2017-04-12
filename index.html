@@ -38,27 +38,18 @@
 </head>
 
 <body>
+    <!-- Facebook JavaScript SDK-->
+    <!--<div id="fb-root"></div>
     <script>
-        window.fbAsyncInit = function () {
-            FB.init({
-                appId: '663218817159771',
-                xfbml: true,
-                version: 'v2.8'
-            });
-            FB.AppEvents.logPageView();
-        };
-
         (function (d, s, id) {
             var js, fjs = d.getElementsByTagName(s)[0];
-            if (d.getElementById(id)) {
-                return;
-            }
+            if (d.getElementById(id)) return;
             js = d.createElement(s);
             js.id = id;
-            js.src = "//connect.facebook.net/en_US/sdk.js";
+            js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8&appId=663218817159771";
             fjs.parentNode.insertBefore(js, fjs);
         }(document, 'script', 'facebook-jssdk'));
-    </script>
+    </script>-->
     <header>
         <nav class="light-blue lighten-1" role="navigation">
             <div class="nav-wrapper container"><a href="https://vatz88.in" class="brand-logo">VaTz88</a>
@@ -206,6 +197,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
     <script src="js/script.js"></script>
+
 </body>
 
 </html>

@@ -40,24 +40,15 @@
 </head>
 
 <body>
+    <!-- Facebook JavaScript SDK-->
+    <div id="fb-root"></div>
     <script>
-        window.fbAsyncInit = function () {
-            FB.init({
-                appId: '663218817159771',
-                xfbml: true,
-                version: 'v2.8'
-            });
-            FB.AppEvents.logPageView();
-        };
-
         (function (d, s, id) {
             var js, fjs = d.getElementsByTagName(s)[0];
-            if (d.getElementById(id)) {
-                return;
-            }
+            if (d.getElementById(id)) return;
             js = d.createElement(s);
             js.id = id;
-            js.src = "//connect.facebook.net/en_US/sdk.js";
+            js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8&appId=663218817159771";
             fjs.parentNode.insertBefore(js, fjs);
         }(document, 'script', 'facebook-jssdk'));
     </script>
@@ -252,7 +243,7 @@
                                         Additionally, if you would like to install postgresql follow the Stack Overflow answer bellow.
                                         <br>
                                         <em>Reference:</em>
-                                        <a target="_blank" href="http://stackoverflow.com/questions/1471571/how-to-configure-postgresql-for-the-first-time">http://stackoverflow.com/questions/1471571/how-to-configure-postgresql-for-the-first-time</a>
+                                        <a target="_blank" href="https://stackoverflow.com/questions/1471571/how-to-configure-postgresql-for-the-first-time">http://stackoverflow.com/questions/1471571/how-to-configure-postgresql-for-the-first-time</a>
                                     </li>
                                 </ul>
 
@@ -317,7 +308,7 @@
                                         startup.
                                     </p>
                                     <em>Reference:</em>
-                                    <a href="http://stackoverflow.com/questions/1471571/how-to-configure-postgresql-for-the-first-time">http://stackoverflow.com/questions/1471571/how-to-configure-postgresql-for-the-first-time</a>
+                                    <a href="https://stackoverflow.com/questions/1471571/how-to-configure-postgresql-for-the-first-time">https://stackoverflow.com/questions/1471571/how-to-configure-postgresql-for-the-first-time</a>
                                 </div>
 
                             </div>
@@ -335,8 +326,8 @@
             <!-- Facebook plugins -->
             <div class="row">
                 <div class="col l10 m12 s12">
-                    <div class="fb-follow" data-width="240px" data-href="https://www.facebook.com/VaTz88" data-layout="standard" data-size="small"
-                        data-show-faces="true"></div>
+                    <iframe src="https://www.facebook.com/plugins/follow.php?href=https%3A%2F%2Fwww.facebook.com%2FVaTz88&width=240&height=80&layout=standard&size=small&show_faces=true&appId=663218817159771"
+                        width="100%" height="80" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
                 </div>
             </div>
             <div class="row">
@@ -398,6 +389,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
     <script src="../js/script.js"></script>
+
 </body>
 
 </html>
