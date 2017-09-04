@@ -1,0 +1,29 @@
+{
+  "name": "blog.vatz88.in",
+  "version": "2.0.0",
+  "description": "Blog by Vatsal Joshi",
+  "author": "Vatsal Joshi",
+  "license": "MIT",
+  "keywords": [
+    "blog",
+    "vatsal",
+    "joshi",
+    "vatz88"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VaTz88/blog.git"
+  },
+  "bugs": {
+    "url": "https://github.com/VaTz88/blog/issues"
+  },
+  "homepage": "https://github.com/VaTz88/blog#readme",
+  "scripts": {
+    "test": "echo \"Error: no test specified\"",
+    "start": "node lib/build-articles.js"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "showdown": "^1.7.3"
+  }
+}
