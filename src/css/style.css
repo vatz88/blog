@@ -15,6 +15,7 @@ main,
     width: 100%;
     margin: 0 auto;
     max-width: 48rem;
+    background-color: #fff;
 }
 
 header,
@@ -22,7 +23,7 @@ footer {
     /* text-align: center; */
     padding: 2rem;
     margin: 0 -1rem 0 -1rem;
-    color: #ffffff;
+    color: #fff;
     background-color: #EF6C00;
 }
 
@@ -169,7 +170,6 @@ main {
     font-family: 'Open Sans Condensed', sans-serif;
     font-weight: 300;
     line-height: 1.45;
-    background-color: #ffffff;
 }
 
 h1,
