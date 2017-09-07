@@ -1,0 +1,15 @@
+CACHE MANIFEST
+# 2017-09-2
+
+NETWORK:
+*
+
+FALLBACK:
+/ /
+
+CACHE:
+
+src/media/favicon.png
+src/media/icon_192x192.png
+src/css/style.css
+src/js/script.js

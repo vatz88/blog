@@ -1,395 +1,140 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html><html lang="en" dir="lrt"><head><script>if (window.location.protocol === "http:" && window.location.hostname !== "localhost") {window.location.protocol = "https";}</script><script async src="https://www.googletagmanager.com/gtag/js?id=UA-75111209-4"></script><script>window.dataLayer = window.dataLayer || [];function gtag() {dataLayer.push(arguments)};gtag('js', new Date());gtag('config', 'UA-75111209-4');</script><meta charset="utf-8"><link rel="icon" href="../src/media/favicon.png"><title>Setting up Ubuntu on Asus Rog GL552VW</title><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"><meta name="description" content="Setting up Ubuntu on Asus Rog GL552VW - Blog | Vatsal Joshi"><meta name="twitter:card" content="summary"><meta name="twitter:site:id" content="@vatz88"><meta name="twitter:title" content="Setting up Ubuntu on Asus Rog GL552VW"><meta name="twitter:description" content="Setting up Ubuntu on Asus Rog GL552VW - Blog | Vatsal Joshi."><meta name="twitter:image" content="../src/media/twitter_image_300x300.png"><meta name="twitter:image:alt" content="Setting up Ubuntu on Asus Rog GL552VW - Blog | Vatsal Joshi"><meta name="og:title" content="Setting up Ubuntu on Asus Rog GL552VW"><meta name="og:type" content="website"><meta name="og:url" content="https://blog.vatz88.in/Setting up Ubuntu on Asus Rog GL552VW/"><meta name="og:image" content="../src/media/og_image_1200x1200.png"><meta name="og:description" content="Setting up Ubuntu on Asus Rog GL552VW - Blog | Vatsal Joshi"><meta name="Setting up Ubuntu on Asus Rog GL552VW" content="og:site_name"><meta name="keywords" content="Ubuntu,Linux,Asus,Rog,GL552VW,Blog,Vatsal,Joshi,vatz88"><meta name="author" content="Vatsal Joshi"><meta name="theme-color" content="#FF9800"><link rel="icon" sizes="192x192" href="../src/media/icon_192x192.png"><link rel="stylesheet" href="../src/css/style.css"></head><body>
+        <header>
+            <a href="/">Home</a>
+        </header><main><h1 id="settingupubuntuonasusroggl552vw">Setting up Ubuntu on Asus Rog GL552VW</h1>
+<p><em>Author: <strong><a href="https://vatz88.in">Vatsal Joshi</a></strong></em> </p>
+<p><em>Date: <strong>10th March 2017</strong></em></p>
+<hr />
+<p>If you are new to Linux probably switching from Windows, getting Linux up and running on your system can be tiresome. Fisrt thing you would do is simply google it to find out the most easy way to get things done.
+If you are lucky it may work out well for you. But that was not the case with me. Here, I have tried to list down the problems I faced while setting up my system with their solutions. Also, I have added some extra things you might want to do as a developer.
+In the end I have added some very useful Linux commands which will be helpful to you if you are a first time Linux user.
+I will be more specific towards the issues which may arise while installing and skip the common steps which you can find from a google search. I have Asus Rog GL552VW which comes with Nvidia graphics card and Windows installed.</p>
+<h3 id="installingubuntu">Installing Ubuntu</h3>
+<p><strong>Issue:</strong> Ubuntu stuck while booting</p>
+<p>This problem arises due the Nvidia graphics.</p>
+<p><strong>Solution:</strong></p>
+<ul>
+<li>Reboot into GRUB.</li></li>
+<li>Highlight the Ubuntu option and press <code>E</code>.</li>
+<li>Add <code>nouveau.modeset=0</code> to the end of the line beginning with Linux.</li>
+<li>Press F10 to boot.</li>
+</ul>
+<p>This is just a temporary work around. After the installation make sure you do the following:</p>
+<ol>
+<li><p>Open the GRUB file.</p>
+<p>sudo gedit /etc/default/grub</p></li>
+<li><p>Find the following command</p>
+<pre><code>GRUB_CMDLINE_LINUX_DEFAULT="quiet splash"
+</code></pre>
+<p>And change it to</p>
+<pre><code>GRUB_CMDLINE_LINUX_DEFAULT="quiet splash nouveau.modeset=0"
+</code></pre></li>
+<li><p>Save and go back to terminal and run:</p>
+<pre><code>sudo update-grub
+</code></pre></li>
+<li><p>Finally reboot your system.</p></li>
+</ol>
+<p><em>Reference:</em> <a href="http://askUbuntu.com/questions/760934/graphics-issues-after-while-installing-Ubuntu-16-04-16-10-with-nvidia-graphics">askUbuntu.com/questions/760934/graphics-issues-after-while-installing-Ubuntu-16-04-16-10-with-nvidia-graphics</a></p>
+<h3 id="chromeflickering">Chrome Flickering</h3>
+<p><strong>Issue:</strong> Some pages with heavy animations when opened in chrome, screen starts flickering.</p>
+<p><strong>Solution:</strong></p>
+<ol>
+<li><p>Open the following file to edit</p>
+<pre><code>sudo gedit /usr/share/applications/google-chrome.desktop
+</code></pre></li>
+<li><p>Find and change the line</p>
+<pre><code>Exec=/usr/bin/google-chrome-stable %U
+</code></pre>
+<p>to</p>
+<pre><code>Exec=/usr/bin/google-chrome-stable %U "--disable-gpu-driver-bug-workarounds" "--enable-native-gpu-memory-buffers"
+</code></pre></li>
+</ol>
+<p><em>Note that you'll have to do this each time after chrome is updated.</em></p>
+<h2 id="extrasetupfordevelopers">Extra Setup For Developers</h2>
+<h3 id="installjdk">Install JDK</h3>
+<pre><code>sudo apt-get install default-jdk
+</code></pre>
+<h3 id="setuplamp">Set up LAMP</h3>
+<ul>
+<li><p>Install Apache Server</p>
+<pre><code>sudo apt-get install apache2
+</code></pre></li>
+<li><p>Install MySQL Server</p>
+<pre><code>sudo apt-get install mysql-server
+</code></pre></li>
+<li><p>Install PHP</p>
+<pre><code>sudo apt-get install php7.0-cli
+sudo apt-get install libapache2-mod-php
+sudo apt-get install php-mysql
+</code></pre></li>
+</ul>
+<p>Above commands will Install LAMP. Once you're done with that, following are some addition tools and useful commands:</p>
+<ul>
+<li><p>Restart Apache Server</p>
+<pre><code>sudo /etc/init.d/apache2 restart
+</code></pre></li>
+<li><p>Open mysql in terminal</p>
+<pre><code>mysql -u root -p
+</code></pre></li>
+<li><p>Deploy Adminer On Localhost</p>
+<pre><code>sudo apt-get install adminer
 
-<head>
-    <title>Setting up Ubuntu on Asus Rog GL552VW - Blog | Vatsal Joshi</title>
-    <meta charset="UTF-8">
-    <script>
-        if (window.location.protocol === "http:" && window.location.hostname !== "localhost") {
-            window.location.protocol = "https";
-        }
-    </script>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <meta content="Setting up Ubuntu on Asus Rog GL552VW - Blog | Vatsal Joshi" name="description" itemprop="description" />
-    <meta content="Blog,Vatsal,Joshi,VaTz88,VIT,Vadodara,India" name="keywords" />
-    <meta content="Vatsal Joshi" name="author">
-    <meta itemprop="url" content="https://blog.vatz88.in/Setting-up-Ubuntu-on-Asus-Rog-GL552VW/">
-    <!--<link href="media/VatsalJoshi.ico" rel="shortcut icon">-->
-    <!--<meta content="media/VatsalJoshi.jpg" itemprop="image" />-->
-    <!-- twitter meta tag -->
-    <meta content="summary" name="twitter:card" />
-    <meta content=@VaTz88 name="twitter:site:id" />
-    <meta content="Setting up Ubuntu on Asus Rog GL552VW - Blog | Vatsal Joshi" name="twitter:title" />
-    <meta content="Setting up Ubuntu on Asus Rog GL552VW - Blog | Vatsal Joshi" name="twitter:description" />
-    <!--<meta content="../media/VatsalJoshi.jpg" name="twitter:image" />-->
-    <meta content="Setting up Ubuntu on Asus Rog GL552VW - Blog | Vatsal Joshi" name="twitter:image:alt" />
-    <!-- og meta tag -->
-    <meta property="og:title" content="Setting up Ubuntu on Asus Rog GL552VW - Blog | Vatsal Joshi" />
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://blog.vatz88.in/Setting-up-Ubuntu-on-Asus-Rog-GL552VW/">
-    <!--<meta content="media/VatsalJoshi.jpg" property="og:image" />-->
-    <meta property="og:description" content="Setting up Ubuntu on Asus Rog GL552VW - Blog | Vatsal Joshi" />
-    <meta property="og:site_name" content="Setting up Ubuntu on Asus Rog GL552VW - Blog | Vatsal Joshi" />
-    <meta property="fb:app_id" content="663218817159771" />
-    <!-- Microsoft -->
-    <meta content="30AC13B4115EEFB980C0404E990B0FE7" name="msvalidate.01" />
-    <!-- CSS  -->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="../css/style.css">
-</head>
+sudo wget "http://www.adminer.org/latest.php" -O /usr/share/adminer/latest.php
 
-<body>
-    <!-- Facebook JavaScript SDK-->
-    <div id="fb-root"></div>
-    <script>
-        (function (d, s, id) {
-            var js, fjs = d.getElementsByTagName(s)[0];
-            if (d.getElementById(id)) return;
-            js = d.createElement(s);
-            js.id = id;
-            js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8&appId=663218817159771";
-            fjs.parentNode.insertBefore(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));
-    </script>
-    <header>
-        <nav class="light-blue lighten-1" role="navigation">
-            <div class="nav-wrapper container"><a id="logo-container" href="https://vatz88.in" class="brand-logo">VaTz88</a>
+sudo ln -s /usr/share/adminer/latest.php /usr/share/adminer/adminer.php
 
-                <ul class="right hide-on-med-and-down">
-                    <li><a href="/">Home</a></li>
-                </ul>
+echo "Alias /adminer.php /usr/share/adminer/adminer.php" | sudo tee /etc/apache2/conf-available/adminer.conf
 
-                <ul id="nav-mobile" class="side-nav">
-                    <li><a href="/">Home</a></li>
-                </ul>
-                <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
-
-            </div>
-        </nav>
-    </header>
-
-    <main class="container">
-        <div class="section">
-
-            <!-- Article -->
-            <article itemscope itemtype="http://schema.org/Article">
-
-                <div class="row">
-                    <div class="col l10 m12 s12">
-
-                        <div class="artilce-head">
-                            <div class="artile-title">
-                                <h3 itemprop="name">Setting up Ubuntu On Asus Rog GL552VW</h3>
-                            </div>
-                            <div>
-                                <span itemprop="datePublished" content="2017-03-10" class="card-date">10<sup>th</sup> March 2017</span>
-                            </div>
-                        </div>
-
-                        <hr>
-                        <div class="section"></div>
-
-                        <div class="article-body">
-                            <div class="artile-content">
-
-                                <p>
-                                    If you are new to Linux probably switching from Windows, getting Linux up and running on your system can be tiresome. Fisrt
-                                    thing you would do is simply google to find out the most easy way to get things done.
-                                    If you are lucky it may work out well for you. But that was not the case with me. Here,
-                                    I have tried to list down the problems I faced while setting up my system with their
-                                    solutions. Also, I have added some extra things you might want to do as a developer.
-                                    In the end I have added some very useful Linux commands which will be helpful to you
-                                    if you are a first time Linux user.
-                                </p>
-                                <p>
-                                    I will be more specific towards the issues which may arise while installing and skip the common steps which you can find
-                                    from a google search. I have Asus Rog GL552VW which comes with Nvidia graphics card and
-                                    Windows installed.
-                                    <blockquote>
-                                        I would recommend not to buy a laptop with Nvidia graphics card if you are not a gamer.
-                                    </blockquote>
-                                </p>
-
-                                <div class="section"></div>
-
-                                <h4>Installing Ubuntu</h4>
-                                <h5>Issue: Ubuntu stuck while booting</h5>
-                                <p>This problem arises due the Nvidia graphics.</p>
-                                <em>Solution</em>
-                                <ol>
-                                    <li>Reboot into GRUB.</li>
-                                    <li>Highlight the Ubuntu option and press <code>E</code>.</li>
-                                    <li>Add <code><div>nouveau.modeset=0</div></code> to the end of the line beginning with Linux.</li>
-                                    <li>Press F10 to boot.</li>
-                                </ol>
-                                <p>This is just a temporary work around. After the installation make sure you do the following:</p>
-                                <ol>
-                                    <li>
-                                        Open the GRUB file.
-                                        <br>
-                                        <code><div>sudo gedit /etc/default/grub</div></code>
-                                    </li>
-                                    <li>
-                                        Find the following command
-                                        <br>
-                                        <code><div>GRUB_CMDLINE_LINUX_DEFAULT="quiet splash"</div></code>
-                                        <br> And change it to
-                                        <br>
-                                        <code><div>GRUB_CMDLINE_LINUX_DEFAULT="quiet splash nouveau.modeset=0"</div></code>
-                                    </li>
-                                    <li>
-                                        Save and go back to terminal
-                                        <br> Run <code><div>sudo update-grub</div></code>
-                                    </li>
-                                    <li>Finally reboot your system.</li>
-                                </ol>
-                                <div>
-                                    <em>Reference:</em>
-                                    <ul class="browser-default">
-                                        <li>
-                                            <a href="http://askUbuntu.com/questions/760934/graphics-issues-after-while-installing-Ubuntu-16-04-16-10-with-nvidia-graphics">http://askUbuntu.com/questions/760934/graphics-issues-after-while-installing-Ubuntu-16-04-16-10-with-nvidia-graphics</a>
-                                        </li>
-                                    </ul>
-                                </div>
-
-                                <div class="section"></div>
-
-                                <h4>Chrome Flickering</h4>
-                                <h5><em>Issue:</em> Some pages with heavy animations when opened in chrome screen starts flickering.</h5>
-                                <em>Solution</em>
-                                <ol>
-                                    <li>
-                                        Open the following file to edit
-                                        <br>
-                                        <code><div>sudo gedit /usr/share/applications/google-chrome.desktop</div></code>
-                                    </li>
-                                    <li>
-                                        Find and change the line
-                                        <br>
-                                        <code><div>Exec=/usr/bin/google-chrome-stable %U</div></code>
-                                        <br>To
-                                        <br>
-                                        <code><div>Exec=/usr/bin/google-chrome-stable %U "--disable-gpu-driver-bug-workarounds" "--enable-native-gpu-memory-buffers"</div></code>
-                                    </li>
-                                </ol>
-                                <p>Note that you'll have to do this each time after chrome is updated.</p>
-
-                                <div class="section"></div>
-
-                                <h4>Extra Setup For Developers</h4>
-
-                                <h5>Install JDK</h5>
-                                <code><div>sudo apt-get install default-jdk</div></code>
-
-                                <div class="section"></div>
-
-                                <h5>Set up LAMP</h5>
-                                <ol>
-                                    <li>
-                                        Install Apache Server
-                                        <br>
-                                        <code><div>sudo apt-get install apache2</div></code>
-                                    </li>
-                                    <li>
-                                        Install MySQL Server
-                                        <br>
-                                        <code><div>sudo apt-get install mysql-server</div></code>
-                                    </li>
-                                    <li>
-                                        Install PHP
-                                        <br>
-                                        <code><div>sudo apt-get install php7.0-cli</div></code>
-                                        <br>
-                                        <code><div>sudo apt-get install libapache2-mod-php</div></code>
-                                        <br>
-                                        <code><div>sudo apt-get install php-mysql</div></code>
-                                    </li>
-                                </ol>
-                                <p>
-                                    Above commands will Install LAMP. Once you're done with that, following are some addition tools and useful commands:
-                                </p>
-                                <ul class="browser-default">
-                                    <li>
-                                        Restart Apache Server
-                                        <br>
-                                        <code><div>sudo /etc/init.d/apache2 restart</div></code>
-                                    </li>
-                                    <li>
-                                        Open mysql in terminal
-                                        <br>
-                                        <code><div>mysql -u root -p</div></code>
-                                    </li>
-                                    <li>
-                                        Deploy Adminer On Localhost
-                                        <br>A lot of people use phpMyAdmin, but I prefer Adminer.
-                                        <br>
-                                        <code><div>
-                                            <div>
-                                                sudo apt-get install adminer
-                                                <br>
-                                                sudo wget "http://www.adminer.org/latest.php" -O /usr/share/adminer/latest.php
-                                                <br>
-                                                sudo ln -s /usr/share/adminer/latest.php /usr/share/adminer/adminer.php
-                                                <br>
-                                                echo "Alias /adminer.php /usr/share/adminer/adminer.php" | sudo tee /etc/apache2/conf-available/adminer.conf
-                                                <br>
-                                                sudo a2enconf adminer.conf
-                                                // access here: http://localhost/adminer.php
-                                            </div>
-                                        </div></code>
-                                    </li>
-                                    <li>
-                                        Additionally, if you would like to install postgresql follow the Stack Overflow answer bellow.
-                                        <br>
-                                        <em>Reference:</em>
-                                        <a target="_blank" href="https://stackoverflow.com/questions/1471571/how-to-configure-postgresql-for-the-first-time">http://stackoverflow.com/questions/1471571/how-to-configure-postgresql-for-the-first-time</a>
-                                    </li>
-                                </ul>
-
-                                <div class="section"></div>
-
-                                <h4>Useful Linux Commands And Tricks For Newbies</h4>
-
-                                <h5>Upadte System</h5>
-                                Update everything with this single command
-                                <br>
-                                <code><div>sudo apt-get update && time sudo apt-get dist-upgrade</div></code>
-
-                                <div class="section"></div>
-
-                                <h5>Show Password Feedback In Terminal</h5>
-                                <code><div>sudo gedit /etc/sudoers</div></code>
-                                <br> Find the following line in the file opened
-                                <br>
-                                <code><div>Defaults	env_reset</div></code>
-                                <br> And replace it with
-                                <br>
-                                <code><div>Defaults	env_reset,pwfeedback</div></code>
-
-                                <div class="section"></div>
-
-                                <h5>Install A Package</h5>
-                                <code><div>udo apt-get install [packagename]</div></code>
-
-                                <div class="section"></div>
-
-                                <h5>Completely Uninstall A Package</h5>
-                                <code><div>
-                                    sudo apt-get remove --purge [packagename]
-                                    sudo apt-get autoremove
-                                    sudo aptitude purge [packagename]
-                                </div></code>
-
-                                <div class="section"></div>
-
-                                <h5>Reinstall a Installed Package</h5>
-                                <code><div>sudo apt-get update && sudo apt-get install --reinstall [packagename]</div></code>
-
-                                <div class="section"></div>
-
-                                <h5>Open File Browser As Super User</h5>
-                                <code><div>
-                                    sudo apt install gksu
-                                    <br>
-                                    gksu nautilus
-                                </div></code>
-
-                                <div class="section"></div>
-
-                                <h5>Automatically Mount Partitions</h5>
-                                <p>
-                                    If you have more than one hard drive partitions on your system Ubuntu will only mount the one on which it is installed. Other
-                                    partitions will mount as you try to open them. This gives some fraction of a second lag
-                                    when you open the unmount drive for the first time.
-                                </p>
-                                <div>
-                                    <p>You can refer the following Stack Overflow link to mount partitions automatically on
-                                        startup.
-                                    </p>
-                                    <em>Reference:</em>
-                                    <a href="https://stackoverflow.com/questions/1471571/how-to-configure-postgresql-for-the-first-time">https://stackoverflow.com/questions/1471571/how-to-configure-postgresql-for-the-first-time</a>
-                                </div>
-
-                            </div>
-                            <!-- End of article content -->
-                        </div>
-                        <!-- End of article body -->
-                    </div>
-                </div>
-
-                <span itemprop="author" itemscope itemtype="http://schema.org/Person"><meta itemprop="name" content="Vatsal Joshi"></span>
-            </article>
-
-            <div class="section"></div>
-
-            <!-- Facebook plugins -->
-            <div class="row">
-                <div class="col l10 m12 s12">
-                    <iframe src="https://www.facebook.com/plugins/follow.php?href=https%3A%2F%2Fwww.facebook.com%2FVaTz88&width=240&height=80&layout=standard&size=small&show_faces=true&appId=663218817159771"
-                        width="100%" height="80" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col l10 m12 s12">
-                    <div class="fb-comments" data-width="100%" data-href="https://blog.vatz88.in/Setting-up-Ubuntu-on-Asus-Rog-GL552VW/" data-numposts="5"></div>
-                </div>
-            </div>
-
-        </div>
-        <br><br>
-        <div class="section"></div>
-    </main>
-
-    <footer class="page-footer orange">
-        <div class="container">
-            <div class="row">
-                <div class="col l6 m12 s12">
-                    <h4 class="white-text">About Me</h4>
-                    <p class="grey-text text-lighten-4">Engineering student at VIT University, Vellore campus. Technology enthusiast and love coding.</p>
-                </div>
-                <div class="col l3 m6 s12">
-                    <h4 class="white-text">My Projects</h4>
-                    <ul>
-                        <li><a class="white-text" target="_blank" href="https://bit.ly/ffcsotg">FFCS on The Go</a></li>
-                        <li><a class="white-text" target="_blank" href="https://goo.gl/jxLuI7">V-TOP-Easy</a></li>
-                        <li><span class="white-text">See more on</span><br>
-                            <a class="white-text" target="_blank" href="https://github.com/vatz88"><img src="../media/github-circle.png" alt="GitHub"> GitHub</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col l3 m6 s12">
-                    <h4 class="white-text">Connect With Me</h4>
-                    <ul>
-                        <li>
-                            <a class="white-text" href="https://www.facebook.com/VaTz88" target="_blank"><img src="../media/facebook.png" alt="Facebook"> Facebook</a>
-                        </li>
-                        <li>
-                            <a class="white-text" href="https://twitter.com/VaTz88" target="_blank"><img src="../media/twitter.png" alt="Twitter"> Twitter</a>
-                        </li>
-                        <li>
-                            <a class="white-text" href="https://plus.google.com/+VatsalJoshiVaTz88" target="_blank"><img src="../media/google-plus.png" alt="Google+"> Google+</a>
-                        </li>
-                        <li>
-                            <a class="white-text" href="https://www.linkedin.com/in/vatz88" target="_blank"><img src="../media/linkedin.png" alt="LinkedIn"> LinkedIn</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="footer-copyright">
-            <div class="container">
-                &copy; 2017 <a class="orange-text text-lighten-3" href="https://vatz88.in" target="_blank">Vatsal Joshi</a>
-            </div>
-        </div>
-    </footer>
-
-
-    <!-- js -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
-    <script src="../js/script.js"></script>
-
-</body>
-
-</html>
+sudo a2enconf adminer.conf //access here: http://localhost/adminer.php
+</code></pre></li>
+</ul>
+<p>Additionally, if you would like to install postgresql follow the Stack Overflow answer bellow.</p>
+<p><em>Reference:</em> <a href="https://stackoverflow.com/questions/1471571/how-to-configure-postgresql-for-the-first-time">stackoverflow.com/questions/1471571/how-to-configure-postgresql-for-the-first-time</a></p>
+<h2 id="usefullinuxcommandsandtricksfornewbies">Useful Linux Commands And Tricks For Newbies</h2>
+<h3 id="upadtesystem">Upadte System</h3>
+<p>Update everything with this single command</p>
+<pre><code>sudo apt-get update &amp;&amp; time sudo apt-get dist-upgrade
+</code></pre>
+<h3 id="showpasswordfeedbackinterminal">Show Password Feedback In Terminal</h3>
+<pre><code>sudo gedit /etc/sudoers
+</code></pre>
+<p>Find the following line in the file opened</p>
+<pre><code>Defaults env_reset
+</code></pre>
+<p>And replace it with</p>
+<pre><code>Defaults env_reset,pwfeedback
+</code></pre>
+<h3 id="installapackage">Install A Package</h3>
+<p>sudo apt-get install [packagename]</p>
+<h3 id="completelyuninstallapackage">Completely Uninstall A Package</h3>
+<pre><code>sudo apt-get remove --purge [packagename]
+sudo apt-get autoremove
+sudo aptitude purge [packagename]
+</code></pre>
+<h3 id="reinstallainstalledpackage">Reinstall a Installed Package</h3>
+<pre><code>sudo apt-get update &amp;&amp; sudo apt-get install --reinstall [packagename]
+</code></pre>
+<h3 id="openfilebrowserassuperuser">Open File Browser As Super User</h3>
+<pre><code>sudo apt install gksu
+gksu nautilus
+</code></pre>
+<h3 id="automaticallymountpartitions">Automatically Mount Partitions</h3>
+<p>If you have more than one hard drive partitions on your system Ubuntu will only mount the one on which it is installed. Other partitions will mount as you try to open them. This gives some fraction of a second lag when you open the unmount drive for the first time.</p>
+<p>You can refer the following Stack Overflow link to mount partitions automatically on startup.</p>
+<p><em>Reference:</em> <a href="https://stackoverflow.com/questions/1471571/how-to-configure-postgresql-for-the-first-time">stackoverflow.com/questions/1471571/how-to-configure-postgresql-for-the-first-time</a></p></main><div id="disqus_thread"></div>
+        <script>
+        var disqus_config = function () {
+        this.page.url = "https://blog.vatz88.in/Setting-up-Ubuntu-on-Asus-Rog-GL552VW/";
+        this.page.identifier = "blog001";
+        };
+        (function() {
+        var d = document, s = d.createElement('script');
+        s.src = 'https://blog-by-vatsal-joshi.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+        })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        <footer>
+            © 2017 <a href="https://vatz88.in">Vatsal Joshi</a>
+        </footer><script src="../src/js/script.js"></script></body></html>
