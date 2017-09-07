@@ -9,7 +9,7 @@ FALLBACK:
 
 CACHE:
 
-src/media/favicon.png
-src/media/icon_192x192.png
-src/css/style.css
-src/js/script.js
+../src/media/favicon.png
+../src/media/icon_192x192.png
+../src/css/style.css
+../src/js/script.js
