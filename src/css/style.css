@@ -10,12 +10,22 @@ body {
     margin: 0 1rem 0 1rem;
 }
 
+#google_cse {
+    margin: 0 auto;
+    max-width: 80vw;
+}
+
 main,
 #disqus_thread {
     width: 100%;
     margin: 0 auto;
     max-width: 48rem;
     background-color: #fff;
+}
+
+#disqus_thread {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
 header,

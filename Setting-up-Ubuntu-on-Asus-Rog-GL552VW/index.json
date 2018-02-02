@@ -2,7 +2,7 @@
     "title": "Setting up Ubuntu on Asus Rog GL552VW",
     "meta": [{
         "name": "viewport",
-        "content": "width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+        "content": "width=device-width, initial-scale=1"
     }, {
         "name": "description",
         "content": "Setting up Ubuntu on Asus Rog GL552VW - Blog | Vatsal Joshi"
@@ -50,7 +50,7 @@
         "content": "Vatsal Joshi"
     }, {
         "name": "theme-color",
-        "content": "#FF9800"
+        "content": "#E65100"
     }],
     "date": "2017-03-10",
     "page_identifier": "blog001",
