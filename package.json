@@ -24,6 +24,6 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "showdown": "^1.7.3"
+    "showdown": "^1.8.6"
   }
 }

@@ -6,9 +6,9 @@ _Date: **10th March 2017**_
 
 ---
 
-If you are new to Linux probably switching from Windows, getting Linux up and running on your system can be tiresome. Fisrt thing you would do is simply google it to find out the most easy way to get things done.
-If you are lucky it may work out well for you. But that was not the case with me. Here, I have tried to list down the problems I faced while setting up my system with their solutions. Also, I have added some extra things you might want to do as a developer.
-In the end I have added some very useful Linux commands which will be helpful to you if you are a first time Linux user.
+If you are new to Linux probably switching from Windows, getting Linux up and running on your system can be tiresome.
+Here, I have tried to list down the problems I faced while setting up my system along with their solutions. Also, I have added some extra things you might want to do as a developer.
+In the end I have added some useful Linux commands which will be helpful to you if you are a first time Linux user.
 I will be more specific towards the issues which may arise while installing and skip the common steps which you can find from a google search. I have Asus Rog GL552VW which comes with Nvidia graphics card and Windows installed.
 
 ### Installing Ubuntu
@@ -101,15 +101,11 @@ Above commands will Install LAMP. Once you're done with that, following are some
 - Deploy Adminer On Localhost
 
         sudo apt-get install adminer
-        
         sudo wget "http://www.adminer.org/latest.php" -O /usr/share/adminer/latest.php
-        
         sudo ln -s /usr/share/adminer/latest.php /usr/share/adminer/adminer.php
-        
         echo "Alias /adminer.php /usr/share/adminer/adminer.php" | sudo tee /etc/apache2/conf-available/adminer.conf
-        
         sudo a2enconf adminer.conf //access here: http://localhost/adminer.php
-        
+
 Additionally, if you would like to install postgresql follow the Stack Overflow answer bellow.
 
 *Reference:* [stackoverflow.com/questions/1471571/how-to-configure-postgresql-for-the-first-time](https://stackoverflow.com/questions/1471571/how-to-configure-postgresql-for-the-first-time)
@@ -155,8 +151,8 @@ sudo apt-get install [packagename]
 
 ### Automatically Mount Partitions
 
-If you have more than one hard drive partitions on your system Ubuntu will only mount the one on which it is installed. Other partitions will mount as you try to open them. This gives some fraction of a second lag when you open the unmount drive for the first time.
+If you have more than one hard drive partitions on your system Ubuntu will only mount the one on which it is installed. Other partitions will mount as you try to open them. This gives some lag when you open the unmounted drive for the first time.
 
-You can refer the following Stack Overflow link to mount partitions automatically on startup.
+You may refer the following Stack Overflow link to mount partitions automatically on startup.
 
 _Reference:_ [stackoverflow.com/questions/1471571/how-to-configure-postgresql-for-the-first-time](https://stackoverflow.com/questions/1471571/how-to-configure-postgresql-for-the-first-time)

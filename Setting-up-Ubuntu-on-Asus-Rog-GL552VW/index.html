@@ -33,9 +33,9 @@
 <p><em>Author: <strong><a href="https://vatz88.in">Vatsal Joshi</a></strong></em> </p>
 <p><em>Date: <strong>10th March 2017</strong></em></p>
 <hr />
-<p>If you are new to Linux probably switching from Windows, getting Linux up and running on your system can be tiresome. Fisrt thing you would do is simply google it to find out the most easy way to get things done.
-If you are lucky it may work out well for you. But that was not the case with me. Here, I have tried to list down the problems I faced while setting up my system with their solutions. Also, I have added some extra things you might want to do as a developer.
-In the end I have added some very useful Linux commands which will be helpful to you if you are a first time Linux user.
+<p>If you are new to Linux probably switching from Windows, getting Linux up and running on your system can be tiresome.
+Here, I have tried to list down the problems I faced while setting up my system along with their solutions. Also, I have added some extra things you might want to do as a developer.
+In the end I have added some useful Linux commands which will be helpful to you if you are a first time Linux user.
 I will be more specific towards the issues which may arise while installing and skip the common steps which you can find from a google search. I have Asus Rog GL552VW which comes with Nvidia graphics card and Windows installed.</p>
 <h3 id="installingubuntu">Installing Ubuntu</h3>
 <p><strong>Issue:</strong> Ubuntu stuck while booting</p>
@@ -106,13 +106,9 @@ sudo apt-get install php-mysql
 </code></pre></li>
 <li><p>Deploy Adminer On Localhost</p>
 <pre><code>sudo apt-get install adminer
-
 sudo wget "http://www.adminer.org/latest.php" -O /usr/share/adminer/latest.php
-
 sudo ln -s /usr/share/adminer/latest.php /usr/share/adminer/adminer.php
-
 echo "Alias /adminer.php /usr/share/adminer/adminer.php" | sudo tee /etc/apache2/conf-available/adminer.conf
-
 sudo a2enconf adminer.conf //access here: http://localhost/adminer.php
 </code></pre></li>
 </ul>
@@ -147,8 +143,8 @@ sudo aptitude purge [packagename]
 gksu nautilus
 </code></pre>
 <h3 id="automaticallymountpartitions">Automatically Mount Partitions</h3>
-<p>If you have more than one hard drive partitions on your system Ubuntu will only mount the one on which it is installed. Other partitions will mount as you try to open them. This gives some fraction of a second lag when you open the unmount drive for the first time.</p>
-<p>You can refer the following Stack Overflow link to mount partitions automatically on startup.</p>
+<p>If you have more than one hard drive partitions on your system Ubuntu will only mount the one on which it is installed. Other partitions will mount as you try to open them. This gives some lag when you open the unmounted drive for the first time.</p>
+<p>You may refer the following Stack Overflow link to mount partitions automatically on startup.</p>
 <p><em>Reference:</em> <a href="https://stackoverflow.com/questions/1471571/how-to-configure-postgresql-for-the-first-time">stackoverflow.com/questions/1471571/how-to-configure-postgresql-for-the-first-time</a></p>
         </main>
         <div id="disqus_thread"></div>

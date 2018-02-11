@@ -1,74 +1,6 @@
-/* Custom CSS */
-
-body {
-    margin: 0;
-    word-break: break-word;
-    text-align: justify;
-    color: #444;
-    font-family: 'Open Sans Condensed', sans-serif;
-    font-weight: 300;
-    margin: 0 1rem 0 1rem;
-}
-
-#google_cse {
-    margin: 0 auto;
-    max-width: 80vw;
-}
-
-main,
-#disqus_thread {
-    width: 100%;
-    margin: 0 auto;
-    max-width: 48rem;
-    background-color: #fff;
-}
-
-#disqus_thread {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-}
-
-header,
-footer {
-    /* text-align: center; */
-    padding: 2rem;
-    margin: 0 -1rem 0 -1rem;
-    color: #fff;
-    background-color: #EF6C00;
-}
-
-header a,
-footer a,
-header a:hover,
-footer a:hover,
-header a:focus,
-footer a:focus,
-header a:active,
-footer a:active {
-    color: #ffffff;
-}
-
-
-/* Sticky footer */
-
-html,
-body {
-    height: 100%;
-}
-
-body {
-    display: flex;
-    flex-direction: column;
-}
-
-main {
-    flex: 1 0 auto;
-}
-
-
 /* Markdown CSS
- * modified version
- * http://markdowncss.github.io/modest/
+* http://markdowncss.github.io/modest/
+* modified by @vatz88
  */
 
 pre,
@@ -208,4 +140,152 @@ blockquote {
 pre,
 code {
     background-color: #eee;
+}
+
+/* Custom CSS */
+
+body {
+    margin: 0;
+    word-break: break-word;
+    text-align: justify;
+    color: #444;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: 300;
+    margin: 0 1rem 0 1rem;
+}
+
+#google_cse {
+    margin: 0 auto;
+    max-width: 80vw;
+}
+
+main,
+#disqus_thread {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 48rem;
+    background-color: #fff;
+}
+
+#disqus_thread {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+header,
+footer {
+    padding: 2rem;
+    margin: 0 -1rem 0 -1rem;
+    color: #fff;
+    background-color: #EF6C00;
+}
+
+header a,
+footer a,
+header a:hover,
+footer a:hover,
+header a:focus,
+footer a:focus,
+header a:active,
+footer a:active {
+    color: #ffffff;
+}
+
+/* Sticky footer */
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+/* Copy code */
+
+.copyCode:before {
+    content: 'Copy';
+    float: right;
+    font-size: 0.8rem;
+    cursor: pointer;
+    background-color: #050505;
+    padding: 0.25rem 0.5rem;
+    color: #fafafa;
+    z-index: 10;
+    border-radius: 4px;
+    z-index: 10;
+    box-shadow: 0 0 0.5rem 0 rgba(0, 0, 0, 0.5);
+    position: relative;
+}
+
+#snackbar {
+    visibility: hidden;
+    min-width: 250px;
+    margin-left: -125px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 2px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    top: 30px;
+    font-size: 17px;
+}
+
+#snackbar.show {
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@-webkit-keyframes fadein {
+    from {
+        top: 0;
+        opacity: 0;
+    }
+    to {
+        top: 30px;
+        opacity: 1;
+    }
+}
+
+@keyframes fadein {
+    from {
+        top: 0;
+        opacity: 0;
+    }
+    to {
+        top: 30px;
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeout {
+    from {
+        top: 30px;
+        opacity: 1;
+    }
+    to {
+        top: 0;
+        opacity: 0;
+    }
+}
+
+@keyframes fadeout {
+    from {
+        top: 30px;
+        opacity: 1;
+    }
+    to {
+        top: 0;
+        opacity: 0;
+    }
 }
