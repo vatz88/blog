@@ -1,90 +1,91 @@
-/* Markdown CSS
-* http://markdowncss.github.io/modest/
-* modified by @vatz88
+/**
+ * Markdown CSS
+ * http://markdowncss.github.io/modest/
+ * modified by @vatz88
  */
 
 pre,
 code {
-    font-family: Menlo, Monaco, "Courier New", monospace;
+  font-family: monospace;
 }
 
 pre {
-    padding: .5rem;
-    line-height: 1.25;
-    overflow-x: scroll;
+  padding: 1.5rem 0.5rem 0.5rem 0.5rem;
+  line-height: 1.25;
+  overflow-x: scroll;
 }
 
 a {
-    color: #3498db;
+  color: #3498db;
 }
 
 a:hover,
 a:focus,
 a:active {
-    color: #2980b9;
+  color: #2980b9;
 }
 
 html {
-    font-size: 12px;
+  font-size: 12px;
 }
 
 @media screen and (min-width: 32rem) and (max-width: 48rem) {
-    html {
-        font-size: 15px;
-    }
+  html {
+    font-size: 15px;
+  }
 }
 
 @media screen and (min-width: 48rem) {
-    html {
-        font-size: 16px;
-    }
+  html {
+    font-size: 16px;
+  }
 }
 
 body {
-    line-height: 1.85;
+  line-height: 1.85;
 }
 
 p {
-    font-size: 1rem;
-    margin-bottom: 1.3rem;
+  font-size: 1rem;
+  margin-bottom: 1.3rem;
 }
 
 h1,
 h2,
 h3,
 h4 {
-    margin: 1.414rem 0 .5rem;
-    font-weight: inherit;
-    line-height: 1.42;
+  margin: 1.414rem 0 0.5rem;
+  font-weight: inherit;
+  line-height: 1.42;
 }
 
 h1 {
-    margin-top: 0;
-    font-size: 3.998rem;
+  margin-top: 0;
+  font-size: 3rem;
 }
 
 h2 {
-    font-size: 2.827rem;
+  font-size: 2rem;
 }
 
 h3 {
-    font-size: 1.999rem;
+  font-size: 1.5rem;
 }
 
 h4 {
-    font-size: 1.414rem;
+  font-size: 1.25rem;
 }
 
 h5 {
-    font-size: 1.121rem;
+  font-size: 1.121rem;
 }
 
 h6 {
-    font-size: .88rem;
+  font-size: 0.88rem;
 }
 
 small {
-    font-size: .707em;
+  font-size: 0.707em;
 }
 
 img,
@@ -94,90 +95,84 @@ video,
 svg,
 select,
 textarea {
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  max-width: 100%;
 }
 
-@import url(http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300italic,700);
-@import url(http://fonts.googleapis.com/css?family=Arimo:700,700italic);
 html {
-    font-size: 18px;
-    max-width: 100%;
+  font-size: 18px;
+  max-width: 100%;
 }
 
 main {
-    color: #444;
-    font-family: 'Open Sans Condensed', sans-serif;
-    font-weight: 300;
-    line-height: 1.45;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-family: Arimo, Helvetica, sans-serif;
+  color: #444;
+  font-weight: 300;
+  line-height: 1.45;
 }
 
 h1,
 h2,
 h3 {
-    border-bottom: 2px solid #fafafa;
-    margin-bottom: 1.15rem;
-    padding-bottom: .5rem;
-    text-align: center;
+  margin-bottom: 1.15rem;
+  padding-bottom: 0.5rem;
+  text-align: left;
+}
+
+h1 {
+  text-align: center;
 }
 
 blockquote {
-    border-left: 8px solid #fafafa;
-    padding: 1rem;
+  border-left: 8px solid #fafafa;
+  padding: 1rem;
 }
 
 pre,
 code {
-    background-color: #eee;
+  background-color: #eee;
 }
 
-/* Custom CSS */
+/*
+ * Custom CSS
+ * Also overrides Markdown CSS
+ */
 
 body {
-    margin: 0;
-    word-break: break-word;
-    text-align: justify;
-    color: #444;
-    font-family: 'Open Sans Condensed', sans-serif;
-    font-weight: 300;
-    margin: 0 1rem 0 1rem;
+  margin: 0;
+  word-break: break-word;
+  text-align: justify;
+  color: #444;
+  font-family: sans-serif;
+  font-weight: 300;
+  margin: 0 1rem 0 1rem;
 }
 
 #google_cse {
-    margin: 0 auto;
-    max-width: 80vw;
+  margin: 0 auto;
+  max-width: 80vw;
 }
 
 main,
 #disqus_thread {
-    width: 100%;
-    margin: 0 auto;
-    max-width: 48rem;
-    background-color: #fff;
+  width: 100%;
+  margin: 0 auto;
+  max-width: 48rem;
+  background-color: #fff;
 }
 
 #disqus_thread {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 header,
 footer {
-    padding: 2rem;
-    margin: 0 -1rem 0 -1rem;
-    color: #fff;
-    background-color: #EF6C00;
+  padding: 2rem;
+  margin: 0 -1rem 0 -1rem;
+  color: #fff;
+  background-color: #ef6c00;
 }
 
 header a,
@@ -188,104 +183,111 @@ header a:focus,
 footer a:focus,
 header a:active,
 footer a:active {
-    color: #ffffff;
+  color: #ffffff;
 }
 
 /* Sticky footer */
 
 html,
 body {
-    height: 100%;
+  height: 100%;
 }
 
 body {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 main {
-    flex: 1 0 auto;
+  flex: 1 0 auto;
 }
 
 /* Copy code */
 
+pre {
+  position: relative;
+}
+
+.copyCode {
+  position: absolute;
+  right: 0.2rem;
+  top: 0.2rem;
+}
+
 .copyCode:before {
-    content: 'Copy';
-    float: right;
-    font-size: 0.8rem;
-    cursor: pointer;
-    background-color: #050505;
-    padding: 0.25rem 0.5rem;
-    color: #fafafa;
-    z-index: 10;
-    border-radius: 4px;
-    z-index: 10;
-    box-shadow: 0 0 0.5rem 0 rgba(0, 0, 0, 0.5);
-    position: relative;
+  content: 'Copy';
+  font-size: 0.8rem;
+  cursor: pointer;
+  background-color: #050505;
+  padding: 0.25rem 0.5rem;
+  color: #fafafa;
+  border-radius: 0.25rem;
+  z-index: 10;
+  /* box-shadow: 0 0 0.5rem 0 rgba(0, 0, 0, 0.5); */
 }
 
 #snackbar {
-    visibility: hidden;
-    min-width: 250px;
-    margin-left: -125px;
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    border-radius: 2px;
-    padding: 16px;
-    position: fixed;
-    z-index: 1;
-    left: 50%;
-    top: 30px;
-    font-size: 17px;
+  visibility: hidden;
+  min-width: 250px;
+  margin-left: -125px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  border-radius: 2px;
+  padding: 16px;
+  position: fixed;
+  z-index: 11;
+  left: 50vw;
+  top: 3rem;
+  font-size: 1rem;
 }
 
 #snackbar.show {
-    visibility: visible;
-    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
-    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  visibility: visible;
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
 }
 
 @-webkit-keyframes fadein {
-    from {
-        top: 0;
-        opacity: 0;
-    }
-    to {
-        top: 30px;
-        opacity: 1;
-    }
+  from {
+    top: 0;
+    opacity: 0;
+  }
+  to {
+    top: 3rem;
+    opacity: 1;
+  }
 }
 
 @keyframes fadein {
-    from {
-        top: 0;
-        opacity: 0;
-    }
-    to {
-        top: 30px;
-        opacity: 1;
-    }
+  from {
+    top: 0;
+    opacity: 0;
+  }
+  to {
+    top: 3rem;
+    opacity: 1;
+  }
 }
 
 @-webkit-keyframes fadeout {
-    from {
-        top: 30px;
-        opacity: 1;
-    }
-    to {
-        top: 0;
-        opacity: 0;
-    }
+  from {
+    top: 3rem;
+    opacity: 1;
+  }
+  to {
+    top: 0;
+    opacity: 0;
+  }
 }
 
 @keyframes fadeout {
-    from {
-        top: 30px;
-        opacity: 1;
-    }
-    to {
-        top: 0;
-        opacity: 0;
-    }
+  from {
+    top: 3rem;
+    opacity: 1;
+  }
+  to {
+    top: 0;
+    opacity: 0;
+  }
 }
