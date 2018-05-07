@@ -1,6 +1,6 @@
 # Setting up Ubuntu on Asus Rog GL552VW
 
-_Author: **[Vatsal Joshi](https://vatz88.in)**_ 
+_Author: **[Vatsal Joshi](https://vatz88.in)**_
 
 _Date: **10th March 2017**_
 
@@ -19,18 +19,18 @@ This problem arises due the Nvidia graphics.
 
 **Solution:**
 
-- Reboot into GRUB.</li>
-- Highlight the Ubuntu option and press `E`.
-- Add `nouveau.modeset=0` to the end of the line beginning with Linux.
-- Press F10 to boot.
+* Reboot into GRUB.</li>
+* Highlight the Ubuntu option and press `E`.
+* Add `nouveau.modeset=0` to the end of the line beginning with Linux.
+* Press F10 to boot.
 
 This is just a temporary work around. After the installation make sure you do the following:
 
-1. Open the GRUB file.
+1.  Open the GRUB file.
 
     sudo gedit /etc/default/grub
 
-2. Find the following command
+2.  Find the following command
 
         GRUB_CMDLINE_LINUX_DEFAULT="quiet splash"
 
@@ -38,11 +38,11 @@ This is just a temporary work around. After the installation make sure you do th
 
         GRUB_CMDLINE_LINUX_DEFAULT="quiet splash nouveau.modeset=0"
 
-3. Save and go back to terminal and run:
+3.  Save and go back to terminal and run:
 
         sudo update-grub
 
-4. Finally reboot your system.
+4.  Finally reboot your system.
 
 _Reference:_ [askUbuntu.com/questions/760934/graphics-issues-after-while-installing-Ubuntu-16-04-16-10-with-nvidia-graphics](http://askUbuntu.com/questions/760934/graphics-issues-after-while-installing-Ubuntu-16-04-16-10-with-nvidia-graphics)
 
@@ -52,11 +52,11 @@ _Reference:_ [askUbuntu.com/questions/760934/graphics-issues-after-while-install
 
 **Solution:**
 
-1. Open the following file to edit
+1.  Open the following file to edit
 
         sudo gedit /usr/share/applications/google-chrome.desktop
 
-2. Find and change the line
+2.  Find and change the line
 
         Exec=/usr/bin/google-chrome-stable %U
 
@@ -74,15 +74,15 @@ _Note that you'll have to do this each time after chrome is updated._
 
 ### Set up LAMP
 
-- Install Apache Server
+* Install Apache Server
 
         sudo apt-get install apache2
 
-- Install MySQL Server
+* Install MySQL Server
 
         sudo apt-get install mysql-server
 
-- Install PHP
+* Install PHP
 
         sudo apt-get install php7.0-cli
         sudo apt-get install libapache2-mod-php
@@ -90,15 +90,15 @@ _Note that you'll have to do this each time after chrome is updated._
 
 Above commands will Install LAMP. Once you're done with that, following are some addition tools and useful commands:
 
-- Restart Apache Server
+* Restart Apache Server
 
         sudo /etc/init.d/apache2 restart
 
-- Open mysql in terminal
+* Open mysql in terminal
 
         mysql -u root -p
 
-- Deploy Adminer On Localhost
+* Deploy Adminer On Localhost
 
         sudo apt-get install adminer
         sudo wget "http://www.adminer.org/latest.php" -O /usr/share/adminer/latest.php
@@ -108,7 +108,7 @@ Above commands will Install LAMP. Once you're done with that, following are some
 
 Additionally, if you would like to install postgresql follow the Stack Overflow answer bellow.
 
-*Reference:* [stackoverflow.com/questions/1471571/how-to-configure-postgresql-for-the-first-time](https://stackoverflow.com/questions/1471571/how-to-configure-postgresql-for-the-first-time)
+_Reference:_ [stackoverflow.com/questions/1471571/how-to-configure-postgresql-for-the-first-time](https://stackoverflow.com/questions/1471571/how-to-configure-postgresql-for-the-first-time)
 
 ## Useful Linux Commands And Tricks For Newbies
 

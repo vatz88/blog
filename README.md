@@ -5,6 +5,7 @@
 > This blog has articles based on my own experiences as I learn and try out new things. If you are a newbie and this blog helps you I'll be more than happy.
 
 ## Posts
+
 <!-- Posts -->
-- [Placements in VIT](/Placements-in-VIT/)
+- [All You Need To Know About Placements In VIT Vellore](/All-You-Need-To-Know-About-Placements-In-VIT-Vellore/)
 - [Setting up Ubuntu on Asus Rog GL552VW](/Setting-up-Ubuntu-on-Asus-Rog-GL552VW/)
