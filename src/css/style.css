@@ -149,11 +149,6 @@ body {
   margin: 0 1rem 0 1rem;
 }
 
-#google_cse {
-  margin: 0 auto;
-  max-width: 80vw;
-}
-
 main,
 #disqus_thread {
   width: 100%;
