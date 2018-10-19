@@ -202,6 +202,24 @@ main {
   flex: 1 0 auto;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  cursor: pointer;
+}
+
+h1:hover,
+h2:hover,
+h3:hover,
+h4:hover,
+h5:hover,
+h6:hover {
+  text-decoration: underline;
+}
+
 /* Copy code */
 
 pre {
@@ -253,6 +271,7 @@ pre {
     top: 0;
     opacity: 0;
   }
+
   to {
     top: 3rem;
     opacity: 1;
@@ -264,6 +283,7 @@ pre {
     top: 0;
     opacity: 0;
   }
+
   to {
     top: 3rem;
     opacity: 1;
@@ -275,6 +295,7 @@ pre {
     top: 3rem;
     opacity: 1;
   }
+
   to {
     top: 0;
     opacity: 0;
@@ -286,6 +307,7 @@ pre {
     top: 3rem;
     opacity: 1;
   }
+
   to {
     top: 0;
     opacity: 0;

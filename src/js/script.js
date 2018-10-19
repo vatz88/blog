@@ -1,3 +1,12 @@
+// Make header tags linkable
+$h = document.querySelectorAll('h1, h2, h3, h4, h5, h6');
+var linkableHeaderClickListener = function(e) {
+  window.location.hash = e.target.id;
+};
+for (var i = 0; i < $h.length; i++) {
+  $h[i].addEventListener('click', linkableHeaderClickListener);
+}
+
 // Toast
 var snackBar = document.createElement('div');
 snackBar.id = 'snackbar';
@@ -13,29 +22,30 @@ function makeTaost(str) {
 
 // Copy code
 var $pre = document.querySelectorAll('pre');
+var copyClickListener = function(e) {
+  try {
+    document.designMode = 'on';
+    window.getSelection().removeAllRanges();
+    const range = document.createRange();
+    range.selectNode(e.target.nextSibling);
+    window.getSelection().addRange(range);
+    const copyStatus = document.execCommand('copy');
+    if (copyStatus) {
+      makeTaost('Copied!');
+    } else {
+      makeTaost("Couldn't copy. Try again.");
+    }
+    window.getSelection().removeAllRanges();
+    document.designMode = 'off';
+  } catch (err) {
+    makeTaost("Something went wrong! Couldn't copy :(");
+    console.log('Err in copy ', err);
+  }
+};
 for (var i = 0; i < $pre.length; i++) {
   var $span = document.createElement('span');
   $span.classList.add('copyCode');
-  $span.addEventListener('click', function(e) {
-    try {
-      document.designMode = 'on';
-      window.getSelection().removeAllRanges();
-      const range = document.createRange();
-      range.selectNode(e.target.nextSibling);
-      window.getSelection().addRange(range);
-      const copyStatus = document.execCommand('copy');
-      if (copyStatus) {
-        makeTaost('Copied!');
-      } else {
-        makeTaost("Couldn't copy. Try again.");
-      }
-      window.getSelection().removeAllRanges();
-      document.designMode = 'off';
-    } catch (err) {
-      makeTaost("Something went wrong! Couldn't copy :(");
-      console.log('Err in copy ', err);
-    }
-  });
+  $span.addEventListener('click', copyClickListener);
   $pre.item(i).insertBefore($span, $pre.item(i).firstChild);
 }
 
