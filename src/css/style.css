@@ -16,13 +16,7 @@ pre {
 }
 
 a {
-  color: #3498db;
-}
-
-a:hover,
-a:focus,
-a:active {
-  color: #2980b9;
+  color: #1a0dab;
 }
 
 html {
@@ -167,7 +161,7 @@ footer {
   padding: 2rem;
   margin: 0 -1rem 0 -1rem;
   color: #fff;
-  background-color: #ef6c00;
+  background-color: #dd2c00;
 }
 
 header a,
