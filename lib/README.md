@@ -4,19 +4,19 @@
 
 To build all articles and home page
 
-    npm start
+    npm run build
 
 To only build all articles
 
-    npm start *
+    npm run build *
 
 To only build home page
 
-    npm start .
+    npm run build .
 
 To build specific article page
 
-    npm start [article directory names]
+    npm run build [article directory names]
 
 ## html-generator
 
