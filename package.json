@@ -20,7 +20,8 @@
   "homepage": "https://github.com/VaTz88/blog#readme",
   "scripts": {
     "test": "echo \"Error: no test specified\"",
-    "build": "node lib/build-articles.js"
+    "build": "node lib/build-articles.js",
+    "lh": "lighthouse-ci"
   },
   "husky": {
     "hooks": {
