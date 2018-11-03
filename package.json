@@ -20,7 +20,7 @@
   "homepage": "https://github.com/VaTz88/blog#readme",
   "scripts": {
     "test": "echo \"Error: no test specified\"",
-    "start": "node lib/build-articles.js"
+    "build": "node lib/build-articles.js"
   },
   "husky": {
     "hooks": {
@@ -36,6 +36,7 @@
   "dependencies": {},
   "devDependencies": {
     "husky": "^1.1.2",
+    "lighthouse-ci": "git+https://github.com/ebidel/lighthouse-ci.git",
     "lint-staged": "^7.3.0",
     "prettier": "^1.14.3",
     "showdown": "^1.8.6"
