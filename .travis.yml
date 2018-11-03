@@ -1,3 +1,7 @@
+language: node_js
+node_js:
+  - "lts/*"
+
 install:
   - npm install # make sure to install the deps when Travis runs.
 after_success:
