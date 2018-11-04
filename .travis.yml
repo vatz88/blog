@@ -5,4 +5,4 @@ node_js:
 install:
   - npm install # make sure to install the deps when Travis runs.
 after_success:
-  - npm run lh -- --perf --seo --a11y --bp https://blog-staging.vatz88.in/
+  - npm run lh -- --perf=75 --seo=75 --a11y=75 --bp=75 https://blog-staging.vatz88.in/
