@@ -215,13 +215,13 @@ pre {
   position: relative;
 }
 
-.copyCode {
+.copy-code {
   position: absolute;
   right: 0.2rem;
   top: 0.2rem;
 }
 
-.copyCode:before {
+.copy-code:before {
   content: 'Copy';
   font-size: 0.8rem;
   cursor: pointer;
