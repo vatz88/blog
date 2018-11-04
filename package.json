@@ -21,6 +21,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\"",
     "build": "node lib/build-articles.js",
+    "build:staging": "echo \"User-agent: *\nDisallow: /\" > robots.txt",
     "lh": "lighthouse-ci"
   },
   "husky": {
