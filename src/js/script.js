@@ -44,7 +44,7 @@ var copyClickListener = function(e) {
 };
 for (var i = 0; i < $pre.length; i++) {
   var $span = document.createElement('span');
-  $span.classList.add('copyCode');
+  $span.classList.add('copy-code');
   $span.addEventListener('click', copyClickListener);
   $pre.item(i).insertBefore($span, $pre.item(i).firstChild);
 }
