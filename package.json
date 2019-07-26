@@ -12,15 +12,16 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/vatz88/blog.git"
+    "url": "git+https://github.com/vatz88/blog.vatz88.in.git"
   },
   "bugs": {
-    "url": "https://github.com/vatz88/blog/issues"
+    "url": "https://github.com/vatz88/blog.vatz88.in/issues"
   },
   "homepage": "https://blog.vatz88.in",
   "scripts": {
-    "test": "echo \"Error: no test specified\"",
-    "build": "node lib/build-articles.js"
+    "start": "watch 'yarn build' lib & live-server",
+    "build": "node lib/build-articles.js",
+    "test": "echo \"Error: no test specified\""
   },
   "husky": {
     "hooks": {
@@ -37,7 +38,9 @@
   "devDependencies": {
     "husky": "^1.1.2",
     "lint-staged": "^7.3.0",
+    "live-server": "^1.2.1",
     "prettier": "^1.14.3",
-    "showdown": "^1.8.6"
+    "showdown": "^1.8.6",
+    "watch": "^1.0.2"
   }
 }
