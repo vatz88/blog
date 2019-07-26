@@ -1,2 +1,5 @@
 node_modules
 .vscode
+
+# ignore build html files except root index.html
+**/**.html
