@@ -28,7 +28,7 @@ That's how VIT looks at companies. I have a different view. I would rather categ
 
 Companies start visiting the campus as early as during the 6th semester, although that's only couple of them, from what I remember, Cisco and RBS (Royal Bank of Scotland). Both belong to the super dream category. I wasn't eligible to apply to either of them because of my standing arrear in one subject. This brings us to very important thing about companies one must know, their eligibility criteria.
 
-###### Eligiblity Criteria
+###### Eligibility Criteria
 
 There nothing much you can do if companies don't allow you to apply for the job. Most important of all is, NO STANDING ARREARS criteria. All companies have it and if you have a standing arrear, please clear it before starting of the 7th semester, or you could miss out the whole placement season. There will be companies coming in the 8th semester as well, but it would be very depressing to not be eligible for any of the companies (even the mass placement ones) in the 7th semester. After this comes the company specific criteria, CGPA. All most all of the banks have a criteria of minimum CGPA of 9. Then there are some companies in dream offer category which have CGPA criteria of 8.5. The good part is most super dream companies offering core software developer job (for example Amazon, PayPal, Directi) don't have such high CGPA cutoffs. If you're a 9 pointer, awesome, you'll be able to apply to all companies. Otherwise, I would suggest you to try and have a CGPA of 8.5 which will make you eligible for most of the companies. And if not 8.5, nothing to worry, my CGPA never touched 8.5! Yes I was not eligible to apply to many of the companies.
 
