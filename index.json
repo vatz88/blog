@@ -4,12 +4,18 @@
   "manifest": "src/appcache.manifest",
   "meta": [
     { "name": "viewport", "content": "width=device-width, initial-scale=1" },
-    { "name": "description", "content": "Blog by Vatsal Joshi. Connect with me @vatz88" },
+    {
+      "name": "description",
+      "content": "Blog by Vatsal Joshi. Connect with me @vatz88"
+    },
     { "name": "twitter:card", "content": "summary" },
     { "name": "twitter:site:id", "content": "@vatz88" },
     { "name": "twitter:title", "content": "Blog | Vatsal Joshi" },
     { "name": "twitter:description", "content": "Blog by Vatsal Joshi." },
-    { "name": "twitter:image", "content": "src/media/twitter_image_300x300.png" },
+    {
+      "name": "twitter:image",
+      "content": "src/media/twitter_image_300x300.png"
+    },
     { "name": "twitter:image:alt", "content": "Blog | Vatsal Joshi" },
     { "name": "og:title", "content": "Blog | Vatsal Joshi" },
     { "name": "og:type", "content": "website" },

@@ -1,6 +1,6 @@
 {
   "name": "blog.vatz88.in",
-  "version": "2.0.1",
+  "version": "3.0.0",
   "description": "Blog by Vatsal Joshi",
   "author": "Vatsal Joshi",
   "license": "MIT",
@@ -12,17 +12,15 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/VaTz88/blog.git"
+    "url": "git+https://github.com/vatz88/blog.git"
   },
   "bugs": {
-    "url": "https://github.com/VaTz88/blog/issues"
+    "url": "https://github.com/vatz88/blog/issues"
   },
-  "homepage": "https://github.com/VaTz88/blog#readme",
+  "homepage": "https://blog.vatz88.in",
   "scripts": {
     "test": "echo \"Error: no test specified\"",
-    "build": "node lib/build-articles.js",
-    "build:staging": "echo \"User-agent: *\nDisallow: /\" > robots.txt",
-    "lh": "lighthouse-ci"
+    "build": "node lib/build-articles.js"
   },
   "husky": {
     "hooks": {
@@ -31,14 +29,13 @@
   },
   "lint-staged": {
     "*.{js,json,css,md}": [
-      "prettier --single-quote=true --print-width=100 --write",
+      "prettier --write",
       "git add"
     ]
   },
   "dependencies": {},
   "devDependencies": {
     "husky": "^1.1.2",
-    "lighthouse-ci": "git+https://github.com/ebidel/lighthouse-ci.git",
     "lint-staged": "^7.3.0",
     "prettier": "^1.14.3",
     "showdown": "^1.8.6"
