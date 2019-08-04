@@ -169,6 +169,10 @@ footer {
   background-color: #dd2c00;
 }
 
+header {
+  margin-bottom: 1rem;
+}
+
 header a,
 footer a,
 header a:hover,
@@ -227,7 +231,7 @@ pre {
 }
 
 .copy-code:before {
-  content: 'Copy';
+  content: "Copy";
   font-size: 0.8rem;
   cursor: pointer;
   background-color: #050505;
