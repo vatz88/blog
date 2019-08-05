@@ -19,7 +19,8 @@
   },
   "homepage": "https://blog.vatz88.in",
   "scripts": {
-    "start": "watch 'yarn build' lib & live-server",
+    "start": "watch 'yarn build' lib src & live-server",
+    "start:nobrowser": "yarn start -- --no-browser",
     "build": "node lib/build-articles.js",
     "test": "echo \"Error: no test specified\""
   },
@@ -40,7 +41,7 @@
     "lint-staged": "^7.3.0",
     "live-server": "^1.2.1",
     "prettier": "^1.14.3",
-    "showdown": "^1.8.6",
+    "showdown": "^1.9.0",
     "watch": "^1.0.2"
   }
 }
