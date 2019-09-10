@@ -28,9 +28,9 @@ Basic approach should be:
 
 3. Identify and upgrade the plugins and loaders or the related config change.
 
-This did work well for upgrading Babel and Webpack. For upgrading their plugins and loaders, I checked their respective repos on github for any changelog or deprecation notice. For example the Webpack's `ExtractTextPlugin` is deprecated and you should instead use `MiniCssExtractPlugin`.
+This did work well for upgrading Babel and Webpack. For upgrading their plugins and loaders, I checked their respective repos on github for any changelog or deprecation notice. For example, the Webpack's `ExtractTextPlugin` is deprecated and you should instead use `MiniCssExtractPlugin`.
 
-The problem with this approach is that webpack config will also need to be updated, not just for webpack changelog but also for upgrade or deprecation changes in plugins / loaders. Writing the perfect webpack config is not easy, unless you're a pro at it. For some reason I find webpack a little tricky, because sheer knowledge of javascript just does not help. You'll have to dive into its documentation and know some of the internals of webpack. For example, the webpack 4 has a new key in their config called `mode`. When `mode` is set to `production` you no more need to use the `UglifyJsPlugin`.
+The problem with this approach is that webpack config will also need to be updated, not just for webpack changelog but also for upgrade or deprecation changes in plugins / loaders. Writing a perfect webpack config is not easy, unless you're a pro at it. For some reason I find webpack a little tricky, because sheer knowledge of javascript just does not help. You'll have to dive into its documentation and know some of the internals of webpack. For example, the webpack 4 has a new key in their config called `mode`. When `mode` is set to `production` you no more need to use the `UglifyJsPlugin`.
 
 ### Copy From The Latest CRA Eject
 
@@ -38,7 +38,7 @@ This approach is more foolproof. Create a new project from CRA and eject it. Cop
 
 You should still read and go through the changelog of Babel and especially Webpack. It'll help you understand the changes in the config file. This approach also automatically adds new CRA features like support for typescript and other optimizations in the webpack config.
 
-## Potential Issues To Run Into
+## Potential Issues You May Face
 
 After you follow the upgrade procedure and run `npm start` or `yarn start`, the start script will probably fail the first time. Try to identify the issue, fix it and keep repeating it unless you get the dev server running.
 
@@ -56,7 +56,7 @@ Few issues I faced were:
 
 ## Moving LESS to SASS
 
-The project I was upgrading is using LESS and it's no more a good idea to use LESS. SASS is better in a lot of terms. Refer this article to know more on why you should use SASS over LESS [sass-vs-less/](https://css-tricks.com/sass-vs-less/). I did try to convert my LESS files to SASS and there are npm packages which do that. But it's not 100% compatible conversion. I later decided not to go ahead with it and let LESS remain there for now. Any new CSS should be written in SASS and LESS can be gradually removed over time.
+The project I was upgrading is using LESS and it's no more a good idea to use LESS. SASS is better in a lot of terms. Refer this article to know more on why you should use SASS over LESS [sass-vs-less](https://css-tricks.com/sass-vs-less/). I did try to convert my LESS files to SASS and there are npm packages which do that. But it's not 100% compatible conversion. I later decided not to go ahead with it and let LESS remain there for now. Any new CSS should be written in SASS and LESS can be gradually removed over time.
 
 ## Upgrading React
 
@@ -67,3 +67,5 @@ If you get rest of the things working, this is the easiest step. React codemods 
 In my case running react codemods was not that simple. I had to first convert all CoffeeScript files, both `.coffee` and `.cjsx` to `.js` and `.jsx`.
 
 NPM packages [decaffeinate](https://github.com/decaffeinate/decaffeinate) and [depercolator](https://github.com/bugsnag/depercolator) are amazing, converting literally all of `.coffee` and `.cjsx` to `.js` and `.jsx` respectively. There were some issues in converting, but these cli commands come with options, like I had to use `--disable-babel-constructor-workaround` and then fix the error manually in some of the files.
+
+Hope you found this information helpful. There's much more to this whole upgrading process but I guess I have covered everything in simplest possible way. Drop in a comment if you'd like to know more.
