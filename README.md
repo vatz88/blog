@@ -7,5 +7,7 @@
 ## Posts
 
 <!-- Posts -->
+
 - [All You Need To Know About Placements In VIT Vellore](/All-You-Need-To-Know-About-Placements-In-VIT-Vellore/)
 - [Setting up Ubuntu on Asus Rog GL552VW](/Setting-up-Ubuntu-on-Asus-Rog-GL552VW/)
+- [Upgrading Ejected CRA Project](/Upgrading-Ejected-CRA-Project/)

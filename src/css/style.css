@@ -24,6 +24,10 @@ a:hover {
   text-decoration: underline;
 }
 
+li {
+  margin: 0.5rem 0;
+}
+
 html {
   font-size: 12px;
 }
@@ -139,7 +143,6 @@ code {
  */
 
 body {
-  margin: 0;
   word-break: break-word;
   text-align: justify;
   color: #444;
@@ -167,6 +170,10 @@ footer {
   margin: 0 -1rem 0 -1rem;
   color: #fff;
   background-color: #dd2c00;
+}
+
+header {
+  margin-bottom: 1rem;
 }
 
 header a,
@@ -227,7 +234,7 @@ pre {
 }
 
 .copy-code:before {
-  content: 'Copy';
+  content: "Copy";
   font-size: 0.8rem;
   cursor: pointer;
   background-color: #050505;
