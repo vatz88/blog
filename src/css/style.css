@@ -24,6 +24,10 @@ a:hover {
   text-decoration: underline;
 }
 
+li {
+  margin: 0.5rem 0;
+}
+
 html {
   font-size: 12px;
 }
