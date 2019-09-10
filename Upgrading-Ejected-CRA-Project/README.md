@@ -44,7 +44,7 @@ After you follow the upgrade procedure and run `npm start` or `yarn start`, the 
 
 ### Dev Build Works, Production Does Not
 
-This may happen, since there are different configs for both. As a first hack, pass 'development' to configFactory in build script. To better identify if the issue is with the production config.
+This may happen, since there are different configs for both. As a first hack, pass 'development' to `configFactory` in build script. To better identify if the issue is with the production config.
 
 `Babel` has some significant changes from version 6 to 7. Try changing `BABEL_ENV = 'development'` in the build script. I did the trick for me.
 
