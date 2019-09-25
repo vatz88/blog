@@ -1,76 +1,12 @@
 {
-  "title": "All You Need To Know About Placements In VIT (Vellore Institute of Technology)",
+  "title": "All You Need To Know About Placements In VIT Vellore",
+  "description": "All You Need To Know About Placements In VIT, Vellore. How it's done? How to prepare? - Blog | Vatsal Joshi",
   "meta": [
-    {
-      "name": "viewport",
-      "content": "width=device-width, initial-scale=1"
-    },
-    {
-      "name": "description",
-      "content": "All You Need To Know About Placements In VIT, Vellore. How it's done? How to prepare? - Blog | Vatsal Joshi"
-    },
-    {
-      "name": "twitter:card",
-      "content": "summary"
-    },
-    {
-      "name": "twitter:site:id",
-      "content": "@vatz88"
-    },
-    {
-      "name": "twitter:title",
-      "content": "All You Need To Know About Placements In VIT (Vellore Institute of Technology)"
-    },
-    {
-      "name": "twitter:description",
-      "content": "All You Need To Know About Placements In VIT, Vellore. How it's done? How to prepare? - Blog | Vatsal Joshi."
-    },
-    {
-      "name": "twitter:image",
-      "content": "../src/media/twitter_image_300x300.png"
-    },
-    {
-      "name": "twitter:image:alt",
-      "content": "All You Need To Know About Placements In VIT (Vellore Institute of Technology) - Blog | Vatsal Joshi"
-    },
-    {
-      "name": "og:title",
-      "content": "All You Need To Know About Placements In VIT (Vellore Institute of Technology)"
-    },
-    {
-      "name": "og:type",
-      "content": "website"
-    },
-    {
-      "name": "og:url",
-      "content": "https://blog.vatz88.in/Placements-in-VIT/"
-    },
-    {
-      "name": "og:image",
-      "content": "../src/media/og_image_1200x1200.png"
-    },
-    {
-      "name": "og:description",
-      "content": "All You Need To Know About Placements In VIT, Vellore. How it's done? How to prepare? - Blog | Vatsal Joshi"
-    },
-    {
-      "name": "All You Need To Know About Placements In VIT (Vellore Institute of Technology)",
-      "content": "og:site_name"
-    },
     {
       "name": "keywords",
       "content": "Placements,VIT,Vellore,Blog,Vatsal,Joshi,vatz88"
-    },
-    {
-      "name": "author",
-      "content": "Vatsal Joshi"
-    },
-    {
-      "name": "theme-color",
-      "content": "#DD2C00"
     }
   ],
   "date": "2018-05-08",
-  "page_identifier": "blog002",
-  "enableDisqus": true
+  "page_identifier": "blog002"
 }

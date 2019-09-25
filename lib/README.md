@@ -44,9 +44,9 @@ JSON
             "content": "This is the site description"
         }
     ],
-    "css": ["css/style.css"], // order is important | ../src/css/style.js is always included
+    "css": ["css/style.css"], // order is important | ../static/css/style.js is always included
     "body": "<h1>Site Heading</h1>",
-    "script": ["js/script.js"], // order is important | ../src/js/script.js is always included
-    "enableDisqus": false
+    "script": ["js/script.js"], // order is important | ../static/js/script.js is always included
+    "enableDisqus": true,
 }
 ```

@@ -1,0 +1,37 @@
+{
+  "meta": [
+    {
+      "name": "viewport",
+      "content": "width=device-width, initial-scale=1"
+    },
+    {
+      "name": "twitter:card",
+      "content": "summary"
+    },
+    {
+      "name": "twitter:site:id",
+      "content": "@vatz88"
+    },
+    {
+      "name": "twitter:image",
+      "content": "../static/media/twitter_image_300x300.png"
+    },
+    {
+      "name": "og:type",
+      "content": "website"
+    },
+    {
+      "name": "og:image",
+      "content": "../static/media/og_image_1200x1200.png"
+    },
+    {
+      "name": "author",
+      "content": "Vatsal Joshi"
+    },
+    {
+      "name": "theme-color",
+      "content": "#DD2C00"
+    }
+  ],
+  "enableDisqus": true
+}
