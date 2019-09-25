@@ -1,4 +1,4 @@
-# Upgrading Ejected CRA App
+# Upgrading Ejected CRA Project
 
 _Author: **[Vatsal Joshi](https://vatz88.in)**_
 
