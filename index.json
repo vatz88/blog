@@ -1,7 +1,6 @@
 {
   "title": "Blog | Vatsal Joshi",
-  "favicon": "src/media/favicon.png",
-  "manifest": "src/appcache.manifest",
+  "favicon": "static/media/favicon.png",
   "meta": [
     { "name": "viewport", "content": "width=device-width, initial-scale=1" },
     {
@@ -14,7 +13,7 @@
     { "name": "twitter:description", "content": "Blog by Vatsal Joshi." },
     {
       "name": "twitter:image",
-      "content": "src/media/twitter_image_300x300.png"
+      "content": "static/media/twitter_image_300x300.png"
     },
     { "name": "twitter:image:alt", "content": "Blog | Vatsal Joshi" },
     { "name": "og:title", "content": "Blog | Vatsal Joshi" },
@@ -27,10 +26,5 @@
     { "name": "author", "content": "Vatsal Joshi" },
     { "name": "theme-color", "content": "#DD2C00" }
   ],
-  "enableDisqus": false,
-  "articles": [
-    "All-You-Need-To-Know-About-Placements-In-VIT-Vellore",
-    "Setting-up-Ubuntu-on-Asus-Rog-GL552VW",
-    "Upgrading-Ejected-CRA-Project"
-  ]
+  "enableDisqus": false
 }

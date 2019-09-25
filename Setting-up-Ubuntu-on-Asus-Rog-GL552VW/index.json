@@ -1,76 +1,12 @@
 {
   "title": "Setting up Ubuntu on Asus Rog GL552VW",
+  "description": "Setting up Ubuntu on Asus Rog GL552VW - Blog | Vatsal Joshi",
   "meta": [
-    {
-      "name": "viewport",
-      "content": "width=device-width, initial-scale=1"
-    },
-    {
-      "name": "description",
-      "content": "Setting up Ubuntu on Asus Rog GL552VW - Blog | Vatsal Joshi"
-    },
-    {
-      "name": "twitter:card",
-      "content": "summary"
-    },
-    {
-      "name": "twitter:site:id",
-      "content": "@vatz88"
-    },
-    {
-      "name": "twitter:title",
-      "content": "Setting up Ubuntu on Asus Rog GL552VW"
-    },
-    {
-      "name": "twitter:description",
-      "content": "Setting up Ubuntu on Asus Rog GL552VW - Blog | Vatsal Joshi."
-    },
-    {
-      "name": "twitter:image",
-      "content": "../src/media/twitter_image_300x300.png"
-    },
-    {
-      "name": "twitter:image:alt",
-      "content": "Setting up Ubuntu on Asus Rog GL552VW - Blog | Vatsal Joshi"
-    },
-    {
-      "name": "og:title",
-      "content": "Setting up Ubuntu on Asus Rog GL552VW"
-    },
-    {
-      "name": "og:type",
-      "content": "website"
-    },
-    {
-      "name": "og:url",
-      "content": "https://blog.vatz88.in/Setting up Ubuntu on Asus Rog GL552VW/"
-    },
-    {
-      "name": "og:image",
-      "content": "../src/media/og_image_1200x1200.png"
-    },
-    {
-      "name": "og:description",
-      "content": "Setting up Ubuntu on Asus Rog GL552VW - Blog | Vatsal Joshi"
-    },
-    {
-      "name": "Setting up Ubuntu on Asus Rog GL552VW",
-      "content": "og:site_name"
-    },
     {
       "name": "keywords",
       "content": "Ubuntu,Linux,Asus,Rog,GL552VW,Blog,Vatsal,Joshi,vatz88"
-    },
-    {
-      "name": "author",
-      "content": "Vatsal Joshi"
-    },
-    {
-      "name": "theme-color",
-      "content": "#DD2C00"
     }
   ],
   "date": "2017-03-10",
-  "page_identifier": "blog001",
-  "enableDisqus": true
+  "page_identifier": "blog001"
 }

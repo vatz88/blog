@@ -19,8 +19,8 @@
   },
   "homepage": "https://blog.vatz88.in",
   "scripts": {
-    "start": "watch 'yarn build' lib src & live-server",
-    "start:nobrowser": "yarn start -- --no-browser",
+    "start": "watch 'yarn build' lib static & live-server",
+    "start:nobrowser": "yarn start --no-browser",
     "build": "node lib/build-articles.js",
     "test": "echo \"Error: no test specified\""
   },
