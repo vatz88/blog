@@ -17,11 +17,11 @@
       "content": "../static/media/twitter_image_300x300.png"
     },
     {
-      "name": "og:type",
+      "property": "og:type",
       "content": "website"
     },
     {
-      "name": "og:image",
+      "property": "og:image",
       "content": "../static/media/og_image_1200x1200.png"
     },
     {
