@@ -185,6 +185,7 @@ footer a:focus,
 header a:active,
 footer a:active {
   color: #ffffff;
+  text-decoration: underline;
 }
 
 /* Sticky footer */
