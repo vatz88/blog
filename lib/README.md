@@ -29,7 +29,6 @@ JSON
 ```js
 {
     "title": "This Is A Example",
-    "favicon": "media/favicon.png", // set by default
     "head": "<script>console.log('Can put anything here')</script>",
     "lang": "en", // set by default
     "dir" : "ltr", // set by default
