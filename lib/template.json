@@ -5,16 +5,16 @@
       "content": "width=device-width, initial-scale=1"
     },
     {
-      "name": "twitter:card",
-      "content": "summary"
+      "property": "twitter:card",
+      "content": "summary_large_image"
     },
     {
-      "name": "twitter:site:id",
+      "property": "twitter:site:id",
       "content": "@vatz88"
     },
     {
-      "name": "twitter:image",
-      "content": "../static/media/twitter_image_300x300.png"
+      "property": "twitter:image",
+      "content": "/static/media/icon_1200x628.jpg"
     },
     {
       "property": "og:type",
@@ -22,7 +22,7 @@
     },
     {
       "property": "og:image",
-      "content": "../static/media/og_image_1200x1200.png"
+      "content": "/static/media/icon_1200x628.jpg"
     },
     {
       "name": "author",
