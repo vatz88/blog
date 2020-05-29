@@ -1,8 +1,8 @@
 # Blog by Vatsal Joshi
 
-**My attempt towards becoming a better developer**
+I'm a JavaScript and Web enthusiast. This blog has articles based on my own experiences as I learn and try out new things.
 
-> This blog has articles based on my own experiences as I learn and try out new things. If you are a newbie and this blog helps you I'll be more than happy.
+Always happy to connect 🙂 - [twitter.com/vatz88](https://twitter.com/vatz88) ; [hello@vatz88.in](mailto:hello@vatz88.in)
 
 ## Posts
 
