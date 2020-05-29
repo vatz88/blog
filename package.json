@@ -19,7 +19,7 @@
   },
   "homepage": "https://blog.vatz88.in",
   "scripts": {
-    "start": "watch 'yarn build' lib static & live-server",
+    "start": "watch 'yarn build' . --filter=./watch.config.js -p /node_modules/ --ignoreUnreadable --ignoreDotFiles & live-server",
     "start:nobrowser": "yarn start --no-browser",
     "build": "node lib/build-articles.js",
     "test": "echo \"Error: no test specified\""
