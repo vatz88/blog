@@ -1,5 +1,4 @@
 node_modules
-.vscode
 yarn-error.log
 
 # ignore build html files except root index.html
