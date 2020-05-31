@@ -12,5 +12,6 @@
 	"parserOptions": {
 		"ecmaVersion": 11
 	},
-	"rules": {}
+	"rules": {},
+	"ignorePatterns": ["**/**.min.js"]
 }
