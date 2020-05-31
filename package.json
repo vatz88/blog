@@ -1,47 +1,51 @@
 {
-  "name": "blog.vatz88.in",
-  "version": "3.0.0",
-  "description": "Blog by Vatsal Joshi",
-  "author": "Vatsal Joshi",
-  "license": "GPL-3.0",
-  "keywords": [
-    "blog",
-    "vatsal",
-    "joshi",
-    "vatz88"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/vatz88/blog.vatz88.in.git"
-  },
-  "bugs": {
-    "url": "https://github.com/vatz88/blog.vatz88.in/issues"
-  },
-  "homepage": "https://blog.vatz88.in",
-  "scripts": {
-    "start": "watch 'yarn build' lib static & live-server",
-    "start:nobrowser": "yarn start --no-browser",
-    "build": "node lib/build-articles.js",
-    "test": "echo \"Error: no test specified\""
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
-  "lint-staged": {
-    "*.{js,json,css,md}": [
-      "prettier --write",
-      "git add"
-    ]
-  },
-  "dependencies": {},
-  "devDependencies": {
-    "husky": "^1.1.2",
-    "lint-staged": "^7.3.0",
-    "live-server": "^1.2.1",
-    "prettier": "^1.14.3",
-    "showdown": "^1.9.0",
-    "watch": "^1.0.2"
-  }
+	"name": "blog.vatz88.in",
+	"version": "3.0.0",
+	"description": "Blog by Vatsal Joshi",
+	"author": "Vatsal Joshi",
+	"license": "GPL-3.0",
+	"keywords": [
+		"blog",
+		"vatsal",
+		"joshi",
+		"vatz88"
+	],
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/vatz88/blog.vatz88.in.git"
+	},
+	"bugs": {
+		"url": "https://github.com/vatz88/blog.vatz88.in/issues"
+	},
+	"homepage": "https://blog.vatz88.in",
+	"scripts": {
+		"start": "watch 'yarn build' . --filter=./watch.config.js -p /node_modules/ --ignoreUnreadable --ignoreDotFiles & live-server --quiet",
+		"start:nobrowser": "yarn start --no-browser",
+		"build": "node ./lib/build-articles.js",
+		"test": "echo \"Error: no test specified\""
+	},
+	"husky": {
+		"hooks": {
+			"pre-commit": "lint-staged"
+		}
+	},
+	"lint-staged": {
+		"*.{js,json,css,md}": [
+			"prettier --write",
+			"git add"
+		]
+	},
+	"dependencies": {},
+	"devDependencies": {
+		"eslint": "^7.1.0",
+		"eslint-config-google": "^0.14.0",
+		"eslint-config-prettier": "^6.11.0",
+		"eslint-plugin-prettier": "^3.1.3",
+		"husky": "^1.1.2",
+		"lint-staged": "^7.3.0",
+		"live-server": "^1.2.1",
+		"prettier": "^1.14.3",
+		"showdown": "^1.9.0",
+		"watch": "^1.0.2"
+	}
 }
