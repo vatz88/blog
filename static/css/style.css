@@ -3,25 +3,9 @@
  * http://markdowncss.github.io/modest/
  * modified by @vatz88
  */
-
-pre,
-code {
-	font-family: monospace;
-}
-
-pre {
-	padding: 1.5rem 0.5rem 0.5rem 0.5rem;
-	line-height: 1.25;
-	overflow-x: scroll;
-}
-
 a {
 	color: #1a0dab;
 	text-decoration: none;
-}
-
-a[href^='#'] {
-	color: #444;
 }
 
 a:hover {
@@ -135,15 +119,25 @@ blockquote {
 	padding: 1rem;
 }
 
-pre,
-code {
-	background-color: #eee;
-}
-
 /*
  * Custom CSS
  * Also overrides Markdown CSS
  */
+
+
+a[href^='#'] {
+	color: #444;
+}
+
+code {
+	font-size: 85%;
+	padding: 0.2em 0.4em;
+	border-radius: 6px;
+	margin: 0;
+	/* color and bg-color copied from highlight.css */
+	color: #d6deeb;
+	background-color: #011627;
+}
 
 body {
 	word-break: break-word;
@@ -222,12 +216,6 @@ h4:hover,
 h5:hover,
 h6:hover {
 	text-decoration: underline;
-}
-
-/* Copy code */
-
-pre {
-	position: relative;
 }
 
 .copy-code {
