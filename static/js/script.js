@@ -1,13 +1,4 @@
 (function() {
-	// Make header tags linkable
-	$h = document.querySelectorAll('h1, h2, h3, h4, h5, h6');
-	var linkableHeaderClickListener = function(e) {
-		window.location.hash = e.target.id;
-	};
-	for (var i = 0; i < $h.length; i++) {
-		$h[i].addEventListener('click', linkableHeaderClickListener);
-	}
-
 	// Toast
 	var snackBar = document.createElement('div');
 	snackBar.id = 'snackbar';

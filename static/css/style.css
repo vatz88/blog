@@ -20,6 +20,10 @@ a {
 	text-decoration: none;
 }
 
+a[href^='#'] {
+	color: #444;
+}
+
 a:hover {
 	text-decoration: underline;
 }
