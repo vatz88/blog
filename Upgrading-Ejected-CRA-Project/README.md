@@ -1,3 +1,18 @@
+<!--json
+{
+  "title": "Upgrading Ejected CRA Project",
+  "description": "Upgrading Ejected CRA Project (React v15 to v16) - Blog | Vatsal Joshi",
+  "meta": [
+    {
+      "name": "keywords",
+      "content": "CRA,Ejected,Create,React,App,Webpack,Blog,Vatsal,Joshi,vatz88"
+    }
+  ],
+  "date": "2019-09-10",
+  "page_identifier": "blog003"
+}
+-->
+
 # Upgrading Ejected CRA Project
 
 _Author: **[Vatsal Joshi](https://vatz88.in)**_

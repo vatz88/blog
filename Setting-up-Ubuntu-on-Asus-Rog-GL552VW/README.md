@@ -1,3 +1,18 @@
+<!--json
+{
+    "title": "Setting up Ubuntu on Asus Rog GL552VW",
+    "description": "Setting up Ubuntu on Asus Rog GL552VW - Blog | Vatsal Joshi",
+    "meta": [
+      {
+        "name": "keywords",
+        "content": "Ubuntu,Linux,Asus,Rog,GL552VW,Blog,Vatsal,Joshi,vatz88"
+      }
+    ],
+    "date": "2017-03-10",
+    "page_identifier": "blog001" 
+}
+-->
+
 # Setting up Ubuntu on Asus Rog GL552VW
 
 _Author: **[Vatsal Joshi](https://vatz88.in)**_
@@ -28,19 +43,27 @@ This is just a temporary work around. After the installation make sure you do th
 
 1.  Open the GRUB file.
 
-    sudo gedit /etc/default/grub
+```shell
+sudo gedit /etc/default/grub
+```
 
 2.  Find the following command
 
-        GRUB_CMDLINE_LINUX_DEFAULT="quiet splash"
+```shell
+GRUB_CMDLINE_LINUX_DEFAULT="quiet splash"
+```
 
-    And change it to
+And change it to
 
-        GRUB_CMDLINE_LINUX_DEFAULT="quiet splash nouveau.modeset=0"
+```shell
+GRUB_CMDLINE_LINUX_DEFAULT="quiet splash nouveau.modeset=0"
+```
 
 3.  Save and go back to terminal and run:
 
-        sudo update-grub
+```shell
+sudo update-grub
+```
 
 4.  Finally reboot your system.
 
@@ -54,15 +77,21 @@ _Reference:_ [askUbuntu.com/questions/760934/graphics-issues-after-while-install
 
 1.  Open the following file to edit
 
-        sudo gedit /usr/share/applications/google-chrome.desktop
+```shell
+sudo gedit /usr/share/applications/google-chrome.desktop
+```
 
 2.  Find and change the line
 
-        Exec=/usr/bin/google-chrome-stable %U
+```shell
+Exec=/usr/bin/google-chrome-stable %U
+```
 
-    to
+to
 
-        Exec=/usr/bin/google-chrome-stable %U "--disable-gpu-driver-bug-workarounds" "--enable-native-gpu-memory-buffers"
+```shell
+Exec=/usr/bin/google-chrome-stable %U "--disable-gpu-driver-bug-workarounds" "--enable-native-gpu-memory-buffers"
+```
 
 _Note that you'll have to do this each time after chrome is updated._
 
@@ -70,41 +99,55 @@ _Note that you'll have to do this each time after chrome is updated._
 
 ### Install JDK
 
-    sudo apt-get install default-jdk
+```shell
+sudo apt-get install default-jdk
+```
 
 ### Set up LAMP
 
 * Install Apache Server
 
-        sudo apt-get install apache2
+```shell
+sudo apt-get install apache2
+```
 
 * Install MySQL Server
 
-        sudo apt-get install mysql-server
+```shell
+sudo apt-get install mysql-server
+```
 
 * Install PHP
 
-        sudo apt-get install php7.0-cli
-        sudo apt-get install libapache2-mod-php
-        sudo apt-get install php-mysql
+```shell
+sudo apt-get install php7.0-cli
+sudo apt-get install libapache2-mod-php
+sudo apt-get install php-mysql
+```
 
 Above commands will Install LAMP. Once you're done with that, following are some addition tools and useful commands:
 
 * Restart Apache Server
 
-        sudo /etc/init.d/apache2 restart
+```shell
+sudo /etc/init.d/apache2 restart
+```
 
 * Open mysql in terminal
 
-        mysql -u root -p
+```shell
+mysql -u root -p
+```
 
 * Deploy Adminer On Localhost
 
-        sudo apt-get install adminer
-        sudo wget "http://www.adminer.org/latest.php" -O /usr/share/adminer/latest.php
-        sudo ln -s /usr/share/adminer/latest.php /usr/share/adminer/adminer.php
-        echo "Alias /adminer.php /usr/share/adminer/adminer.php" | sudo tee /etc/apache2/conf-available/adminer.conf
-        sudo a2enconf adminer.conf //access here: http://localhost/adminer.php
+```shell
+sudo apt-get install adminer
+sudo wget "http://www.adminer.org/latest.php" -O /usr/share/adminer/latest.php
+sudo ln -s /usr/share/adminer/latest.php /usr/share/adminer/adminer.php
+echo "Alias /adminer.php /usr/share/adminer/adminer.php" | sudo tee /etc/apache2/conf-available/adminer.conf
+sudo a2enconf adminer.conf //access here: http://localhost/adminer.php
+```
 
 Additionally, if you would like to install postgresql follow the Stack Overflow answer bellow.
 
@@ -116,38 +159,54 @@ _Reference:_ [stackoverflow.com/questions/1471571/how-to-configure-postgresql-fo
 
 Update everything with this single command
 
-    sudo apt-get update && time sudo apt-get dist-upgrade
+```shell
+sudo apt-get update && time sudo apt-get dist-upgrade
+```
 
 ### Show Password Feedback In Terminal
 
-    sudo gedit /etc/sudoers
+```shell
+sudo gedit /etc/sudoers
+```
 
 Find the following line in the file opened
 
-    Defaults env_reset
+```txt
+Defaults env_reset
+```
 
 And replace it with
 
-    Defaults env_reset,pwfeedback
+```txt
+Defaults env_reset,pwfeedback
+```
 
 ### Install A Package
 
+```shell
 sudo apt-get install [packagename]
+```
 
 ### Completely Uninstall A Package
 
-    sudo apt-get remove --purge [packagename]
-    sudo apt-get autoremove
-    sudo aptitude purge [packagename]
+```shell
+sudo apt-get remove --purge [packagename]
+sudo apt-get autoremove
+sudo aptitude purge [packagename]
+```
 
 ### Reinstall a Installed Package
 
-    sudo apt-get update && sudo apt-get install --reinstall [packagename]
+```shell
+sudo apt-get update && sudo apt-get install --reinstall [packagename]
+```
 
 ### Open File Browser As Super User
 
-    sudo apt install gksu
-    gksu nautilus
+```shell
+sudo apt install gksu
+gksu nautilus
+```
 
 ### Automatically Mount Partitions
 

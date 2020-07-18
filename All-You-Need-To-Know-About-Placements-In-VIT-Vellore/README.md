@@ -1,3 +1,18 @@
+<!--json
+{
+  "title": "All You Need To Know About Placements In VIT Vellore",
+  "description": "All You Need To Know About Placements In VIT, Vellore. How it's done? How to prepare? - Blog | Vatsal Joshi",
+  "meta": [
+    {
+      "name": "keywords",
+      "content": "Placements,VIT,Vellore,Blog,Vatsal,Joshi,vatz88"
+    }
+  ],
+  "date": "2018-05-08",
+  "page_identifier": "blog002"
+}
+-->
+
 # All You Need To Know About Placements In VIT (Vellore Institute of Technology)
 
 _Author: **[Vatsal Joshi](https://vatz88.in)**_

@@ -1,3 +1,18 @@
+<!--json
+{
+	"title": "Blog | Vatsal Joshi",
+	"description": "Blog by Vatsal Joshi",
+	"meta": [
+		{ "name": "keywords", "content": "Blog,Vatsal,Joshi,vatz88" },
+		{ "property": "og:url", "content": "https://blog.vatz88.in" },
+		{ "property": "twitter:url", "content": "https://blog.vatz88.in" }
+	],
+	"script": ["/static/js/instantpage.v5.1.0.min.js"],
+	"css": [],
+	"enableDisqus": false
+}
+-->
+
 # Blog by Vatsal Joshi
 
 I'm a JavaScript and Web enthusiast. This blog has articles based on my own experiences as I learn and try out new things.
