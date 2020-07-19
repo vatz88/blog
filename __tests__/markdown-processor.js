@@ -24,8 +24,12 @@ const ubuntuMarkdown = fs
 describe('Markdown processor', () => {
 	it('should produce same html for a same given markdown', async () => {
 		const placementsHtml = await markdownProcessor(placementsMarkdown);
-		expect(placementsHtml).toMatchSnapshot();
+		expect(placementsHtml).toMatchSnapshot({
+			cwd: expect.any(String),
+		});
 		const ubuntuHtml = await markdownProcessor(ubuntuMarkdown);
-		expect(ubuntuHtml).toMatchSnapshot();
+		expect(ubuntuHtml).toMatchSnapshot({
+			cwd: expect.any(String),
+		});
 	});
 });

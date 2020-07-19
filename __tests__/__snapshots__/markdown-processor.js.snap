@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Markdown processor should produce same html for a same given markdown 1`] = `
-VFile {
+Object {
   "contents": "<h1 id=\\"all-you-need-to-know-about-placements-in-vit-vellore-institute-of-technology\\"><a href=\\"#all-you-need-to-know-about-placements-in-vit-vellore-institute-of-technology\\">All You Need To Know About Placements In VIT (Vellore Institute of Technology)</a></h1>
 <p><em>Author: <strong><a href=\\"https://vatz88.in\\" target=\\"_blank\\" rel=\\"noopener\\">Vatsal Joshi</a></strong></em></p>
 <p><em>Date: <strong>8th May 2018</strong></em></p>
@@ -45,7 +45,7 @@ VFile {
 </ul>
 <p>Lets come to Tapzo / OneDirect where I finally got placed. The screening process was a bit different. Everyone was asked to fill a google form which asked for the details like links to projects and online profiles like GitHub, HackerEarth / HackerRank and Stack Overflow. I had all of it and so getting shortlisted was easy. Some 600+ people filled the google form out of which 81 were shortlisted for the second round. It included solving three coding questions on paper. Difficulty level was moderate and yes this time I wrote much neater code than what I had done with Amazon. Somewhere around 20 were shortlisted for the interview. Interview went well. It had technical questions, some general talk and one simple coding question. Compared to all other interviews, this one was chill. It was in Hindi! (I'm extremely comfortable with English but interviewer insisted, if I know Hindi, we can just talk in Hindi) Also, I was not asked something stupid, off the topic questions. I like not to be judged for unnecessary stuff. At the end there was a cultural fit check, just to see If I'll fit the companies culture. Few minutes later, the HR came into the room and told me I'm selected and explained me the package. F*cking ₹xxxxxxx CTC! You kidding me!!! It was an amazing feeling. Never before I felt I was worth that CTC.</p>
 <p>Thanks for reading. Hope this post was worth your time. All the best if you're to sit for the placements.</p>",
-  "cwd": "/Users/vatsal.j/Documents/Github/Personal/blog.vatz88.in",
+  "cwd": Any<String>,
   "data": Object {},
   "history": Array [],
   "messages": Array [],
@@ -53,7 +53,7 @@ VFile {
 `;
 
 exports[`Markdown processor should produce same html for a same given markdown 2`] = `
-VFile {
+Object {
   "contents": "<h1 id=\\"setting-up-ubuntu-on-asus-rog-gl552vw\\"><a href=\\"#setting-up-ubuntu-on-asus-rog-gl552vw\\">Setting up Ubuntu on Asus Rog GL552VW</a></h1>
 <p><em>Author: <strong><a href=\\"https://vatz88.in\\" target=\\"_blank\\" rel=\\"noopener\\">Vatsal Joshi</a></strong></em></p>
 <p><em>Date: <strong>10th March 2017</strong></em></p>
@@ -189,7 +189,7 @@ gksu nautilus
 <p>If you have more than one hard drive partitions on your system Ubuntu will only mount the one on which it is installed. Other partitions will mount as you try to open them. This gives some lag when you open the unmounted drive for the first time.</p>
 <p>You may refer the following Stack Overflow link to mount partitions automatically on startup.</p>
 <p><em>Reference:</em> <a href=\\"https://stackoverflow.com/questions/1471571/how-to-configure-postgresql-for-the-first-time\\" target=\\"_blank\\" rel=\\"noopener\\">stackoverflow.com/questions/1471571/how-to-configure-postgresql-for-the-first-time</a></p>",
-  "cwd": "/Users/vatsal.j/Documents/Github/Personal/blog.vatz88.in",
+  "cwd": Any<String>,
   "data": Object {},
   "history": Array [],
   "messages": Array [],
