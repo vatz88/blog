@@ -21,7 +21,7 @@
 	"scripts": {
 		"start": "watch 'yarn build' . --filter=./watch.config.js -p /node_modules/ --ignoreUnreadable --ignoreDotFiles & live-server --quiet",
 		"start:nobrowser": "yarn start --no-browser",
-		"build": "node ./lib/build-articles.js",
+		"build": "node ./lib/build.js",
 		"test": "jest",
 		"test:watch": "yarn test --watch",
 		"lint": "eslint",
