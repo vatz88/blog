@@ -23,6 +23,6 @@ Always happy to connect 🙂 - [twitter.com/vatz88](https://twitter.com/vatz88) 
 
 <!-- Posts -->
 
-- [Upgrading Ejected CRA Project](/Upgrading-Ejected-CRA-Project/) - <em>10 September 2019</em>
-- [All You Need To Know About Placements In VIT Vellore](/All-You-Need-To-Know-About-Placements-In-VIT-Vellore/) - <em>8th May 2018</em>
-- [Setting up Ubuntu on Asus Rog GL552VW](/Setting-up-Ubuntu-on-Asus-Rog-GL552VW/) - <em>10 March 2017</em>
+- [Upgrading Ejected CRA Project](/Upgrading-Ejected-CRA-Project/) - <em>September 10, 2019</em>
+- [All You Need To Know About Placements In VIT Vellore](/All-You-Need-To-Know-About-Placements-In-VIT-Vellore/) - <em>May 8, 2018</em>
+- [Setting up Ubuntu on Asus Rog GL552VW](/Setting-up-Ubuntu-on-Asus-Rog-GL552VW/) - <em>March 10, 2017</em>

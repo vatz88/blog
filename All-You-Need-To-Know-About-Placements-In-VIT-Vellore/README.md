@@ -15,9 +15,7 @@
 
 # All You Need To Know About Placements In VIT (Vellore Institute of Technology)
 
-_Author: **[Vatsal Joshi](https://vatz88.in)**_
-
-_Date: **8th May 2018**_
+Posted on May 8, 2018
 
 ---
 

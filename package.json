@@ -21,8 +21,12 @@
 	"scripts": {
 		"start": "watch 'yarn build' . --filter=./watch.config.js -p /node_modules/ --ignoreUnreadable --ignoreDotFiles & live-server --quiet",
 		"start:nobrowser": "yarn start --no-browser",
-		"build": "node ./lib/build-articles.js",
-		"test": "echo \"Error: no test specified\""
+		"build": "node ./lib/build.js",
+		"test": "jest",
+		"test:watch": "yarn test --watch",
+		"lint": "eslint",
+		"lint:ci": "yarn lint .",
+		"lint:fix": "yarn lint --fix"
 	},
 	"engines": {
 		"node": ">=10"
@@ -31,12 +35,6 @@
 		"hooks": {
 			"pre-commit": "lint-staged"
 		}
-	},
-	"lint-staged": {
-		"*.{js,json,css,md}. !*.min.js": [
-			"prettier --write",
-			"git add"
-		]
 	},
 	"dependencies": {
 		"gray-matter": "^4.0.2",
@@ -55,7 +53,8 @@
 		"eslint-config-prettier": "^6.11.0",
 		"eslint-plugin-prettier": "^3.1.3",
 		"husky": "^1.1.2",
-		"lint-staged": "^7.3.0",
+		"jest": "^26.1.0",
+		"lint-staged": "^10.2.11",
 		"live-server": "^1.2.1",
 		"prettier": "^1.14.3",
 		"watch": "^1.0.2"

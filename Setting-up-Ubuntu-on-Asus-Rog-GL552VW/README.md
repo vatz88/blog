@@ -9,15 +9,13 @@
       }
     ],
     "date": "2017-03-10",
-    "page_identifier": "blog001" 
+    "page_identifier": "blog001"
 }
 -->
 
 # Setting up Ubuntu on Asus Rog GL552VW
 
-_Author: **[Vatsal Joshi](https://vatz88.in)**_
-
-_Date: **10th March 2017**_
+Posted on March 10, 2017
 
 ---
 
@@ -34,10 +32,10 @@ This problem arises due the Nvidia graphics.
 
 **Solution:**
 
-* Reboot into GRUB.</li>
-* Highlight the Ubuntu option and press `E`.
-* Add `nouveau.modeset=0` to the end of the line beginning with Linux.
-* Press F10 to boot.
+- Reboot into GRUB.</li>
+- Highlight the Ubuntu option and press `E`.
+- Add `nouveau.modeset=0` to the end of the line beginning with Linux.
+- Press F10 to boot.
 
 This is just a temporary work around. After the installation make sure you do the following:
 
@@ -105,19 +103,19 @@ sudo apt-get install default-jdk
 
 ### Set up LAMP
 
-* Install Apache Server
+- Install Apache Server
 
 ```shell
 sudo apt-get install apache2
 ```
 
-* Install MySQL Server
+- Install MySQL Server
 
 ```shell
 sudo apt-get install mysql-server
 ```
 
-* Install PHP
+- Install PHP
 
 ```shell
 sudo apt-get install php7.0-cli
@@ -127,19 +125,19 @@ sudo apt-get install php-mysql
 
 Above commands will Install LAMP. Once you're done with that, following are some addition tools and useful commands:
 
-* Restart Apache Server
+- Restart Apache Server
 
 ```shell
 sudo /etc/init.d/apache2 restart
 ```
 
-* Open mysql in terminal
+- Open mysql in terminal
 
 ```shell
 mysql -u root -p
 ```
 
-* Deploy Adminer On Localhost
+- Deploy Adminer On Localhost
 
 ```shell
 sudo apt-get install adminer

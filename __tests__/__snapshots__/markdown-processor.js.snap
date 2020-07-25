@@ -1,0 +1,195 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Markdown processor should produce same html for a same given markdown 1`] = `
+Object {
+  "contents": "<h1 id=\\"all-you-need-to-know-about-placements-in-vit-vellore-institute-of-technology\\"><a href=\\"#all-you-need-to-know-about-placements-in-vit-vellore-institute-of-technology\\">All You Need To Know About Placements In VIT (Vellore Institute of Technology)</a></h1>
+<p>Posted on May 8, 2018</p>
+<hr>
+<p>I belong to the class of 2018, B.Tech. in Information Technology, <a href=\\"https://vit.ac.in\\" target=\\"_blank\\" rel=\\"noopener\\">VIT</a>, Vellore campus. If you are reading this, you're probably a student of VIT and want to know about campus placements. I never had the exact idea about how the whole placement thing works, until it began for my batch. Knowing a few things before sitting for the placements would definitely help. This will be a good read for you if you're looking forward to take part in campus placements at VIT.</p>
+<p><em>Disclaimer:</em> All facts and figures are to best of my knowledge. Everything here is my personal opinion and so is, any advice you come across while reading. Don't catch me if you are not placed after reading this post 😜</p>
+<p><strong>What I Have Covered In This Post:</strong></p>
+<ol>
+<li>An overview Of Placements</li>
+<li>How To Prepare</li>
+<li>My Personal Experience</li>
+</ol>
+<h2 id=\\"an-overview-of-placements\\"><a href=\\"#an-overview-of-placements\\">An Overview Of Placements</a></h2>
+<p>VIT broadly divides companies into three categories:</p>
+<ul>
+<li>Super Dream: CTC more than 10L</li>
+<li>Dream: CTC between 4L to 10L</li>
+<li>Regular: CTC less than 4L</li>
+</ul>
+<p>That's how VIT looks at companies. I have a different view. I would rather categorize them based on the job profile they offer. There are mainly two, core developer job (mostly super dream offer) and the other one is some sort of analyst (mostly dream offer). There are also the mass placement companies (regular offer), but I'm not exactly sure what kind of work they offer to so many people (usually in the range of hundreds) they hire. More on these categories and how to prepare for them in the later section.</p>
+<p>Companies start visiting the campus as early as during the 6th semester, although that's only couple of them, from what I remember, Cisco and RBS (Royal Bank of Scotland). Both belong to the super dream category. I wasn't eligible to apply to either of them because of my standing arrear in one subject. This brings us to very important thing about companies one must know, their eligibility criteria.</p>
+<h6 id=\\"eligibility-criteria\\"><a href=\\"#eligibility-criteria\\">Eligibility Criteria</a></h6>
+<p>There nothing much you can do if companies don't allow you to apply for the job. Most important of all is, NO STANDING ARREARS criteria. All companies have it and if you have a standing arrear, please clear it before starting of the 7th semester, or you could miss out the whole placement season. There will be companies coming in the 8th semester as well, but it would be very depressing to not be eligible for any of the companies (even the mass placement ones) in the 7th semester. After this comes the company specific criteria, CGPA. All most all of the banks have a criteria of minimum CGPA of 9. Then there are some companies in dream offer category which have CGPA criteria of 8.5. The good part is most super dream companies offering core software developer job (for example Amazon, PayPal, Directi) don't have such high CGPA cutoffs. If you're a 9 pointer, awesome, you'll be able to apply to all companies. Otherwise, I would suggest you to try and have a CGPA of 8.5 which will make you eligible for most of the companies. And if not 8.5, nothing to worry, my CGPA never touched 8.5! Yes I was not eligible to apply to many of the companies.</p>
+<h2 id=\\"how-to-prepare\\"><a href=\\"#how-to-prepare\\">How To Prepare</a></h2>
+<p>The process of selection all the companies follow is something like this - screening and then 2 to 4 rounds of interview. It may vary depending upon the company. Considering the number of students studying in VIT and the fact that VIT holds common placements for both Vellore and Chennai campus students, the real challenge I believe is the initial screening round. You're more likely to get placed if you get shortlisted a few times for the interviews, and that'll only happen if you get through the screening round.</p>
+<p>Core developer job has competitive coding on some online platform as screening round. While other jobs too, have a online test, but the focus is less on coding skills and includes questions on aptitude and other soft skills.</p>
+<h3 id=\\"preparing-for-core-developer-job-profile\\"><a href=\\"#preparing-for-core-developer-job-profile\\">Preparing For Core Developer Job Profile</a></h3>
+<p>If you enjoy coding then this is the job profile you should focus on. Solving coding challenges on platforms like <a href=\\"https://www.hackerearth.com\\" target=\\"_blank\\" rel=\\"noopener\\">HackerEarth</a> and <a href=\\"https://www.hackerrank.com\\" target=\\"_blank\\" rel=\\"noopener\\">HackerRank</a> on regular basis should be more than enough. I must emphasize here that <strong>dynamic programming</strong> questions are more likely to be asked and you must be prepared for it. That's all for the screening round. For the interview, prepare Data Structures and Algorithms well. You must know most common data structures like queues, linked lists, binary trees and graphs. You should be able to code it's implementation and also know implementing algorithms relating to the data structure, for example, finding the shortest path between two nodes in a graph. Sorting algorithms are important as well. Some basic theoretical understanding of complexity of algorithm and big O notations will be helpful too. If you can, practice writing code on paper for interviews. You can check out <a href=\\"https://www.geeksforgeeks.org/\\" target=\\"_blank\\" rel=\\"noopener\\">GeeksforGeeks</a> for getting an idea about the interview questions.</p>
+<h3 id=\\"preparing-for-non-developer-job-profile\\"><a href=\\"#preparing-for-non-developer-job-profile\\">Preparing For Non Developer Job Profile</a></h3>
+<p>Don't try too hard on getting a developer job if you don't enjoy coding, otherwise you're mostly going to get rejected during the interview (they'll sense it!) or may not be a good fit in the work enviroment and eventually hate your job. Caution that I say, if you don't enjoy coding, if you like coding and feel you're not up to the mark, you can always improvise. Keeping that aside, for non developer jobs, focus more on soft skills. Aptitute questions will be important for screening round.</p>
+<h2 id=\\"my-personal-experience\\"><a href=\\"#my-personal-experience\\">My Personal Experience</a></h2>
+<p>I got placed in <a href=\\"https://www.tapzo.com\\" target=\\"_blank\\" rel=\\"noopener\\">Tapzo</a> / <a href=\\"https://www.onedirect.in\\" target=\\"_blank\\" rel=\\"noopener\\">OneDirect</a> (both are owned by the same parent company, Coraza Technologies), a startup in Banglore. It's a super dream offer and developer job profile (exactly what I wanted!). Luckily, I got palaced in 1st week of August itself, that's 2 weeks from when placements began in 7th semester. Fall sem during my time started in mid july. Before that, I was rejected in interview with Amazon and McKinsey. There were other companies like D. E. Shaw and Morgan Stanley who would not let apply because of my low CGPA. Didn't clear the screening rounds of PayPal and Directi. This is when I got to know the importance of dynamic programming.</p>
+<p>Coming to interviews I attended:</p>
+<ul>
+<li>
+<p>Amazon - somewhere around 3000 students applied, screening round was online coding. Some 30 students were selected for the interview round. I didn't go through the first interview round, where I was asked two binary tree questions. This is when I got to know the importance of being able to write good code on paper. Until then and well still, it has not been my approach to writing code. I write code and run it, it'll probably fail a few test cases and then I correct it and keep repeating until I get it right. I don't think it's very important to write neat, perfect code in first attempt. Although, I appreciate people who can do that.</p>
+</li>
+<li>
+<p>McKinsey - screening round was similar to Amazon, but coding questions were comparatively easier than that were asked in screening round of Amazon. There were two screening rounds, both similar, online coding test. There were three coding questions in the first round, I solved all of them except didn't get 3 test cases for the last one (thanks to JavaScript, which was enabled for coding, unlike Amazon which restricted coding only in C, C++, Java and Python). In the second screening round (they called it code pairing, but it was nothing like code pairing!) there was only one coding question. I did solve it but due a stupid silly mistake the test cases didn't pass. There was only one sample test case which didn't cover a very important scenario and I didn't think of it either, and as seeing the input of the test cases is not possible, I was not able to figure it out the whole time why the test cases are failing. I still made it to the interview round, maybe because it was the average of the scores in both the rounds, considering I had good score in the first round (I'm not sure though, if that was the reason I made it to the interview round). The interview was complete opposite of what I experienced in Amazon. They focused on technologies I'm interested and my projects. Even though, I did have good, real projects in my resume, I was not selected for the last HR round. Perhaps, I did not have good start to the interview. I was asked, if I have a good sense of humour, to which I replied yes (I don't know why!!!). It didn't stop there, they asked me if can tell them a joke. I said no, I can't think of any right now, but they still insisted on me telling a joke. After a silence of few seconds, I did say something, they didn't laugh, of course it was not funny and I knew it. Maybe, this is what happens when you have all the data structures and algorithms going in your head and you are asked something this stupid. Rest of the interview, I did well but may have answered a few technical questions wrong.</p>
+</li>
+</ul>
+<p>Lets come to Tapzo / OneDirect where I finally got placed. The screening process was a bit different. Everyone was asked to fill a google form which asked for the details like links to projects and online profiles like GitHub, HackerEarth / HackerRank and Stack Overflow. I had all of it and so getting shortlisted was easy. Some 600+ people filled the google form out of which 81 were shortlisted for the second round. It included solving three coding questions on paper. Difficulty level was moderate and yes this time I wrote much neater code than what I had done with Amazon. Somewhere around 20 were shortlisted for the interview. Interview went well. It had technical questions, some general talk and one simple coding question. Compared to all other interviews, this one was chill. It was in Hindi! (I'm extremely comfortable with English but interviewer insisted, if I know Hindi, we can just talk in Hindi) Also, I was not asked something stupid, off the topic questions. I like not to be judged for unnecessary stuff. At the end there was a cultural fit check, just to see If I'll fit the companies culture. Few minutes later, the HR came into the room and told me I'm selected and explained me the package. F*cking ₹xxxxxxx CTC! You kidding me!!! It was an amazing feeling. Never before I felt I was worth that CTC.</p>
+<p>Thanks for reading. Hope this post was worth your time. All the best if you're to sit for the placements.</p>",
+  "cwd": Any<String>,
+  "data": Object {},
+  "history": Array [],
+  "messages": Array [],
+}
+`;
+
+exports[`Markdown processor should produce same html for a same given markdown 2`] = `
+Object {
+  "contents": "<h1 id=\\"setting-up-ubuntu-on-asus-rog-gl552vw\\"><a href=\\"#setting-up-ubuntu-on-asus-rog-gl552vw\\">Setting up Ubuntu on Asus Rog GL552VW</a></h1>
+<p>Posted on March 10, 2017</p>
+<hr>
+<p>If you are new to Linux probably switching from Windows, getting Linux up and running on your system can be tiresome.
+Here, I have tried to list down the problems I faced while setting up my system along with their solutions. Also, I have added some extra things you might want to do as a developer.
+In the end I have added some useful Linux commands which will be helpful to you if you are a first time Linux user.
+I will be more specific towards the issues which may arise while installing and skip the common steps which you can find from a google search. I have Asus Rog GL552VW which comes with Nvidia graphics card and Windows installed.</p>
+<h3 id=\\"installing-ubuntu\\"><a href=\\"#installing-ubuntu\\">Installing Ubuntu</a></h3>
+<p><strong>Issue:</strong> Ubuntu stuck while booting</p>
+<p>This problem arises due the Nvidia graphics.</p>
+<p><strong>Solution:</strong></p>
+<ul>
+<li>Reboot into GRUB.</li>
+<li>Highlight the Ubuntu option and press <code>E</code>.</li>
+<li>Add <code>nouveau.modeset=0</code> to the end of the line beginning with Linux.</li>
+<li>Press F10 to boot.</li>
+</ul>
+<p>This is just a temporary work around. After the installation make sure you do the following:</p>
+<ol>
+<li>Open the GRUB file.</li>
+</ol>
+<pre><code class=\\"hljs language-shell\\">sudo gedit /etc/default/grub
+</code></pre>
+<ol start=\\"2\\">
+<li>Find the following command</li>
+</ol>
+<pre><code class=\\"hljs language-shell\\">GRUB_CMDLINE_LINUX_DEFAULT=\\"quiet splash\\"
+</code></pre>
+<p>And change it to</p>
+<pre><code class=\\"hljs language-shell\\">GRUB_CMDLINE_LINUX_DEFAULT=\\"quiet splash nouveau.modeset=0\\"
+</code></pre>
+<ol start=\\"3\\">
+<li>Save and go back to terminal and run:</li>
+</ol>
+<pre><code class=\\"hljs language-shell\\">sudo update-grub
+</code></pre>
+<ol start=\\"4\\">
+<li>Finally reboot your system.</li>
+</ol>
+<p><em>Reference:</em> <a href=\\"http://askUbuntu.com/questions/760934/graphics-issues-after-while-installing-Ubuntu-16-04-16-10-with-nvidia-graphics\\" target=\\"_blank\\" rel=\\"noopener\\">askUbuntu.com/questions/760934/graphics-issues-after-while-installing-Ubuntu-16-04-16-10-with-nvidia-graphics</a></p>
+<h3 id=\\"chrome-flickering\\"><a href=\\"#chrome-flickering\\">Chrome Flickering</a></h3>
+<p><strong>Issue:</strong> Some pages with heavy animations when opened in chrome, screen starts flickering.</p>
+<p><strong>Solution:</strong></p>
+<ol>
+<li>Open the following file to edit</li>
+</ol>
+<pre><code class=\\"hljs language-shell\\">sudo gedit /usr/share/applications/google-chrome.desktop
+</code></pre>
+<ol start=\\"2\\">
+<li>Find and change the line</li>
+</ol>
+<pre><code class=\\"hljs language-shell\\">Exec=/usr/bin/google-chrome-stable %U
+</code></pre>
+<p>to</p>
+<pre><code class=\\"hljs language-shell\\">Exec=/usr/bin/google-chrome-stable %U \\"--disable-gpu-driver-bug-workarounds\\" \\"--enable-native-gpu-memory-buffers\\"
+</code></pre>
+<p><em>Note that you'll have to do this each time after chrome is updated.</em></p>
+<h2 id=\\"extra-setup-for-developers\\"><a href=\\"#extra-setup-for-developers\\">Extra Setup For Developers</a></h2>
+<h3 id=\\"install-jdk\\"><a href=\\"#install-jdk\\">Install JDK</a></h3>
+<pre><code class=\\"hljs language-shell\\">sudo apt-get install default-jdk
+</code></pre>
+<h3 id=\\"set-up-lamp\\"><a href=\\"#set-up-lamp\\">Set up LAMP</a></h3>
+<ul>
+<li>Install Apache Server</li>
+</ul>
+<pre><code class=\\"hljs language-shell\\">sudo apt-get install apache2
+</code></pre>
+<ul>
+<li>Install MySQL Server</li>
+</ul>
+<pre><code class=\\"hljs language-shell\\">sudo apt-get install mysql-server
+</code></pre>
+<ul>
+<li>Install PHP</li>
+</ul>
+<pre><code class=\\"hljs language-shell\\">sudo apt-get install php7.0-cli
+sudo apt-get install libapache2-mod-php
+sudo apt-get install php-mysql
+</code></pre>
+<p>Above commands will Install LAMP. Once you're done with that, following are some addition tools and useful commands:</p>
+<ul>
+<li>Restart Apache Server</li>
+</ul>
+<pre><code class=\\"hljs language-shell\\">sudo /etc/init.d/apache2 restart
+</code></pre>
+<ul>
+<li>Open mysql in terminal</li>
+</ul>
+<pre><code class=\\"hljs language-shell\\">mysql -u root -p
+</code></pre>
+<ul>
+<li>Deploy Adminer On Localhost</li>
+</ul>
+<pre><code class=\\"hljs language-shell\\">sudo apt-get install adminer
+sudo wget \\"http://www.adminer.org/latest.php\\" -O /usr/share/adminer/latest.php
+sudo ln -s /usr/share/adminer/latest.php /usr/share/adminer/adminer.php
+echo \\"Alias /adminer.php /usr/share/adminer/adminer.php\\" | sudo tee /etc/apache2/conf-available/adminer.conf
+sudo a2enconf adminer.conf //access here: http://localhost/adminer.php
+</code></pre>
+<p>Additionally, if you would like to install postgresql follow the Stack Overflow answer bellow.</p>
+<p><em>Reference:</em> <a href=\\"https://stackoverflow.com/questions/1471571/how-to-configure-postgresql-for-the-first-time\\" target=\\"_blank\\" rel=\\"noopener\\">stackoverflow.com/questions/1471571/how-to-configure-postgresql-for-the-first-time</a></p>
+<h2 id=\\"useful-linux-commands-and-tricks-for-newbies\\"><a href=\\"#useful-linux-commands-and-tricks-for-newbies\\">Useful Linux Commands And Tricks For Newbies</a></h2>
+<h3 id=\\"upadte-system\\"><a href=\\"#upadte-system\\">Upadte System</a></h3>
+<p>Update everything with this single command</p>
+<pre><code class=\\"hljs language-shell\\">sudo apt-get update &#x26;&#x26; time sudo apt-get dist-upgrade
+</code></pre>
+<h3 id=\\"show-password-feedback-in-terminal\\"><a href=\\"#show-password-feedback-in-terminal\\">Show Password Feedback In Terminal</a></h3>
+<pre><code class=\\"hljs language-shell\\">sudo gedit /etc/sudoers
+</code></pre>
+<p>Find the following line in the file opened</p>
+<pre><code class=\\"hljs language-txt\\">Defaults env_reset
+</code></pre>
+<p>And replace it with</p>
+<pre><code class=\\"hljs language-txt\\">Defaults env_reset,pwfeedback
+</code></pre>
+<h3 id=\\"install-a-package\\"><a href=\\"#install-a-package\\">Install A Package</a></h3>
+<pre><code class=\\"hljs language-shell\\">sudo apt-get install [packagename]
+</code></pre>
+<h3 id=\\"completely-uninstall-a-package\\"><a href=\\"#completely-uninstall-a-package\\">Completely Uninstall A Package</a></h3>
+<pre><code class=\\"hljs language-shell\\">sudo apt-get remove --purge [packagename]
+sudo apt-get autoremove
+sudo aptitude purge [packagename]
+</code></pre>
+<h3 id=\\"reinstall-a-installed-package\\"><a href=\\"#reinstall-a-installed-package\\">Reinstall a Installed Package</a></h3>
+<pre><code class=\\"hljs language-shell\\">sudo apt-get update &#x26;&#x26; sudo apt-get install --reinstall [packagename]
+</code></pre>
+<h3 id=\\"open-file-browser-as-super-user\\"><a href=\\"#open-file-browser-as-super-user\\">Open File Browser As Super User</a></h3>
+<pre><code class=\\"hljs language-shell\\">sudo apt install gksu
+gksu nautilus
+</code></pre>
+<h3 id=\\"automatically-mount-partitions\\"><a href=\\"#automatically-mount-partitions\\">Automatically Mount Partitions</a></h3>
+<p>If you have more than one hard drive partitions on your system Ubuntu will only mount the one on which it is installed. Other partitions will mount as you try to open them. This gives some lag when you open the unmounted drive for the first time.</p>
+<p>You may refer the following Stack Overflow link to mount partitions automatically on startup.</p>
+<p><em>Reference:</em> <a href=\\"https://stackoverflow.com/questions/1471571/how-to-configure-postgresql-for-the-first-time\\" target=\\"_blank\\" rel=\\"noopener\\">stackoverflow.com/questions/1471571/how-to-configure-postgresql-for-the-first-time</a></p>",
+  "cwd": Any<String>,
+  "data": Object {},
+  "history": Array [],
+  "messages": Array [],
+}
+`;
