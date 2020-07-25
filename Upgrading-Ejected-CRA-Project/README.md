@@ -15,9 +15,7 @@
 
 # Upgrading Ejected CRA Project
 
-_Author: **[Vatsal Joshi](https://vatz88.in)**_
-
-_Date: **10th September 2019**_
+Posted on September 10, 2019
 
 ---
 

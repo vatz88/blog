@@ -3,8 +3,7 @@
 exports[`Markdown processor should produce same html for a same given markdown 1`] = `
 Object {
   "contents": "<h1 id=\\"all-you-need-to-know-about-placements-in-vit-vellore-institute-of-technology\\"><a href=\\"#all-you-need-to-know-about-placements-in-vit-vellore-institute-of-technology\\">All You Need To Know About Placements In VIT (Vellore Institute of Technology)</a></h1>
-<p><em>Author: <strong><a href=\\"https://vatz88.in\\" target=\\"_blank\\" rel=\\"noopener\\">Vatsal Joshi</a></strong></em></p>
-<p><em>Date: <strong>8th May 2018</strong></em></p>
+<p>Posted on May 8, 2018</p>
 <hr>
 <p>I belong to the class of 2018, B.Tech. in Information Technology, <a href=\\"https://vit.ac.in\\" target=\\"_blank\\" rel=\\"noopener\\">VIT</a>, Vellore campus. If you are reading this, you're probably a student of VIT and want to know about campus placements. I never had the exact idea about how the whole placement thing works, until it began for my batch. Knowing a few things before sitting for the placements would definitely help. This will be a good read for you if you're looking forward to take part in campus placements at VIT.</p>
 <p><em>Disclaimer:</em> All facts and figures are to best of my knowledge. Everything here is my personal opinion and so is, any advice you come across while reading. Don't catch me if you are not placed after reading this post 😜</p>
@@ -55,8 +54,7 @@ Object {
 exports[`Markdown processor should produce same html for a same given markdown 2`] = `
 Object {
   "contents": "<h1 id=\\"setting-up-ubuntu-on-asus-rog-gl552vw\\"><a href=\\"#setting-up-ubuntu-on-asus-rog-gl552vw\\">Setting up Ubuntu on Asus Rog GL552VW</a></h1>
-<p><em>Author: <strong><a href=\\"https://vatz88.in\\" target=\\"_blank\\" rel=\\"noopener\\">Vatsal Joshi</a></strong></em></p>
-<p><em>Date: <strong>10th March 2017</strong></em></p>
+<p>Posted on March 10, 2017</p>
 <hr>
 <p>If you are new to Linux probably switching from Windows, getting Linux up and running on your system can be tiresome.
 Here, I have tried to list down the problems I faced while setting up my system along with their solutions. Also, I have added some extra things you might want to do as a developer.
