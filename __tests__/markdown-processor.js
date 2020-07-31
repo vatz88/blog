@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const markdownProcessor = require('../lib/helpers/markdown-processor');
+const markdownProcessor = require('../lib/utils/markdown-processor');
 
 const placementsMarkdown = fs
 	.readFileSync(

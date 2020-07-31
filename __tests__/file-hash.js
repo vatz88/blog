@@ -1,4 +1,4 @@
-const fileHash = require('../lib/helpers/file-hash');
+const fileHash = require('../lib/utils/file-hash');
 
 describe('File hash', () => {
 	it('should return non empty string as file hash', () => {
