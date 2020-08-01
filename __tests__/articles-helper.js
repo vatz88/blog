@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 const matter = require('gray-matter');
 
-const { getAtriclesDirArr } = require('../lib/helpers/articles-helper');
+const { getAtriclesDirArr } = require('../lib/utils/articles-helper');
 
 const articleDirs = getAtriclesDirArr();
 
