@@ -1,11 +1,11 @@
 <!--json
 {
-    "title": "Setting up Ubuntu on Asus Rog GL552VW",
-    "description": "Setting up Ubuntu on Asus Rog GL552VW - Blog | Vatsal Joshi",
+    "title": "Setting up Ubuntu on Asus ROG GL552VW",
+    "description": "Setting up Ubuntu on Asus ROG GL552VW - Blog | Vatsal Joshi",
     "meta": [
       {
         "name": "keywords",
-        "content": "Ubuntu,Linux,Asus,Rog,GL552VW,Blog,Vatsal,Joshi,vatz88"
+        "content": "Ubuntu,Linux,Asus,ROG,GL552VW,Blog,Vatsal,Joshi,vatz88"
       }
     ],
     "date": "2017-03-10",
@@ -13,7 +13,7 @@
 }
 -->
 
-# Setting up Ubuntu on Asus Rog GL552VW
+# Setting up Ubuntu on Asus ROG GL552VW
 
 Posted on March 10, 2017
 
@@ -22,9 +22,9 @@ Posted on March 10, 2017
 If you are new to Linux probably switching from Windows, getting Linux up and running on your system can be tiresome.
 Here, I have tried to list down the problems I faced while setting up my system along with their solutions. Also, I have added some extra things you might want to do as a developer.
 In the end I have added some useful Linux commands which will be helpful to you if you are a first time Linux user.
-I will be more specific towards the issues which may arise while installing and skip the common steps which you can find from a google search. I have Asus Rog GL552VW which comes with Nvidia graphics card and Windows installed.
+I will be more specific towards the issues which may arise while installing and skip the common steps which you can find from a google search. I have Asus ROG GL552VW which comes with Nvidia graphics card and Windows installed.
 
-### Installing Ubuntu
+## Installing Ubuntu
 
 **Issue:** Ubuntu stuck while booting
 
@@ -39,13 +39,13 @@ This problem arises due the Nvidia graphics.
 
 This is just a temporary work around. After the installation make sure you do the following:
 
-1.  Open the GRUB file.
+1. Open the GRUB file.
 
 ```shell
 sudo gedit /etc/default/grub
 ```
 
-2.  Find the following command
+2. Find the following command
 
 ```shell
 GRUB_CMDLINE_LINUX_DEFAULT="quiet splash"
@@ -57,13 +57,13 @@ And change it to
 GRUB_CMDLINE_LINUX_DEFAULT="quiet splash nouveau.modeset=0"
 ```
 
-3.  Save and go back to terminal and run:
+3. Save and go back to terminal and run:
 
 ```shell
 sudo update-grub
 ```
 
-4.  Finally reboot your system.
+4. Finally reboot your system.
 
 _Reference:_ [askUbuntu.com/questions/760934/graphics-issues-after-while-installing-Ubuntu-16-04-16-10-with-nvidia-graphics](http://askUbuntu.com/questions/760934/graphics-issues-after-while-installing-Ubuntu-16-04-16-10-with-nvidia-graphics)
 
@@ -73,13 +73,13 @@ _Reference:_ [askUbuntu.com/questions/760934/graphics-issues-after-while-install
 
 **Solution:**
 
-1.  Open the following file to edit
+1. Open the following file to edit
 
 ```shell
 sudo gedit /usr/share/applications/google-chrome.desktop
 ```
 
-2.  Find and change the line
+2. Find and change the line
 
 ```shell
 Exec=/usr/bin/google-chrome-stable %U
@@ -153,7 +153,7 @@ _Reference:_ [stackoverflow.com/questions/1471571/how-to-configure-postgresql-fo
 
 ## Useful Linux Commands And Tricks For Newbies
 
-### Upadte System
+### Update System
 
 Update everything with this single command
 
