@@ -1,6 +1,6 @@
 <!--json
 {
-	"title": "Blog | Vatsal Joshi",
+	"title": "Vatsal's Blog",
 	"description": "Blog by Vatsal Joshi",
 	"meta": [
 		{ "name": "keywords", "content": "Blog,Vatsal,Joshi,vatz88" },
@@ -13,7 +13,7 @@
 }
 -->
 
-# Blog by Vatsal Joshi
+# Vatsal's Blog
 
 I'm a JavaScript and Web enthusiast. This blog has articles based on my own experiences as I learn and try out new things.
 
@@ -23,8 +23,8 @@ Always happy to connect 🙂 - [twitter.com/vatz88](https://twitter.com/vatz88) 
 
 <!-- Posts -->
 
-[Upgrading Ejected CRA Project](/upgrading-ejected-cra-project/) - <em>September 10, 2019</em>
+[Upgrading Ejected CRA Project](/upgrading-ejected-cra-project/) - September 10, 2019
 
-[All You Need To Know About Placements In VIT Vellore](/all-you-need-to-Know-about-placements-in-vit-vellore/) - <em>May 8, 2018</em>
+[All You Need To Know About Placements In VIT Vellore](/all-you-need-to-Know-about-placements-in-vit-vellore/) - May 8, 2018
 
-[Setting up Ubuntu on Asus Rog GL552VW](/setting-up-ubuntu-on-asus-rog-gl552vw/) - <em>March 10, 2017</em>
+[Setting up Ubuntu on Asus ROG GL552VW](/setting-up-ubuntu-on-asus-rog-gl552vw/) - March 10, 2017

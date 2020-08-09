@@ -3,6 +3,7 @@ module.exports = function filter(params) {
 		String(params).endsWith('.html') ||
 		String(params).endsWith('.json') ||
 		String(params).includes('node_modules') ||
+		String(params).includes('__tests__') ||
 		String(params).includes('yarn.lock')
 	);
 };

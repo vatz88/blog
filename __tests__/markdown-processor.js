@@ -16,7 +16,7 @@ const ubuntuMarkdown = fs
 	.readFileSync(
 		path.resolve(
 			__dirname,
-			'../Setting-up-Ubuntu-on-Asus-Rog-GL552VW/README.md',
+			'../Setting-up-Ubuntu-on-Asus-ROG-GL552VW/README.md',
 		),
 	)
 	.toString();

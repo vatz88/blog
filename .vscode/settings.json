@@ -33,5 +33,17 @@
 		"yml"
 	],
 	"spellright.language": ["en"],
-	"spellright.documentTypes": ["markdown", "latex", "plaintext"]
+	"spellright.documentTypes": ["markdown", "latex", "plaintext"],
+	"cSpell.words": [
+		"Asus",
+		"Disqus",
+		"Joshi",
+		"Vatsal",
+		"Vellore",
+		"delims",
+		"noopener",
+		"prefetch",
+		"rehype",
+		"vatz"
+	]
 }

@@ -85,7 +85,7 @@ exports[`Article builder should build correct html for All-You-Need-To-Know-Abou
         </html>"
 `;
 
-exports[`Article builder should build correct html for Setting-up-Ubuntu-on-Asus-Rog-GL552VW 1`] = `
+exports[`Article builder should build correct html for Setting-up-Ubuntu-on-Asus-ROG-GL552VW 1`] = `
 "<!doctype html>
         <html lang=\\"en\\">
         <head>
@@ -360,8 +360,8 @@ exports[`Article builder should build correct html for home page 1`] = `
         <head>
         	<meta charset=\\"utf-8\\">
        		<link rel=\\"icon\\" href=\\"/static/media/favicon.png\\">
-        	<title>Blog | Vatsal Joshi</title>
-        	<meta property=\\"twitter:title\\" content=\\"Blog | Vatsal Joshi\\"><meta property=\\"og:title\\" content=\\"Blog | Vatsal Joshi\\"><meta property=\\"twitter:image:alt\\" content=\\"Blog | Vatsal Joshi\\"><meta property=\\"og:site_name\\" content=\\"Blog | Vatsal Joshi\\"><meta property=\\"twitter:description\\" content=\\"Blog by Vatsal Joshi\\"><meta property=\\"og:description\\" content=\\"Blog by Vatsal Joshi\\"><meta name=\\"title\\" content=\\"Blog | Vatsal Joshi\\"><meta name=\\"description\\" content=\\"Blog by Vatsal Joshi\\"><meta name=\\"viewport\\" content=\\"width=device-width, initial-scale=1\\"><meta property=\\"twitter:card\\" content=\\"summary_large_image\\"><meta property=\\"twitter:site:id\\" content=\\"@vatz88\\"><meta property=\\"twitter:image\\" content=\\"https://blog.vatz88.in/static/media/icon_1200x628.jpg\\"><meta property=\\"og:type\\" content=\\"website\\"><meta property=\\"og:image\\" content=\\"https://blog.vatz88.in/static/media/icon_1200x628.jpg\\"><meta name=\\"author\\" content=\\"Vatsal Joshi\\"><meta name=\\"theme-color\\" content=\\"#DD2C00\\"><meta name=\\"keywords\\" content=\\"Blog,Vatsal,Joshi,vatz88\\"><meta property=\\"og:url\\" content=\\"https://blog.vatz88.in\\"><meta property=\\"twitter:url\\" content=\\"https://blog.vatz88.in\\">
+        	<title>Vatsal's Blog</title>
+        	<meta property=\\"twitter:title\\" content=\\"Vatsal's Blog\\"><meta property=\\"og:title\\" content=\\"Vatsal's Blog\\"><meta property=\\"twitter:image:alt\\" content=\\"Vatsal's Blog\\"><meta property=\\"og:site_name\\" content=\\"Vatsal's Blog\\"><meta property=\\"twitter:description\\" content=\\"Blog by Vatsal Joshi\\"><meta property=\\"og:description\\" content=\\"Blog by Vatsal Joshi\\"><meta name=\\"title\\" content=\\"Vatsal's Blog\\"><meta name=\\"description\\" content=\\"Blog by Vatsal Joshi\\"><meta name=\\"viewport\\" content=\\"width=device-width, initial-scale=1\\"><meta property=\\"twitter:card\\" content=\\"summary_large_image\\"><meta property=\\"twitter:site:id\\" content=\\"@vatz88\\"><meta property=\\"twitter:image\\" content=\\"https://blog.vatz88.in/static/media/icon_1200x628.jpg\\"><meta property=\\"og:type\\" content=\\"website\\"><meta property=\\"og:image\\" content=\\"https://blog.vatz88.in/static/media/icon_1200x628.jpg\\"><meta name=\\"author\\" content=\\"Vatsal Joshi\\"><meta name=\\"theme-color\\" content=\\"#DD2C00\\"><meta name=\\"keywords\\" content=\\"Blog,Vatsal,Joshi,vatz88\\"><meta property=\\"og:url\\" content=\\"https://blog.vatz88.in\\"><meta property=\\"twitter:url\\" content=\\"https://blog.vatz88.in\\">
         	<link rel=\\"icon\\" sizes=\\"192x192\\" href=\\"/static/media/icon_192x192.png\\">
 			<link rel=\\"dns-prefetch\\" href=\\"https://www.google-analytics.com\\">
 			<link rel=\\"dns-prefetch\\" href=\\"https://blog-by-vatsal-joshi.disqus.com\\">
@@ -374,13 +374,13 @@ exports[`Article builder should build correct html for home page 1`] = `
     <a href=\\"/\\">Home</a>
 </header>
         	<main>
-        		<h1 id=\\"blog-by-vatsal-joshi\\"><a href=\\"#blog-by-vatsal-joshi\\">Blog by Vatsal Joshi</a></h1>
+        		<h1 id=\\"vatsals-blog\\"><a href=\\"#vatsals-blog\\">Vatsal's Blog</a></h1>
 <p>I'm a JavaScript and Web enthusiast. This blog has articles based on my own experiences as I learn and try out new things.</p>
 <p>Always happy to connect 🙂 - <a href=\\"https://twitter.com/vatz88\\" target=\\"_blank\\" rel=\\"noopener\\">twitter.com/vatz88</a> ; <a href=\\"mailto:hello@vatz88.in\\">hello@vatz88.in</a></p>
 <h2 id=\\"posts\\"><a href=\\"#posts\\">Posts</a></h2>
 <p><a href=\\"/upgrading-ejected-cra-project/\\">Upgrading Ejected CRA Project</a> - September 10, 2019</p>
 <p><a href=\\"/all-you-need-to-Know-about-placements-in-vit-vellore/\\">All You Need To Know About Placements In VIT Vellore</a> - May 8, 2018</p>
-<p><a href=\\"/setting-up-ubuntu-on-asus-rog-gl552vw/\\">Setting up Ubuntu on Asus Rog GL552VW</a> - March 10, 2017</p>
+<p><a href=\\"/setting-up-ubuntu-on-asus-rog-gl552vw/\\">Setting up Ubuntu on Asus ROG GL552VW</a> - March 10, 2017</p>
         	</main>
         	
         	

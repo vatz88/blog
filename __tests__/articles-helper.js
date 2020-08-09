@@ -2,9 +2,9 @@ const fs = require('fs');
 const path = require('path');
 const matter = require('gray-matter');
 
-const { getAtriclesDirArr } = require('../lib/utils/articles-helper');
+const { getArticlesDirArr } = require('../lib/utils/articles-helper');
 
-const articleDirs = getAtriclesDirArr();
+const articleDirs = getArticlesDirArr();
 
 const pageIdentifierArr = [];
 
@@ -19,17 +19,17 @@ describe('Build articles', () => {
 	it.each(articleDirs)(
 		'%s README.md should have correct gray-matter data',
 		dirName => {
-			const readmetext = fs.readFileSync(
+			const readmeText = fs.readFileSync(
 				path.resolve(__dirname, '..', dirName, 'README.md'),
 			);
-			const { content: readme, data: indexjson } = matter(
-				readmetext.toString(),
+			const { content: readme, data: indexJson } = matter(
+				readmeText.toString(),
 				{
 					delims: ['<!--', '-->'],
 				},
 			);
 			expect(readme).toBeTruthy();
-			expect(indexjson).toEqual(
+			expect(indexJson).toEqual(
 				expect.objectContaining({
 					title: expect.any(String),
 					description: expect.any(String),
@@ -39,8 +39,8 @@ describe('Build articles', () => {
 				}),
 			);
 			// page_identifier should never change for article
-			expect(indexjson.page_identifier).toMatchSnapshot();
-			pageIdentifierArr.push(indexjson.page_identifier);
+			expect(indexJson.page_identifier).toMatchSnapshot();
+			pageIdentifierArr.push(indexJson.page_identifier);
 		},
 	);
 
