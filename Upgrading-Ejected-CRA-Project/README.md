@@ -5,7 +5,7 @@
   "meta": [
     {
       "name": "keywords",
-      "content": "CRA,Ejected,Create,React,App,Webpack,Blog,Vatsal,Joshi,vatz88"
+      "content": "CRA,Ejected,Create,React,App,webpack,Blog,Vatsal,Joshi,vatz88"
     }
   ],
   "date": "2019-09-10",
@@ -19,13 +19,13 @@ Posted on September 10, 2019
 
 ---
 
-I recently upgraded a react app with significantly large code base and already running in production which was created using [CRA](https://facebook.github.io/create-react-app/) and had [Webpack](https://webpack.js.org) [ejected](https://create-react-app.dev/docs/available-scripts#npm-run-eject). The goal was to upgrade [React](https://reactjs.org/) from v15 to v16, Webpack from v3 to v4, [Babel](https://babeljs.io/) from v6 to v7 and all the related loader / plugin and dependencies to their latest versions. In addition to that, the project had a significant portion of code written in `coffee` and `cjsx` which was to be removed as it's no more a good idea to keep using [CoffeeScript](https://coffeescript.org).
+I recently upgraded a react app with significantly large code base and already running in production which was created using [CRA](https://facebook.github.io/create-react-app/) and had [webpack](https://webpack.js.org) [ejected](https://create-react-app.dev/docs/available-scripts#npm-run-eject). The goal was to upgrade [React](https://reactjs.org/) from v15 to v16, webpack from v3 to v4, [Babel](https://babeljs.io/) from v6 to v7 and all the related loader / plugin and dependencies to their latest versions. In addition to that, the project had a significant portion of code written in `coffee` and `cjsx` which was to be removed as it's no more a good idea to keep using [CoffeeScript](https://coffeescript.org).
 
 I'll share some of my learnings and approaches here.
 
 ## Explore Alternatives To Ejecting CRA
 
-Ejecting webpack does give a lot of customizing power, but do consider other approaches before ejecting. Since upgrading ejected app is quite a task, of manually keeping check of latest version of packages and their compatibility with versions of React and Webpack. Consider reading [alternatives to ejecting](https://facebook.github.io/create-react-app/docs/alternatives-to-ejecting).
+Ejecting webpack does give a lot of customizing power, but do consider other approaches before ejecting. Since upgrading ejected app is quite a task, of manually keeping check of latest version of packages and their compatibility with versions of React and webpack. Consider reading [alternatives to ejecting](https://facebook.github.io/create-react-app/docs/alternatives-to-ejecting).
 
 ## Approaches To Upgrading Ejected CRA
 
@@ -41,7 +41,7 @@ Basic approach should be:
 
 3. Identify and upgrade the plugins and loaders or the related config change.
 
-This did work well for upgrading Babel and Webpack. For upgrading their plugins and loaders, I checked their respective repos on github for any changelog or deprecation notice. For example, the Webpack's `ExtractTextPlugin` is deprecated and you should instead use `MiniCssExtractPlugin`.
+This did work well for upgrading Babel and webpack. For upgrading their plugins and loaders, I checked their respective repos on GitHub for any changelog or deprecation notice. For example, the webpack's `ExtractTextPlugin` is deprecated and you should instead use `MiniCssExtractPlugin`.
 
 The problem with this approach is that webpack config will also need to be updated, not just for webpack changelog but also for upgrade or deprecation changes in plugins / loaders. Writing a perfect webpack config is not easy, unless you're a pro at it. For some reason I find webpack a little tricky, because sheer knowledge of javascript just does not help. You'll have to dive into its documentation and know some of the internals of webpack. For example, the webpack 4 has a new key in their config called `mode`. When `mode` is set to `production` you no more need to use the `UglifyJsPlugin`.
 
@@ -49,7 +49,7 @@ The problem with this approach is that webpack config will also need to be updat
 
 This approach is more foolproof. Create a new project from CRA and eject it. Copy the webpack config and related files and also `start` and `build` script files. Basically, everything you see in `config` and `scripts` folder. Now, compare and update the packages' versions, remove unused packages and add new ones if required.
 
-You should still read and go through the changelog of Babel and especially Webpack. It'll help you understand the changes in the config file. This approach also automatically adds new CRA features like support for typescript and other optimizations in the webpack config.
+You should still read and go through the changelog of Babel and especially webpack. It'll help you understand the changes in the config file. This approach also automatically adds new CRA features like support for typescript and other optimizations in the webpack config.
 
 ## Potential Issues You May Face
 
@@ -63,7 +63,7 @@ This may happen, since there are different configs for both. As a first hack, pa
 
 Few issues I faced were:
 
-- **Production mode JavaScript bundle execution fails.** It was mainly because the latest CRA uses `TerserPlugin` with options set for best optimizations. I had to modify a few options and add some additional options to override the defaults. If you have eslint enabled in your webpack config in your project which is suppose to ensure code quality, you may not face this issue.
+- **Production mode JavaScript bundle execution fails.** It was mainly because the latest CRA uses `TerserPlugin` with options set for best optimizations. I had to modify a few options and add some additional options to override the defaults. If you have ESLint enabled in your webpack config in your project which is suppose to ensure code quality, you may not face this issue.
 
 - **Styles did not load properly.** The development build uses `style-loader` which would bundle CSS along with JavaScript. Also, better for HOT reloading. But the production build uses `MiniCssExtractPlugin` which will, as the name suggests extract the CSS and make a separate bundle for CSS. It's better for production build as CSS bundles can be cached by browser separately and also makes loading styles faster and doesn't depend on Javascript bundle to execute. Apparently, the plugin which was used in the older versions, `ExtractTextPlugin` did work as expected with the existing code but, with `MiniCssExtractPlugin` had to do certain refactoring in the LESS files.
 

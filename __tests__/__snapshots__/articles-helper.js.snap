@@ -2,6 +2,6 @@
 
 exports[`Build articles All-You-Need-To-Know-About-Placements-In-VIT-Vellore README.md should have correct gray-matter data 1`] = `"blog002"`;
 
-exports[`Build articles Setting-up-Ubuntu-on-Asus-Rog-GL552VW README.md should have correct gray-matter data 1`] = `"blog001"`;
+exports[`Build articles Setting-up-Ubuntu-on-Asus-ROG-GL552VW README.md should have correct gray-matter data 1`] = `"blog001"`;
 
 exports[`Build articles Upgrading-Ejected-CRA-Project README.md should have correct gray-matter data 1`] = `"blog003"`;

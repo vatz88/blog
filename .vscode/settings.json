@@ -1,3 +1,49 @@
 {
-  "cSpell.words": ["Joshi", "Vatsal", "vatz"]
+	"cSpell.enabledLanguageIds": [
+		// Only markdown is removed.
+		// We use spellright for checking spelling in markdown
+		"asciidoc",
+		"c",
+		"cpp",
+		"csharp",
+		"css",
+		"git-commit",
+		"go",
+		"handlebars",
+		"haskell",
+		"html",
+		"jade",
+		"java",
+		"javascript",
+		"javascriptreact",
+		"json",
+		"jsonc",
+		"less",
+		"php",
+		"python",
+		"pug",
+		"restructuredtext",
+		"rust",
+		"scala",
+		"scss",
+		"text",
+		"typescript",
+		"typescriptreact",
+		"yaml",
+		"yml"
+	],
+	"spellright.language": ["en"],
+	"spellright.documentTypes": ["markdown", "latex", "plaintext"],
+	"cSpell.words": [
+		"Asus",
+		"Disqus",
+		"Joshi",
+		"Vatsal",
+		"Vellore",
+		"delims",
+		"noopener",
+		"prefetch",
+		"rehype",
+		"vatz"
+	]
 }
