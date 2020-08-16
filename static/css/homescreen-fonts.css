@@ -1,0 +1,53 @@
+/* 
+ @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap&text=Vatsal%27s%20Blog');
+ */
+@font-face {
+	font-family: 'Press Start 2P';
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+	src: local('Press Start 2P Regular'), local('PressStart2P-Regular'),
+		url(https://fonts.gstatic.com/l/font?kit=e3t4euO8T-267oIAQAu6jDQyK0nXgPRE4rU_JbJfuws-HnT-7Q&skey=24cc298767068e24&v=v8)
+			format('woff2');
+}
+
+#vatsals-blog {
+	font-family: 'Press Start 2P';
+	word-break: normal;
+}
+
+/* https://www.w3schools.com/css/css_rwd_mediaqueries.asp */
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+	#vatsals-blog {
+		font-size: 1.5rem;
+	}
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+	#vatsals-blog {
+		font-size: 2rem;
+	}
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+	#vatsals-blog {
+		font-size: 2.5rem;
+	}
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+	#vatsals-blog {
+		font-size: 3rem;
+	}
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+	#vatsals-blog {
+		font-size: 3.5rem;
+	}
+}

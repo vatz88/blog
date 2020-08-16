@@ -8,7 +8,7 @@
 		{ "property": "twitter:url", "content": "https://blog.vatz88.in" }
 	],
 	"script": ["/static/js/instantpage.v5.1.0.min.js"],
-	"css": [],
+	"css": ["/static/css/homescreen-fonts.css"],
 	"enableDisqus": false
 }
 -->
