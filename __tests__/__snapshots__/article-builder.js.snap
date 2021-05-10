@@ -313,7 +313,7 @@ exports[`Article builder should build correct html for Upgrading-Ejected-CRA-Pro
 <p>After you follow the upgrade procedure and run <code>npm start</code> or <code>yarn start</code>, the start script will probably fail the first time. Try to identify the issue, fix it and keep repeating it unless you get the dev server running.</p>
 <h3 id=\\"dev-build-works-production-does-not\\"><a href=\\"#dev-build-works-production-does-not\\">Dev Build Works, Production Does Not</a></h3>
 <p>This may happen, since there are different configs for both. As a first hack, pass 'development' to <code>configFactory</code> in build script. To better identify if the issue is with the production config.</p>
-<p><code>Babel</code> has some significant changes from version 6 to 7. Try changing <code>BABEL_ENV = 'development'</code> in the build script. I did the trick for me.</p>
+<p><code>Babel</code> has some significant changes from version 6 to 7. Try changing <code>BABEL_ENV = 'development'</code> in the build script. It did the trick for me. (Update: No it wasn't actually babel, the issue was with the code. Something to do with propTypes being dropped on prod build but still some code trying to access it, resulting in error.)</p>
 <p>Few issues I faced were:</p>
 <ul>
 <li>
@@ -328,8 +328,8 @@ exports[`Article builder should build correct html for Upgrading-Ejected-CRA-Pro
 <h2 id=\\"upgrading-react\\"><a href=\\"#upgrading-react\\">Upgrading React</a></h2>
 <p>If you get rest of the things working, this is the easiest step. React codemods make it even easier. Just go through the <a href=\\"https://reactjs.org/blog/2017/09/26/react-v16.0.html#upgrading\\" target=\\"_blank\\" rel=\\"noopener\\">official react migration doc</a>.</p>
 <h3 id=\\"migrating-coffeescript\\"><a href=\\"#migrating-coffeescript\\">Migrating CoffeeScript</a></h3>
-<p>In my case running react codemods was not that simple. I had to first convert all CoffeeScript files, both <code>.coffee</code> and <code>.cjsx</code> to <code>.js</code> and <code>.jsx</code>.</p>
-<p>NPM packages <a href=\\"https://github.com/decaffeinate/decaffeinate\\" target=\\"_blank\\" rel=\\"noopener\\">decaffeinate</a> and <a href=\\"https://github.com/bugsnag/depercolator\\" target=\\"_blank\\" rel=\\"noopener\\">depercolator</a> are amazing, converting literally all of <code>.coffee</code> and <code>.cjsx</code> to <code>.js</code> and <code>.jsx</code> respectively. There were some issues in converting, but these cli commands come with options, like I had to use <code>--disable-babel-constructor-workaround</code> and then fix the error manually in some of the files.</p>
+<p>In my case running react codemods was not that simple. I had to first convert all CoffeeScript files, both <code>.coffee</code> and <code>.cjsx</code> to <code>.js</code> and <code>.jsx</code> respectively.</p>
+<p>NPM packages <a href=\\"https://github.com/decaffeinate/decaffeinate\\" target=\\"_blank\\" rel=\\"noopener\\">decaffeinate</a> and <a href=\\"https://github.com/bugsnag/depercolator\\" target=\\"_blank\\" rel=\\"noopener\\">depercolator</a> are amazing, converting literally all of my <code>.coffee</code> and <code>.cjsx</code> files to <code>.js</code> and <code>.jsx</code> respectively. There were some issues in converting, but these cli commands come with options, like I had to use <code>--disable-babel-constructor-workaround</code> and then fix the error manually in some of the files.</p>
 <p>Hope you found this information helpful. There's much more to this whole upgrading process but I guess I have covered everything in simplest possible way. Drop in a comment if you'd like to know more.</p>
         	</main>
         	<div id=\\"disqus_thread\\"></div>
