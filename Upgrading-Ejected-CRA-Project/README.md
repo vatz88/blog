@@ -59,7 +59,7 @@ After you follow the upgrade procedure and run `npm start` or `yarn start`, the 
 
 This may happen, since there are different configs for both. As a first hack, pass 'development' to `configFactory` in build script. To better identify if the issue is with the production config.
 
-`Babel` has some significant changes from version 6 to 7. Try changing `BABEL_ENV = 'development'` in the build script. I did the trick for me.
+`Babel` has some significant changes from version 6 to 7. Try changing `BABEL_ENV = 'development'` in the build script. It did the trick for me. (Update: No it wasn't actually babel, the issue was with the code. Something to do with propTypes being dropped on prod build but still some code trying to access it, resulting in error.)
 
 Few issues I faced were:
 
@@ -77,8 +77,8 @@ If you get rest of the things working, this is the easiest step. React codemods 
 
 ### Migrating CoffeeScript
 
-In my case running react codemods was not that simple. I had to first convert all CoffeeScript files, both `.coffee` and `.cjsx` to `.js` and `.jsx`.
+In my case running react codemods was not that simple. I had to first convert all CoffeeScript files, both `.coffee` and `.cjsx` to `.js` and `.jsx` respectively.
 
-NPM packages [decaffeinate](https://github.com/decaffeinate/decaffeinate) and [depercolator](https://github.com/bugsnag/depercolator) are amazing, converting literally all of `.coffee` and `.cjsx` to `.js` and `.jsx` respectively. There were some issues in converting, but these cli commands come with options, like I had to use `--disable-babel-constructor-workaround` and then fix the error manually in some of the files.
+NPM packages [decaffeinate](https://github.com/decaffeinate/decaffeinate) and [depercolator](https://github.com/bugsnag/depercolator) are amazing, converting literally all of my `.coffee` and `.cjsx` files to `.js` and `.jsx` respectively. There were some issues in converting, but these cli commands come with options, like I had to use `--disable-babel-constructor-workaround` and then fix the error manually in some of the files.
 
 Hope you found this information helpful. There's much more to this whole upgrading process but I guess I have covered everything in simplest possible way. Drop in a comment if you'd like to know more.
