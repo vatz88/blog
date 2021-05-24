@@ -2,7 +2,21 @@
 
 exports[`Markdown processor should produce same html for a same given markdown 1`] = `
 Object {
-  "contents": "<h1 id=\\"all-you-need-to-know-about-placements-in-vit-vellore-institute-of-technology\\"><a href=\\"#all-you-need-to-know-about-placements-in-vit-vellore-institute-of-technology\\">All You Need To Know About Placements In VIT (Vellore Institute of Technology)</a></h1>
+  "contents": "<!--json
+{
+  \\"title\\": \\"All You Need To Know About Placements In VIT Vellore\\",
+  \\"description\\": \\"All You Need To Know About Placements In VIT, Vellore. How it's done? How to prepare? - Blog | Vatsal Joshi\\",
+  \\"meta\\": [
+    {
+      \\"name\\": \\"keywords\\",
+      \\"content\\": \\"Placements,VIT,Vellore,Blog,Vatsal,Joshi,vatz88\\"
+    }
+  ],
+  \\"date\\": \\"2018-05-08\\",
+  \\"page_identifier\\": \\"blog002\\"
+}
+-->
+<h1 id=\\"all-you-need-to-know-about-placements-in-vit-vellore-institute-of-technology\\"><a href=\\"#all-you-need-to-know-about-placements-in-vit-vellore-institute-of-technology\\">All You Need To Know About Placements In VIT (Vellore Institute of Technology)</a></h1>
 <p>Posted on May 8, 2018</p>
 <hr>
 <p>I belong to the class of 2018, B.Tech. in Information Technology, <a href=\\"https://vit.ac.in\\" target=\\"_blank\\" rel=\\"noopener\\">VIT</a>, Vellore campus. If you are reading this, you're probably a student of VIT and want to know about campus placements. I never had the exact idea about how the whole placement thing works, until it began for my batch. Knowing a few things before sitting for the placements would definitely help. This will be a good read for you if you're looking forward to take part in campus placements at VIT.</p>
@@ -53,7 +67,21 @@ Object {
 
 exports[`Markdown processor should produce same html for a same given markdown 2`] = `
 Object {
-  "contents": "<h1 id=\\"setting-up-ubuntu-on-asus-rog-gl552vw\\"><a href=\\"#setting-up-ubuntu-on-asus-rog-gl552vw\\">Setting up Ubuntu on Asus ROG GL552VW</a></h1>
+  "contents": "<!--json
+{
+    \\"title\\": \\"Setting up Ubuntu on Asus ROG GL552VW\\",
+    \\"description\\": \\"Setting up Ubuntu on Asus ROG GL552VW - Blog | Vatsal Joshi\\",
+    \\"meta\\": [
+      {
+        \\"name\\": \\"keywords\\",
+        \\"content\\": \\"Ubuntu,Linux,Asus,ROG,GL552VW,Blog,Vatsal,Joshi,vatz88\\"
+      }
+    ],
+    \\"date\\": \\"2017-03-10\\",
+    \\"page_identifier\\": \\"blog001\\"
+}
+-->
+<h1 id=\\"setting-up-ubuntu-on-asus-rog-gl552vw\\"><a href=\\"#setting-up-ubuntu-on-asus-rog-gl552vw\\">Setting up Ubuntu on Asus ROG GL552VW</a></h1>
 <p>Posted on March 10, 2017</p>
 <hr>
 <p>If you are new to Linux probably switching from Windows, getting Linux up and running on your system can be tiresome.
