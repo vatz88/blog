@@ -19,7 +19,7 @@
 	},
 	"homepage": "https://blog.vatz88.in",
 	"scripts": {
-		"start": "watch 'yarn build' . --filter=./watch.config.js -p /node_modules/ --ignoreUnreadable --ignoreDotFiles & live-server --quiet",
+		"start": "cross-env NODE_ENV=development watch 'yarn build' . --filter=./watch.config.js -p /node_modules/ --ignoreUnreadable --ignoreDotFiles & live-server --quiet",
 		"start:nobrowser": "yarn start --no-browser",
 		"build": "node ./lib/index.js",
 		"test": "jest",
@@ -49,6 +49,7 @@
 		"unified": "^9.0.0"
 	},
 	"devDependencies": {
+		"cross-env": "^7.0.3",
 		"eslint": "^7.1.0",
 		"eslint-config-google": "^0.14.0",
 		"eslint-config-prettier": "^6.11.0",
