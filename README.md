@@ -23,6 +23,8 @@ Always happy to connect 🙂 - [twitter.com/vatz88](https://twitter.com/vatz88) 
 
 <!-- Posts -->
 
+[Components With Async Friendly Event Handlers](/components-with-async-friendly-event-handlers/) - May 24, 2021
+
 [Upgrading Ejected CRA Project](/upgrading-ejected-cra-project/) - September 10, 2019
 
 [All You Need To Know About Placements In VIT Vellore](/all-you-need-to-Know-about-placements-in-vit-vellore/) - May 8, 2018
