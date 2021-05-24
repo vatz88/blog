@@ -378,6 +378,7 @@ exports[`Article builder should build correct html for home page 1`] = `
 <p>I'm a JavaScript and Web enthusiast. This blog has articles based on my own experiences as I learn and try out new things.</p>
 <p>Always happy to connect 🙂 - <a href=\\"https://twitter.com/vatz88\\" target=\\"_blank\\" rel=\\"noopener\\">twitter.com/vatz88</a> ; <a href=\\"mailto:hello@vatz88.in\\">hello@vatz88.in</a></p>
 <h2 id=\\"posts\\"><a href=\\"#posts\\">Posts</a></h2>
+<!-- Posts -->
 <p><a href=\\"/upgrading-ejected-cra-project/\\">Upgrading Ejected CRA Project</a> - September 10, 2019</p>
 <p><a href=\\"/all-you-need-to-Know-about-placements-in-vit-vellore/\\">All You Need To Know About Placements In VIT Vellore</a> - May 8, 2018</p>
 <p><a href=\\"/setting-up-ubuntu-on-asus-rog-gl552vw/\\">Setting up Ubuntu on Asus ROG GL552VW</a> - March 10, 2017</p>
