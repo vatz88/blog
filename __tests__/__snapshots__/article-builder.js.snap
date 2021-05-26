@@ -108,7 +108,7 @@ exports[`Article builder should build correct html for Components-With-Async-Fri
         		<h1 id=\\"components-with-async-friendly-event-handlers\\"><a href=\\"#components-with-async-friendly-event-handlers\\">Components With Async Friendly Event Handlers</a></h1>
 <p>Posted on May 26, 2021</p>
 <hr>
-<p>All apps have to listen to user input, it could be a button click or some text being typed in a input box. These user actions in return perform a task like api call, validating the input, etc. These actions can be asynchronous in nature and it's in these cases where having async even handlers in extremely beneficial.</p>
+<p>All apps have to listen to user input, it could be a button click or some text being typed in an input box. These user actions in return perform a task like api call, validating the input, etc. These actions can be asynchronous in nature and it's in these cases where having async even handlers is quite beneficial.</p>
 <p>Let's take a simple example of a button. On clicking the button, we'll make an api call and then render an image from the api's response. I'll be using React here but these ideas remain same for other frameworks too.</p>
 <!-- Sync onClick handler -->
 <iframe src=\\"https://codesandbox.io/embed/sync-onclick-handler-tqw54?autoresize=1&#x26;fontsize=14&#x26;hidenavigation=1&#x26;module=%2Fsrc%2FApp.js&#x26;theme=dark\\" style=\\"width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;\\" title=\\"Sync onClick handler\\" allow=\\"accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking\\" sandbox=\\"allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts\\"></iframe>
@@ -136,7 +136,7 @@ exports[`Article builder should build correct html for Components-With-Async-Fri
 <p>The state of <code>Button</code> component is internally handled by the component. A traditional approach to solve this has been to pass a <code>isDisabled</code> prop to the <code>Button</code> component. But why would we want to add logic to enable/disable button for each button we use in our app when the component itself can take care of it?</p>
 </li>
 <li>
-<p>Some apps show a full spinner to indicate that they are fetching data from api. It works but again, don't we end up writing the logic to toggle the spinner on button click? Additionally, why hide the existing content until we're fetching new one? Inputs with async handler and internal state (loaded/loading) have this UX advantage that they don't end up changing any of the existing content on page and still communicate that new data is being fetched. Wouldn't it be nice to have the meaningful content on the page for user's reference than show a spinner? In some cases, may be yes.</p>
+<p>Some apps show a full screen spinner to indicate that they are fetching data from api. It works but again, don't we end up writing the logic to toggle the spinner on button click? Additionally, why hide the existing content until we're fetching new one? Inputs with async handler can manage their state (loaded/loading) internally and have this UX advantage that they don't end up changing any of the existing content on page and still communicate to the user that new data is being fetched. Wouldn't it be nice to have the meaningful content on the page for user's reference than show a spinner? In some cases, may be yes.</p>
 </li>
 </ul>
 <p>Here we considered a button component but, this same logic can be extending to all forms of input components.</p>
@@ -147,7 +147,7 @@ exports[`Article builder should build correct html for Components-With-Async-Fri
     <span class=\\"hljs-comment\\">// some synchronous code here</span>
 }
 </code></pre>
-<p>Another way is to modify our <code>Button</code> component to accept both kinds of <code>onClick</code> handlers functions - sync and async. We can do this simply by wrapping the response of <code>onClick</code> handler in <code>Promise.resolve</code>. This will return a promise if the onClick handler was not an async function. Doesn't matter if it returns a <code>Promise</code>.</p>
+<p>Another way is to modify our <code>Button</code> component to accept both kinds of <code>onClick</code> handler functions - sync and async. We can do this simply by wrapping the response of <code>onClick</code> handler in <code>Promise.resolve</code>. This will return a promise if the onClick handler was not an async function. Doesn't matter if it's already returning a <code>Promise</code>.</p>
 <pre><code class=\\"hljs language-js\\"><span class=\\"hljs-comment\\">// set Button state to 'loading'</span>
 <span class=\\"hljs-keyword\\">const</span> response = <span class=\\"hljs-built_in\\">Promise</span>.resolve(onClickHandler);
 <span class=\\"hljs-keyword\\">await</span> response;

@@ -19,7 +19,7 @@ Posted on May 26, 2021
 
 ---
 
-All apps have to listen to user input, it could be a button click or some text being typed in a input box. These user actions in return perform a task like api call, validating the input, etc. These actions can be asynchronous in nature and it's in these cases where having async even handlers in extremely beneficial.
+All apps have to listen to user input, it could be a button click or some text being typed in an input box. These user actions in return perform a task like api call, validating the input, etc. These actions can be asynchronous in nature and it's in these cases where having async even handlers is quite beneficial.
 
 Let's take a simple example of a button. On clicking the button, we'll make an api call and then render an image from the api's response. I'll be using React here but these ideas remain same for other frameworks too.
 
@@ -64,7 +64,7 @@ What did we change? We made the `onClick` function passed to button `async funct
 
 - The state of `Button` component is internally handled by the component. A traditional approach to solve this has been to pass a `isDisabled` prop to the `Button` component. But why would we want to add logic to enable/disable button for each button we use in our app when the component itself can take care of it?
 
-- Some apps show a full spinner to indicate that they are fetching data from api. It works but again, don't we end up writing the logic to toggle the spinner on button click? Additionally, why hide the existing content until we're fetching new one? Inputs with async handler and internal state (loaded/loading) have this UX advantage that they don't end up changing any of the existing content on page and still communicate that new data is being fetched. Wouldn't it be nice to have the meaningful content on the page for user's reference than show a spinner? In some cases, may be yes.
+- Some apps show a full screen spinner to indicate that they are fetching data from api. It works but again, don't we end up writing the logic to toggle the spinner on button click? Additionally, why hide the existing content until we're fetching new one? Inputs with async handler can manage their state (loaded/loading) internally and have this UX advantage that they don't end up changing any of the existing content on page and still communicate to the user that new data is being fetched. Wouldn't it be nice to have the meaningful content on the page for user's reference than show a spinner? In some cases, may be yes.
 
 Here we considered a button component but, this same logic can be extending to all forms of input components.
 
@@ -80,7 +80,7 @@ async function asyncFunctionDoingSyncTask() {
 }
 ```
 
-Another way is to modify our `Button` component to accept both kinds of `onClick` handlers functions - sync and async. We can do this simply by wrapping the response of `onClick` handler in `Promise.resolve`. This will return a promise if the onClick handler was not an async function. Doesn't matter if it returns a `Promise`.
+Another way is to modify our `Button` component to accept both kinds of `onClick` handler functions - sync and async. We can do this simply by wrapping the response of `onClick` handler in `Promise.resolve`. This will return a promise if the onClick handler was not an async function. Doesn't matter if it's already returning a `Promise`.
 
 ```js
 // set Button state to 'loading'
