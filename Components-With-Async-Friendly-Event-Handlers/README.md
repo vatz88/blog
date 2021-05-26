@@ -41,9 +41,9 @@ As you can try in the above example it works perfectly well. But what if it's an
      sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
    ></iframe>
 
-- Now if click the button, there's no immediate feedback to the user. User may feel like it's not working. Only to eventually find out that the result is loaded after 4s.
+- Now if you click the button, there's no immediate feedback to the user. User may feel like it's not working. Only to eventually find out that the result is loaded after 4s.
 
-- In these 4s time gap, the user may just click the button again thinking it was not clicked the first time 🤦‍♂️. This leads to unnecessary api calls. Also, may render the results twice, once for each response from the api call. This is based on the implementation but it could lead us to handling more edge cases.
+- In this 4s time gap, the user may just click the button again thinking it was not clicked the first time 🤦‍♂️. This leads to unnecessary api calls. Also, it may render the results twice, once for each response from the api call. This is based on the implementation but it could lead us to handling more edge cases.
 
 ## Writing Components With Async Event Handler
 
@@ -62,17 +62,17 @@ What did we change? We made the `onClick` function passed to button `async funct
 
 - Users get a visual feedback on the action of click.
 
-- The state of `Button` component is internally handled by the component. Some traditional approaches to solve this has been to pass a `isDisabled` prop to the `Button` component. But why would we want to add logic to enable/disable button for each button we use in our app when the component itself can take care of it?
+- The state of `Button` component is internally handled by the component. A traditional approach to solve this has been to pass a `isDisabled` prop to the `Button` component. But why would we want to add logic to enable/disable button for each button we use in our app when the component itself can take care of it?
 
-- Some apps a full spinner to indicate that they are fetching data from api. It works but again, don't we end up writing the logic to toggle the spinner on button click? Additionally, why hide the existing content until we're fetching new one? Inputs with async handler and internal state (loaded/loading) have this UX advantage that they don't end up changing any of the existing content on page and still communicate that new data is being fetched. Wouldn't it be nice to have the meaningful content on the page for user's reference than show a spinner? In some cases, may be yes.
+- Some apps show a full spinner to indicate that they are fetching data from api. It works but again, don't we end up writing the logic to toggle the spinner on button click? Additionally, why hide the existing content until we're fetching new one? Inputs with async handler and internal state (loaded/loading) have this UX advantage that they don't end up changing any of the existing content on page and still communicate that new data is being fetched. Wouldn't it be nice to have the meaningful content on the page for user's reference than show a spinner? In some cases, may be yes.
 
 Here we considered a button component but, this same logic can be extending to all forms of input components.
 
-Imagine you have a input box with some async validations. How nice it'd be, if the input component can update it's state (show user the validation error) based on if the async `onChange` is resolved or rejected. We can even reject it with the custom validation error message for input component to show!
+Imagine you have a input box with some async validations. How nice it'd be, if the input component can update it's state (show user the validation error) based on whether the async `onChange` is resolved or rejected. We can even reject it with the custom validation error message for input component to show!
 
 ### Adding Compatibility For Sync OnClick Handlers
 
-We may still want to use the `Button` component for non-async tasks. One way is you convert all your functions to async function by simple using the `async` keyword.
+We may still want to use the `Button` component for non-async tasks. One way is to convert all your functions to async function by simple using the `async` keyword.
 
 ```js
 async function asyncFunctionDoingSyncTask() {
@@ -80,7 +80,7 @@ async function asyncFunctionDoingSyncTask() {
 }
 ```
 
-Another way is that we modify our `Button` component to accept both kinds of `onClick` handlers functions - sync and async. We can do this simply by wrapping the response of `onClick` handler in `Promise.resolve`. This will return a promise if the onClick handler was not an async function. Doesn't matter if it returns a `Promise`.
+Another way is to modify our `Button` component to accept both kinds of `onClick` handlers functions - sync and async. We can do this simply by wrapping the response of `onClick` handler in `Promise.resolve`. This will return a promise if the onClick handler was not an async function. Doesn't matter if it returns a `Promise`.
 
 ```js
 // set Button state to 'loading'
