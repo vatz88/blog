@@ -1,4 +1,7 @@
 {
 	"ol-prefix": false,
-	"line-length": false
+	"line-length": false,
+	"no-hard-tabs": {
+		"code_blocks": false
+	}
 }
