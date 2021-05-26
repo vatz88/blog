@@ -84,12 +84,13 @@ Another way is to modify our `Button` component to accept both kinds of `onClick
 
 ```js
 // set Button state to 'loading'
-const response = Promise.resolve(onClickHandler);
+let response = onClickHandler();
+response = Promise.resolve(response);
 await response;
 // set Button state to 'done'
 ```
 
-Some may argue that this will make a synchronous code execute in an asynchronous way as we make use of Promise which will add execution after `await` to microtask queue. You may use `instanceof` to determine if the return value of the onClick handler is a `Promise` or not. I'd not prefer doing this, but still mentioning it for sake of knowledge.
+Some may argue that this will make a synchronous code execute in an asynchronous way as we make use of Promise which will add execution after `await` to microtask queue. You may use `instanceof` to determine if the return value of the `onClick` handler is a `Promise` or not.
 
 ```js
 const response = onClickHandler();

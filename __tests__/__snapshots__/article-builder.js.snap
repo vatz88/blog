@@ -149,11 +149,12 @@ exports[`Article builder should build correct html for Components-With-Async-Fri
 </code></pre>
 <p>Another way is to modify our <code>Button</code> component to accept both kinds of <code>onClick</code> handler functions - sync and async. We can do this simply by wrapping the response of <code>onClick</code> handler in <code>Promise.resolve</code>. This will return a promise if the onClick handler was not an async function. Doesn't matter if it's already returning a <code>Promise</code>.</p>
 <pre><code class=\\"hljs language-js\\"><span class=\\"hljs-comment\\">// set Button state to 'loading'</span>
-<span class=\\"hljs-keyword\\">const</span> response = <span class=\\"hljs-built_in\\">Promise</span>.resolve(onClickHandler);
+<span class=\\"hljs-keyword\\">let</span> response = onClickHandler();
+response = <span class=\\"hljs-built_in\\">Promise</span>.resolve(response);
 <span class=\\"hljs-keyword\\">await</span> response;
 <span class=\\"hljs-comment\\">// set Button state to 'done'</span>
 </code></pre>
-<p>Some may argue that this will make a synchronous code execute in an asynchronous way as we make use of Promise which will add execution after <code>await</code> to microtask queue. You may use <code>instanceof</code> to determine if the return value of the onClick handler is a <code>Promise</code> or not. I'd not prefer doing this, but still mentioning it for sake of knowledge.</p>
+<p>Some may argue that this will make a synchronous code execute in an asynchronous way as we make use of Promise which will add execution after <code>await</code> to microtask queue. You may use <code>instanceof</code> to determine if the return value of the <code>onClick</code> handler is a <code>Promise</code> or not.</p>
 <pre><code class=\\"hljs language-js\\"><span class=\\"hljs-keyword\\">const</span> response = onClickHandler();
 <span class=\\"hljs-keyword\\">if</span> (response <span class=\\"hljs-keyword\\">instanceof</span> <span class=\\"hljs-built_in\\">Promise</span>) {
     response.then(<span class=\\"hljs-function\\">() =></span> {
