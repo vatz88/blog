@@ -106,7 +106,7 @@ exports[`Article builder should build correct html for Components-With-Async-Fri
 </header>
         	<main>
         		<h1 id=\\"components-with-async-friendly-event-handlers\\"><a href=\\"#components-with-async-friendly-event-handlers\\">Components With Async Friendly Event Handlers</a></h1>
-<p>Posted on May 24, 2021</p>
+<p>Posted on May 26, 2021</p>
 <hr>
 <p>All apps have to listen to user input, it could be a button click or some text being typed in a input box. These user actions in return perform a task like api call, validating the input, etc. These actions can be asynchronous in nature and it's in these cases where having async even handlers in extremely beneficial.</p>
 <p>Let's take a simple example of a button. On clicking the button, we'll make an api call and then render an image from the api's response. I'll be using React here but these ideas remain same for other frameworks too.</p>
@@ -481,7 +481,7 @@ exports[`Article builder should build correct html for home page 1`] = `
 <p>Always happy to connect 🙂 - <a href=\\"https://twitter.com/vatz88\\" target=\\"_blank\\" rel=\\"noopener\\">twitter.com/vatz88</a> ; <a href=\\"mailto:hello@vatz88.in\\">hello@vatz88.in</a></p>
 <h2 id=\\"posts\\"><a href=\\"#posts\\">Posts</a></h2>
 <!-- Posts -->
-<p><a href=\\"/components-with-async-friendly-event-handlers/\\">Components With Async Friendly Event Handlers</a> - May 24, 2021</p>
+<p><a href=\\"/components-with-async-friendly-event-handlers/\\">Components With Async Friendly Event Handlers</a> - May 26, 2021</p>
 <p><a href=\\"/upgrading-ejected-cra-project/\\">Upgrading Ejected CRA Project</a> - September 10, 2019</p>
 <p><a href=\\"/all-you-need-to-Know-about-placements-in-vit-vellore/\\">All You Need To Know About Placements In VIT Vellore</a> - May 8, 2018</p>
 <p><a href=\\"/setting-up-ubuntu-on-asus-rog-gl552vw/\\">Setting up Ubuntu on Asus ROG GL552VW</a> - March 10, 2017</p>

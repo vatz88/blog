@@ -23,7 +23,7 @@ Always happy to connect 🙂 - [twitter.com/vatz88](https://twitter.com/vatz88) 
 
 <!-- Posts -->
 
-[Components With Async Friendly Event Handlers](/components-with-async-friendly-event-handlers/) - May 24, 2021
+[Components With Async Friendly Event Handlers](/components-with-async-friendly-event-handlers/) - May 26, 2021
 
 [Upgrading Ejected CRA Project](/upgrading-ejected-cra-project/) - September 10, 2019
 

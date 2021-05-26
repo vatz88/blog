@@ -8,14 +8,14 @@
       "content": "React,Async,Button,EventHandler,Promises,Components,Blog,Vatsal,Joshi,vatz88"
     }
   ],
-  "date": "2021-05-24",
+  "date": "2021-05-26",
   "page_identifier": "blog004"
 }
 -->
 
 # Components With Async Friendly Event Handlers
 
-Posted on May 24, 2021
+Posted on May 26, 2021
 
 ---
 
