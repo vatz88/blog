@@ -3,10 +3,13 @@ const promisify = require('util').promisify;
 const fs = require('fs');
 const readFile = promisify(fs.readFile);
 
-const { getArticlesDirArr } = require('../lib/utils/articles-helper');
 const { buildPage } = require('../lib/utils/article-builder');
 
-const articlesDirArr = getArticlesDirArr();
+const articlesDirArr = [
+	'Setting-up-Ubuntu-on-Asus-ROG-GL552VW',
+	'All-You-Need-To-Know-About-Placements-In-VIT-Vellore',
+	'Components-With-Async-Friendly-Event-Handlers',
+];
 
 describe('Article builder', () => {
 	it.each(articlesDirArr)(
