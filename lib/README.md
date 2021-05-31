@@ -51,3 +51,7 @@ JSON
     "enableDisqus": true,
 }
 ```
+
+# Additional info
+
+Meta images are 1200x628
