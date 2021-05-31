@@ -16,6 +16,13 @@ describe('Build articles', () => {
 		expect(hasReadme).toBe(true);
 	});
 
+	it.each(articleDirs)('%s should have meta image', dirName => {
+		const hasMetaImage = fs.existsSync(
+			path.resolve(__dirname, '..', dirName, 'meta-image.png'),
+		);
+		expect(hasMetaImage).toBe(true);
+	});
+
 	it.each(articleDirs)(
 		'%s README.md should have correct gray-matter data',
 		dirName => {
