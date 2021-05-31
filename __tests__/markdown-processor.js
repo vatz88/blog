@@ -21,14 +21,36 @@ const ubuntuMarkdown = fs
 	)
 	.toString();
 
+const asyncEventHandlersMarkdown = fs
+	.readFileSync(
+		path.resolve(
+			__dirname,
+			'../Components-With-Async-Friendly-Event-Handlers/README.md',
+		),
+	)
+	.toString();
+
 describe('Markdown processor', () => {
 	it('should produce same html for a same given markdown', async () => {
-		const placementsHtml = await markdownProcessor(placementsMarkdown);
+		const [
+			placementsHtml,
+			ubuntuHtml,
+			asyncEventHandlersHtml,
+		] = await Promise.all([
+			markdownProcessor(placementsMarkdown),
+			markdownProcessor(ubuntuMarkdown),
+			markdownProcessor(asyncEventHandlersMarkdown),
+		]);
+
 		expect(placementsHtml).toMatchSnapshot({
 			cwd: expect.any(String),
 		});
-		const ubuntuHtml = await markdownProcessor(ubuntuMarkdown);
+
 		expect(ubuntuHtml).toMatchSnapshot({
+			cwd: expect.any(String),
+		});
+
+		expect(asyncEventHandlersHtml).toMatchSnapshot({
 			cwd: expect.any(String),
 		});
 	});
