@@ -241,7 +241,7 @@ Object {
 <h1 id=\\"components-with-async-friendly-event-handlers\\"><a href=\\"#components-with-async-friendly-event-handlers\\">Components With Async Friendly Event Handlers</a></h1>
 <p>Posted on May 26, 2021</p>
 <hr>
-<p>All apps have to listen to user input, it could be a button click or some text being typed in an input box. These user actions in return perform a task like api call, validating the input, etc. These actions can be asynchronous in nature and it's in these cases where having async even handlers is quite beneficial.</p>
+<p>All apps have to listen to user input, it could be a button click or some text being typed in an input box. These user actions in return perform a task like api call, validating the input, etc. These actions can be asynchronous in nature and it's in these cases where having async event handlers is quite beneficial.</p>
 <p>Let's take a simple example of a button. On clicking the button, we'll make an api call and then render an image from the api's response. I'll be using React here but these ideas remain same for other frameworks too.</p>
 <!-- Sync onClick handler -->
 <iframe src=\\"https://codesandbox.io/embed/sync-onclick-handler-tqw54?autoresize=1&#x26;fontsize=14&#x26;hidenavigation=1&#x26;module=%2Fsrc%2FApp.js&#x26;theme=dark\\" style=\\"width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;\\" title=\\"Sync onClick handler\\" allow=\\"accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking\\" sandbox=\\"allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts\\"></iframe>
