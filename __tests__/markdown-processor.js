@@ -7,7 +7,7 @@ const placementsMarkdown = fs
 	.readFileSync(
 		path.resolve(
 			__dirname,
-			'../All-You-Need-To-Know-About-Placements-In-VIT-Vellore/README.md',
+			'../all-you-need-to-Know-about-placements-in-vit-vellore/README.md',
 		),
 	)
 	.toString();
@@ -16,7 +16,7 @@ const ubuntuMarkdown = fs
 	.readFileSync(
 		path.resolve(
 			__dirname,
-			'../Setting-up-Ubuntu-on-Asus-ROG-GL552VW/README.md',
+			'../setting-up-ubuntu-on-asus-rog-gl552vw/README.md',
 		),
 	)
 	.toString();
@@ -25,7 +25,7 @@ const asyncEventHandlersMarkdown = fs
 	.readFileSync(
 		path.resolve(
 			__dirname,
-			'../Components-With-Async-Friendly-Event-Handlers/README.md',
+			'../components-with-async-friendly-event-handlers/README.md',
 		),
 	)
 	.toString();

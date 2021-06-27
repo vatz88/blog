@@ -6,9 +6,9 @@ const readFile = promisify(fs.readFile);
 const { buildPage } = require('../lib/utils/article-builder');
 
 const articlesDirArr = [
-	'Setting-up-Ubuntu-on-Asus-ROG-GL552VW',
-	'All-You-Need-To-Know-About-Placements-In-VIT-Vellore',
-	'Components-With-Async-Friendly-Event-Handlers',
+	'setting-up-ubuntu-on-asus-rog-gl552vw',
+	'all-you-need-to-Know-about-placements-in-vit-vellore',
+	'components-with-async-friendly-event-handlers',
 ];
 
 describe('Article builder', () => {

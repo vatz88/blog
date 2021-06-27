@@ -1,9 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Build articles All-You-Need-To-Know-About-Placements-In-VIT-Vellore README.md should have correct gray-matter data 1`] = `"blog002"`;
+exports[`Build articles all-you-need-to-Know-about-placements-in-vit-vellore README.md should have correct gray-matter data 1`] = `"blog002"`;
 
-exports[`Build articles Components-With-Async-Friendly-Event-Handlers README.md should have correct gray-matter data 1`] = `"blog004"`;
+exports[`Build articles components-with-async-friendly-event-handlers README.md should have correct gray-matter data 1`] = `"blog004"`;
 
-exports[`Build articles Setting-up-Ubuntu-on-Asus-ROG-GL552VW README.md should have correct gray-matter data 1`] = `"blog001"`;
+exports[`Build articles setting-up-ubuntu-on-asus-rog-gl552vw README.md should have correct gray-matter data 1`] = `"blog001"`;
 
-exports[`Build articles Upgrading-Ejected-CRA-Project README.md should have correct gray-matter data 1`] = `"blog003"`;
+exports[`Build articles upgrading-ejected-cra-project README.md should have correct gray-matter data 1`] = `"blog003"`;
