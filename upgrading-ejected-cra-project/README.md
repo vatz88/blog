@@ -59,7 +59,7 @@ After you follow the upgrade procedure and run `npm start` or `yarn start`, the 
 
 This may happen, since there are different configs for both. As a first hack, pass 'development' to `configFactory` in build script. To better identify if the issue is with the production config.
 
-`Babel` has some significant changes from version 6 to 7. Try changing `BABEL_ENV = 'development'` in the build script. It did the trick for me. (Update: No it wasn't actually babel, the issue was with the code. Something to do with propTypes being dropped on prod build but still some code trying to access it, resulting in error.)
+`Babel` has some significant changes from version 6 to 7. Try changing `BABEL_ENV = 'development'` in the build script. It did the trick for me. (_Update_: No it wasn't actually babel, the issue was with the code. Something to do with propTypes being dropped on prod build but still some code trying to access it, resulting in error.)
 
 Few issues I faced were:
 
