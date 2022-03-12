@@ -70,36 +70,21 @@ Here we considered a button component but, this same logic can be extending to a
 
 Imagine you have a input box with some async validations. How nice it'd be, if the input component can update it's state (show user the validation error) based on whether the async `onChange` is resolved or rejected. We can even reject it with the custom validation error message for input component to show!
 
-### Adding Compatibility For Sync OnClick Handlers
+### Can The Same Component Work With Both Sync And Async Handlers?
 
-We may still want to use the `Button` component for non-async tasks. One way is to convert all your functions to async function by simple using the `async` keyword.
+Yes! So the `.then` / `.catch` methods are only available on Promises but if you use `async` / `await`, you don't have to worry about whether the function is synchronous or returns a Promise.
 
 ```js
-async function asyncFunctionDoingSyncTask() {
-	// some synchronous code here
-}
+await syncOnClickHandler(); // This doesn't throw error! It's safe to use await on anything
 ```
 
-Another way is to modify our `Button` component to accept both kinds of `onClick` handler functions - sync and async. We can do this simply by wrapping the response of `onClick` handler in `Promise.resolve`. This will return a promise if the onClick handler was not an async function. Doesn't matter if it's already returning a `Promise`.
+It's important to know that async functions are executed immediately, only the code after the first `await` goes to microtask queue. So if you plan to use `event.preventDefault()` or `event.stopPropagation()`, these calls should be made before using `await`.
 
 ```js
-// set Button state to 'loading'
-let response = onClickHandler();
-response = Promise.resolve(response);
-await response;
-// set Button state to 'done'
-```
-
-Some may argue that this will make a synchronous code execute in an asynchronous way as we make use of Promise which will add execution after `await` to microtask queue. You may use `instanceof` to determine if the return value of the `onClick` handler is a `Promise` or not.
-
-```js
-const response = onClickHandler();
-if (response instanceof Promise) {
-	response.then(() => {
-		// set Button state to done
-	});
-} else {
-	// set Button state to done
+async function onClick(e) {
+	e.preventDefault(); // ✅
+	await someApiCall();
+	e.stopPropagation(); // this doesn't work because e.stopPropagation has to be called synchronously
 }
 ```
 
