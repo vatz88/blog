@@ -78,7 +78,7 @@ exports[`Article builder should build correct html for all-you-need-to-Know-abou
         </script>
         	
 <footer>
-    © 2017-2021 <a href=\\"https://vatz88.in\\" target=\\"_blank\\" rel=\\"noopener\\">Vatsal Joshi</a>
+    © <a href=\\"https://vatz88.in\\" target=\\"_blank\\" rel=\\"noopener\\">Vatsal Joshi</a>
 </footer>
         	<script src=\\"/static/js/script.js?v=a6fdc4c7deff9d17fcff71c4bb07a0cb\\"></script>
         </body>
@@ -169,7 +169,7 @@ exports[`Article builder should build correct html for components-with-async-fri
         </script>
         	
 <footer>
-    © 2017-2021 <a href=\\"https://vatz88.in\\" target=\\"_blank\\" rel=\\"noopener\\">Vatsal Joshi</a>
+    © <a href=\\"https://vatz88.in\\" target=\\"_blank\\" rel=\\"noopener\\">Vatsal Joshi</a>
 </footer>
         	<script src=\\"/static/js/script.js?v=a6fdc4c7deff9d17fcff71c4bb07a0cb\\"></script>
         </body>
@@ -209,7 +209,7 @@ exports[`Article builder should build correct html for home page 1`] = `
         	
         	
 <footer>
-    © 2017-2021 <a href=\\"https://vatz88.in\\" target=\\"_blank\\" rel=\\"noopener\\">Vatsal Joshi</a>
+    © <a href=\\"https://vatz88.in\\" target=\\"_blank\\" rel=\\"noopener\\">Vatsal Joshi</a>
 </footer>
         	<script src=\\"/static/js/script.js?v=a6fdc4c7deff9d17fcff71c4bb07a0cb\\"></script><script src=\\"/static/js/instantpage.v5.1.0.min.js\\"></script>
         </body>
@@ -386,7 +386,7 @@ gksu nautilus
         </script>
         	
 <footer>
-    © 2017-2021 <a href=\\"https://vatz88.in\\" target=\\"_blank\\" rel=\\"noopener\\">Vatsal Joshi</a>
+    © <a href=\\"https://vatz88.in\\" target=\\"_blank\\" rel=\\"noopener\\">Vatsal Joshi</a>
 </footer>
         	<script src=\\"/static/js/script.js?v=a6fdc4c7deff9d17fcff71c4bb07a0cb\\"></script>
         </body>
