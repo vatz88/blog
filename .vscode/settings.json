@@ -45,5 +45,6 @@
 		"prefetch",
 		"rehype",
 		"vatz"
-	]
+	],
+	"jest.jestCommandLine": "yarn test"
 }
